@@ -4,6 +4,6 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for h
 # V0.3(Beta13)
 <ul>
 <li>font created.</li>
-<li>some features for persian fonts like diacritics and some other stuffs kerning and hinting(with ttfautohint) is avalible.</li>
+<li>some special features for Arabic-Persian fonts like diacritics and arabic numbers and some other public features like kerning and hinting(with ttfautohint) is avalible.</li>
 </ul>
 Now you can download <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta13/Font/Estedad-V0.3(Beta13).ttf">the Font</a> , <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta13/Source/Estedad-V0.3(Beta13).sfd">Fontforge sorce</a> or <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta13/Preview.pdf">PDF preview</a>
