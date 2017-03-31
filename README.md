@@ -12,22 +12,22 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for h
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
 
 <table>
-  <tr>
-    <th></th>
+ <tr>
+    <th>Download</th>
     <th>Source</th>
     <th>Font</th>
-  </tr>
+    </tr>
   <tr>
     <td>With Corbel-Regular Glyphs</td>
     <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/With%20Corbel-Regular%20Glyphs/Source/Estedad-V0.3(Beta14)%20-AL.sfd">Estedad-V0.3(Beta14)-AL</a></td>
     
     <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/With%20Corbel-Regular%20Glyphs/Font/Estedad-V0.3(Beta14)%20-AL.ttf">Estedad-V0.3(Beta14)-AL</a></td>
-  </tr>
-  <tr>
+</tr>
+<tr>
     <td>Only Arabic-Persian Glyphs</td>
     <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/Only%20Arabic-Persian%20Glyphs/Source/Estedad-V0.3(Beta14)%20-A.sfd">Estedad-V0.3(Beta14)-A</a></td>
     <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/Only%20Arabic-Persian%20Glyphs/Font/Estedad-V0.3(Beta14)%20-A.ttf">Estedad-V0.3(Beta14)-A.ttf</a></td>
-  </tr>
+ </tr>
 </table>
 # V 0.3(Beta13)
 <ul>
