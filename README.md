@@ -10,7 +10,8 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for h
 <li>Corbel-regular glyphs now better match in size and weight with other arabic glyphs.</li>
 </ul>
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
-# V0.3(Beta13)
+
+# V 0.3(Beta13)
 <ul>
 <li>font created.</li>
 <li>merged with "corbel" regular font(V5.61) for access latin glyphs in maximum coordination.</li>
