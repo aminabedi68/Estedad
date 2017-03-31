@@ -1,24 +1,3 @@
-<head>
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
-</head>
-<body>
-
 # Estedad
 Estedad is a persian font that designed by me (Amin Abedi) inside inkscape 0.92 and generated with font forge 20:55 under SIL open font licence V1.1.
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for his helpful guidance.
@@ -80,4 +59,3 @@ Now you can download <a href="https://github.com/aminabedi68/Estedad/blob/master
   </tr>
 </table>
 
-</body>
