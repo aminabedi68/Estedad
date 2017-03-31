@@ -28,7 +28,8 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for t
     <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/Only%20Arabic-Persian%20Glyphs/Font/Estedad-V0.3(Beta14)%20-A.ttf">Estedad-V0.3(Beta14)-A.ttf</a></td>
 </tr>
 </table>
-# V 0.3(Beta13)
+
+# V 0.3-Beta13
 <ul>
 <li>font created.</li>
 <li>merged with "corbel" regular font(V5.61) for access latin glyphs in maximum coordination.</li>
