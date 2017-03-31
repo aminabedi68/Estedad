@@ -18,8 +18,9 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for t
     <th>Font</th>
   </tr>
   <tr>
+    <td>With Corbel-Regular Glyphs</td>
     <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/With%20Corbel-Regular%20Glyphs/Source/Estedad-V0.3(Beta14)%20-AL.sfd">Estedad-V0.3(Beta14)-AL</a></td>
-    <td>Maria Anders</td>
+    
     <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/With%20Corbel-Regular%20Glyphs/Font/Estedad-V0.3(Beta14)%20-AL.ttf">Estedad-V0.3(Beta14)-AL</a></td>
   </tr>
   <tr>
