@@ -34,8 +34,8 @@ Now you can download <a href="https://github.com/aminabedi68/Estedad/blob/master
   </tr>
   <tr>
     <td>Only Arabic-Persian Glyphs</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/Only%20Arabic-Persian%20Glyphs/Source/Estedad-V0.3(Beta14)%20-A.sfd">Download</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/Only%20Arabic-Persian%20Glyphs/Font/Estedad-V0.3(Beta14)%20-A.ttf">Download</a></td>
   </tr>
 </table>
 
