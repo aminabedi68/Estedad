@@ -11,7 +11,23 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for h
 </ul>
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
 
-
+<table>
+  <tr>
+    <th></th>
+    <th>Source</th>
+    <th>Font</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/With%20Corbel-Regular%20Glyphs/Source/Estedad-V0.3(Beta14)%20-AL.sfd">Estedad-V0.3(Beta14)-AL</a></td>
+    <td>Maria Anders</td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/With%20Corbel-Regular%20Glyphs/Font/Estedad-V0.3(Beta14)%20-AL.ttf">Estedad-V0.3(Beta14)-AL</a></td>
+  </tr>
+  <tr>
+    <td>Only Arabic-Persian Glyphs</td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/Only%20Arabic-Persian%20Glyphs/Source/Estedad-V0.3(Beta14)%20-A.sfd">Estedad-V0.3(Beta14)-A</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/Only%20Arabic-Persian%20Glyphs/Font/Estedad-V0.3(Beta14)%20-A.ttf">Estedad-V0.3(Beta14)-A.ttf</a></td>
+  </tr>
+</table>
 # V 0.3(Beta13)
 <ul>
 <li>font created.</li>
@@ -21,21 +37,5 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for t
 Now you can download <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta13/Font/Estedad-V0.3(Beta13).ttf">Estedad-V0.3(Beta13).ttf</a> , <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta13/Source/Estedad-V0.3(Beta13).sfd">Fontforge sorce</a> or take a look at <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta13/Preview.pdf">PDF preview</a>
 
 
-<table>
-  <tr>
-    <th></th>
-    <th>Source</th>
-    <th>Font</th>
-  </tr>
-  <tr>
-    <td>With Corble-regular Glyphs</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Only Arabic-Persian Glyphs</td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/Only%20Arabic-Persian%20Glyphs/Source/Estedad-V0.3(Beta14)%20-A.sfd">Download</a></td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.3-Beta14/Only%20Arabic-Persian%20Glyphs/Font/Estedad-V0.3(Beta14)%20-A.ttf">Download</a></td>
-  </tr>
-</table>
+
 
