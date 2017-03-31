@@ -6,7 +6,7 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for h
 <li>size of letter HEH(Isolated form) increased.</li>
 <li>size of letter HEH(Intial form) decreased.</li>
 <li>letter JEH(Final form) display problem fixed.</li>
-<li>kerning for letter AIN(Isolated form) and GHAIN(Isolated form) adjusted.</li>
+<li>kerning for letter AIN(Isolated form), GHAIN(Isolated form) and JEH(Final form) adjusted.</li>
 <li>Corbel-regular glyphs now better match in size and weight with other arabic glyphs.</li>
 </ul>
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
