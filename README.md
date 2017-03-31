@@ -10,7 +10,7 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for h
 <li>Corbel-regular glyphs now better match in size and weight with other arabic glyphs.</li>
 </ul>
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
-
+Now you can download:
 <table>
  <tr>
     <th>Download</th>
