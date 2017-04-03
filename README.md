@@ -5,7 +5,6 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for h
 <ul>
 <li>redesign inside fontforge.</li>
 <li>too many problems fixed.</li>
-<li>letter JEH(Final form) display problem fixed.</li>
 <li>latin glyphs changed to HelveticaLT-Light.</li>
 </ul>
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
@@ -27,6 +26,7 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for t
     <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta1/Only%20Arabic-Persian%20Glyphs/Font/Estedad-V0.4(Beta1)-A.ttf">Estedad-V0.3(Beta14)-A.ttf</a></td>
 </tr>
 </table>
+
 # V 0.3-Beta14
 <ul>
 <li>size of letter HEH(Isolated form) increased.</li>
