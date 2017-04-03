@@ -3,7 +3,7 @@ Estedad is a persian font that designed by me (Amin Abedi) inside inkscape 0.92 
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for his helpful guidance.
 # V 0.4-Beta1
 <ul>
-<li>redesign inside fontforge.</li>
+<li>redesigned inside fontforge.</li>
 <li>too many problems fixed.</li>
 <li>latin glyphs changed to HelveticaLT-Light.</li>
 </ul>
