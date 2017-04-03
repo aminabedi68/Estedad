@@ -17,13 +17,13 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for t
     </tr>
   <tr>
     <td>With HelveticaLT-Light Glyphs</td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta1/With%20HelveticaLT-Light%20Glyphs/Source/Estedad-V0.4(Beta1)-AL.sfd">Estedad-V0.3(Beta14)-AL.sfd</a></td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta1/With%20HelveticaLT-Light%20Glyphs/Font/Estedad-V0.4(Beta1)-AL.ttf">Estedad-V0.3(Beta14)-AL.ttf</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta1/With%20HelveticaLT-Light%20Glyphs/Source">Estedad-V0.4(Beta1)-AL.sfd</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta1/With%20HelveticaLT-Light%20Glyphs/Font">Estedad-V0.4(Beta1)-AL.ttf</a></td>
 </tr>
 <tr>
     <td>Only Arabic-Persian Glyphs</td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta1/Only%20Arabic-Persian%20Glyphs/Source/Estedad-V0.4(Beta1)-A.sfd">Estedad-V0.3(Beta14)-A.sfd</a></td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta1/Only%20Arabic-Persian%20Glyphs/Font/Estedad-V0.4(Beta1)-A.ttf">Estedad-V0.3(Beta14)-A.ttf</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta1/Only%20Arabic-Persian%20Glyphs/Source">Estedad-V0.4(Beta1)-A.sfd</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta1/Only%20Arabic-Persian%20Glyphs/Font">Estedad-V0.4(Beta1)-A.ttf</a></td>
 </tr>
 </table>
 
