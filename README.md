@@ -2,7 +2,7 @@
 Estedad is a persian font that designed by me (Amin Abedi) inside inkscape 0.92 and generated with font forge 20:55 under SIL open font licence V1.1.
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for his helpful guidance.
 
-# V 0.4-Beta1
+# V 0.4-Beta4
 <ul>
 <li>left/right guillemets designed.</li>
 <li>font forge metrics parameters defined.</li>
