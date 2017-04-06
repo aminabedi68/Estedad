@@ -2,6 +2,31 @@
 Estedad is a persian font that designed by me (Amin Abedi) inside inkscape 0.92 and generated with font forge 20:55 under SIL open font licence V1.1.
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for his helpful guidance.
 
+# V 0.4-Beta6
+<ul>
+<li>a few disturted curves in several glyphs fixed.</li>
+<li>side angles(near the connection points) for AIN(midial form) and FEH(initial form) improved.</li>
+</ul>
+Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
+<br />Now you can download:
+<table>
+ <tr>
+    <th>Download</th>
+    <th>Source</th>
+    <th>Font</th>
+    </tr>
+  <tr>
+    <td>With HelveticaLT-Light Glyphs</td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/With%20HelveticaLT-Light%20Glyphs/Source">Estedad-V0.4(Beta6)-AL.sfd</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/With%20HelveticaLT-Light%20Glyphs/Font">Estedad-V0.4(Beta6)-AL.ttf</a></td>
+</tr>
+<tr>
+    <td>Only Arabic-Persian Glyphs</td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/Only%20Arabic-Persian%20Glyphs/Source">Estedad-V0.4(Beta6)-A.sfd</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/tree/master/V%200.4-Beta6/Only%20Arabic-Persian%20Glyphs/Font">Estedad-V0.4(Beta6)-A.ttf</a></td>
+</tr>
+</table>
+
 # V 0.4-Beta4
 <ul>
 <li>left/right guillemets designed.</li>
