@@ -8,7 +8,7 @@ Many thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> 
 <li>side angles(near the connection points) for AIN(midial form) and FEH(initial form) improved.</li>
 </ul>
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
-<br />Now you can download:
+<br />You can download from here:
 <table>
  <tr>
     <th>Download</th>
@@ -62,6 +62,3 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for t
 <li>font merged with "corbel" regular font(V5.61) for access latin glyphs in maximum coordination.</li>
 <li>some special features for Arabic-Persian fonts like arabic diacritics and both Arabic-Persian numbers and also some other public features like kerning and hinting(with ttfautohint) is available.</li>
 </ul>
-
-
-
