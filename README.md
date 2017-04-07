@@ -7,8 +7,11 @@ Many thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> 
 <li>a few disturted curves in several glyphs fixed.</li>
 <li>side angles(near the connection points) for AIN(midial form) and FEH(initial form) improved.</li>
 </ul>
-<br />You can get a <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/Preview.pdf">"PDF preview"</a> or download ttf and sdf(fontforge source) files from here:
+
 <br />
+You can get a <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/Preview.pdf">"PDF preview"</a> or download ttf and sdf(fontforge source) files from here:
+<br />
+
 <table>
  <tr>
     <th>Download</th>
