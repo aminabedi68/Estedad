@@ -7,7 +7,6 @@ Many thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> 
 <li>a few disturted curves in several glyphs fixed.</li>
 <li>side angles(near the connection points) for AIN(midial form) and FEH(initial form) improved.</li>
 </ul>
-Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
 <br />You can get a <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/Preview.pdf">"PDF preview"</a> or download ttf and sdf(fontforge source) files from here:
 <table>
  <tr>
@@ -26,6 +25,7 @@ Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for t
     <td><a href="https://github.com/aminabedi68/Estedad/tree/master/V%200.4-Beta6/Only%20Arabic-Persian%20Glyphs/Font">Estedad-V0.4(Beta6)-A.ttf</a></td>
 </tr>
 </table>
+Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
 
 # V 0.4-Beta4
 <ul>
