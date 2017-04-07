@@ -1,7 +1,0 @@
-V 0.3-Beta14
-size of letter HEH(Isolated form) increased.
-size of letter HEH(Intial form) decreased.
-letter JEH(Final form) display problem fixed.
-kerning for letter AIN(Isolated form), GHAIN(Isolated form) and JEH(Final form) adjusted.
-Corbel-regular glyphs now better match in size and weight with other arabic glyphs.
-Thanks to "Saber Rastikerdar" for testing font and reporting the bugs. 
