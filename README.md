@@ -8,7 +8,7 @@ Many thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> 
 <li>side angles(near the connection points) for AIN(midial form) and FEH(initial form) improved.</li>
 </ul>
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
-<br />You can download from here:
+<br />You can get a <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/Preview.pdf">"PDF preview"</a> or download ttf and sdf(fontforge source) files from here:
 <table>
  <tr>
     <th>Download</th>
