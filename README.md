@@ -1,11 +1,11 @@
 # Estedad
-Estedad is a persian font that designed by me (Amin Abedi) inside inkscape 0.92 and font forge 20:55 under SIL open font licence V1.1.you can always get a PDF preview for the last version from <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/Preview.pdf">here</a>.
+Estedad is a persian font that designed by me (Amin Abedi) inside inkscape 0.92 and font forge 20:55 under SIL open font licence V1.1.you can always get a PDF preview for the last version from <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.5-Beta2/Preview.pdf">here</a>.
 <br />Many thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for his helpful guidance.
 
-# V 0.4-Beta6
+# V 0.5-Beta2
 <ul>
-<li>a few disturted curves in several glyphs fixed.</li>
-<li>side angles(near the connection points) for AIN(midial form) and FEH(initial form) improved.</li>
+<li>rearranged in Unicode standard.</li>
+<li>DAL(/thAL) initial and final forms improved.</li>
 </ul>
 
 <br />
@@ -20,15 +20,21 @@ You can download ttf or sdf(fontforge source) files from here:
     </tr>
   <tr>
     <td>With HelveticaLT-Light Glyphs</td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/With%20HelveticaLT-Light%20Glyphs/Source">Estedad-V0.4(Beta6)-AL.sfd</a></td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/With%20HelveticaLT-Light%20Glyphs/Font">Estedad-V0.4(Beta6)-AL.ttf</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.5-Beta2/With%20HelveticaLT-Light%20Glyphs/Source">Estedad-V0.5(Beta2)-AL.sfd</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.5-Beta2/With%20HelveticaLT-Light%20Glyphs/Font">Estedad-V0.5(Beta2)-AL.ttf</a></td>
 </tr>
 <tr>
     <td>Only Arabic-Persian Glyphs</td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.4-Beta6/Only%20Arabic-Persian%20Glyphs/Source">Estedad-V0.4(Beta6)-A.sfd</a></td>
-    <td><a href="https://github.com/aminabedi68/Estedad/tree/master/V%200.4-Beta6/Only%20Arabic-Persian%20Glyphs/Font">Estedad-V0.4(Beta6)-A.ttf</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.5-Beta2/Only%20Arabic-Persian%20Glyphs/Source">Estedad-V0.5(Beta2)-A.sfd</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/tree/master/V%200.5-Beta2/Only%20Arabic-Persian%20Glyphs/Font">Estedad-V0.5(Beta2)-A.ttf</a></td>
 </tr>
 </table>
+
+# V 0.4-Beta6
+<ul>
+<li>a few disturted curves in several glyphs fixed.</li>
+<li>side angles(near the connection points) for AIN(midial form) and FEH(initial form) improved.</li>
+</ul>
 Thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for testing font and reporting the bugs.
 
 # V 0.4-Beta4
