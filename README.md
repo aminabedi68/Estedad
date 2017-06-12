@@ -4,8 +4,8 @@ Estedad is a persian font that designed by me (Amin Abedi) inside inkscape 0.92 
 
 # V 0.5-Beta2
 <ul>
-<li>rearranged in Unicode standard.</li>
-<li>DAL(/thAL) initial and final forms improved.</li>
+<li>Rearranged in Unicode standard table.</li>
+<li>DAL(THAL) initial and final forms improved.</li>
 </ul>
 
 <br />
