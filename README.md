@@ -2,10 +2,10 @@
 Estedad is a persian font designed by me (Amin Abedi) inside inkscape 0.92 and font forge 20:55 under SIL open font licence V1.1.you can get a PDF preview contain the last version of this font from <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.5-Beta2/Preview.pdf">here</a>.
 <br />Many thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for his helpful guides.
 
-# V 0.5-Beta2
+# V 0.6-Beta1
 <ul>
-<li>Rearranged in Unicode standard table.</li>
-<li>DAL(THAL) initial and final forms improved.</li>
+<li>many glyphs redesigned and improved.</li>
+<li>... more than i can remember and write here!</li>
 </ul>
 
 <br />
@@ -20,15 +20,23 @@ You can download ttf or sdf(fontforge source) files from here:
     </tr>
   <tr>
     <td>With HelveticaLT-Light Glyphs</td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.5-Beta2/With%20HelveticaLT-Light%20Glyphs/Source">Estedad-V0.5(Beta2)-AL.sfd</a></td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.5-Beta2/With%20HelveticaLT-Light%20Glyphs/Font">Estedad-V0.5(Beta2)-AL.ttf</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.6-Beta1/With%20HelveticaLT-Light%20Glyphs/Source">Estedad-V0.6(Beta1)-AL.sfd</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.6-Beta1/With%20HelveticaLT-Light%20Glyphs/Font">Estedad-V0.6(Beta1)-AL.ttf</a></td>
 </tr>
 <tr>
     <td>Only Arabic-Persian Glyphs</td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.5-Beta2/Only%20Arabic-Persian%20Glyphs/Source">Estedad-V0.5(Beta2)-A.sfd</a></td>
-    <td><a href="https://github.com/aminabedi68/Estedad/tree/master/V%200.5-Beta2/Only%20Arabic-Persian%20Glyphs/Font">Estedad-V0.5(Beta2)-A.ttf</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.6-Beta1/Only%20Arabic-Persian%20Glyphs/Source">Estedad-V0.6(Beta1)-A.sfd</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/tree/master/V%200.6-Beta1/Only%20Arabic-Persian%20Glyphs/Font">Estedad-V0.6(Beta1)-A.ttf</a></td>
 </tr>
 </table>
+Thanks to <a href="https://github.com/zoghal">"Saleh Souzanchi"</a> for testing font and reporting bugs.
+
+
+# V 0.5-Beta2
+<ul>
+<li>Rearranged in Unicode standard table.</li>
+<li>DAL(THAL) initial and final forms improved.</li>
+</ul>
 
 # V 0.4-Beta6
 <ul>
