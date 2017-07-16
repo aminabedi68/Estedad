@@ -28,7 +28,7 @@ You can download ttf or sdf(fontforge source) files from here:
     <td><a href="https://github.com/aminabedi68/Estedad/tree/master/V%200.7-Beta1/Only%20Arabic-Persian%20Glyphs/Font">Estedad-V0.7(Beta1)-A.ttf</a></td>
 </tr>
 </table>
-Thanks to <a href="https://github.com/zoghal">"Saleh Souzanchi"</a> for testing font and reporting bugs.
+Thanks to <a href="https://github.com/zoghal">"Saleh Souzanchi"</a> for his kindness and for testing this font and reporting bugs.
 
 
 # V 0.5-Beta2
