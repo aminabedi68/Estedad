@@ -1,6 +1,6 @@
 # Estedad
 Estedad is an Arabic-Persian font designed by me (Amin Abedi) inside inkscape 0.92 and font forge 20:55 under SIL open font licence V1.1.you can get a PDF preview contain the last version of this font from <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.7-Beta10/Preview.pdf">here</a>.
-<br />Many thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for his helpful guides.
+<br />Many thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> and <a href="https://github.com/zoghal">"Saleh Souzanchi"</a> for helpful guides.
 
 # V 0.7-Beta10
 <ul>
