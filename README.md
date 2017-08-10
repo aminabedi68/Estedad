@@ -8,7 +8,7 @@ Estedad is an Arabic-Persian font designed inside inkscape and font forge under 
 <li>Percent sign and slash improved.</li>
 <li>KAF(KEHEH) & GAF letter family was redesigned.</li>
 <li>diacritic placement improved.</li>
-<li>letter initial AIN(GHAIN) was redesigned.</li>
+<li>letter initial and medial AIN(GHAIN) was redesigned.</li>
 <li>letter final LAM joint improved.</li>
 <li>ligature LAM with ALEF(isolated and final forms) with all related glyphs was redesigned.</li>
 <li>some kerning issus was fixed.</li>
