@@ -1,15 +1,16 @@
 # Estedad
-Estedad is an Arabic-Persian font designed by me (Amin Abedi) inside inkscape 0.92 and font forge 20:55 under SIL open font licence V1.1.you can get a PDF preview contain the last version of this font from <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.7-Beta2/Preview.pdf">here</a>.
+Estedad is an Arabic-Persian font designed by me (Amin Abedi) inside inkscape 0.92 and font forge 20:55 under SIL open font licence V1.1.you can get a PDF preview contain the last version of this font from <a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.7-Beta10/Preview.pdf">here</a>.
 <br />Many thanks to <a href="https://github.com/rastikerdar">"Saber Rastikerdar"</a> for his helpful guides.
 
-# V 0.7-Beta2
+# V 0.7-Beta10
 <ul>
-<li>Parenthesis(L/R) and Bracket(L/R) was redesigned.</li>
-<li>AIN(and GHAIN) initial and medial formes was redesigned.</li>
-<li>letter HAH(the basic glyph of letters:KHAH, JEEM and TCHEH) initial and final forms was redesigned.</li>
-<li>SS01 was added to change FEH(medial and final) and QAF(medial) formes to corresponding alternate glyphs.</li>
-<liwoff format was added to available font format.</li>
-<li>excalm was added to glyph set.</li>
+<li>Arabic zero number, thousands and desimal separator improved.</li>
+<li>Percent sign and slash improved.</li>
+<li>KAF(KEHEH) & GAF letter family was redesigned.</li>
+<li>diacritic placement improved.</li>
+<li>letter initial AIN(GHAIN) was redesigned.</li>
+<li>letter final LAM joint improved.</li>
+<li>ligature LAM with ALEF(isolated and final forms) with all related glyphs was redesigned.</li>
 <li>some kerning issus was fixed.</li>
 </ul>
 
@@ -25,19 +26,26 @@ You can download ttf or sdf(fontforge source) files from here:
     </tr>
   <tr>
     <td>With HelveticaLT-Light Glyphs</td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.7-Beta2/With%20HelveticaLT-Light%20Glyphs/Source">Estedad-V0.7(Beta2)-AL.sfd</a></td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.7-Beta2/With%20HelveticaLT-Light%20Glyphs/Font">Estedad-V0.7(Beta2)-AL.zip</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.7-Beta10/With%20HelveticaLT-Light%20Glyphs/Source">Estedad-V0.7(Beta10)-AL.sfd</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.7-Beta10/With%20HelveticaLT-Light%20Glyphs/Font">Estedad-V0.7(Beta10)-AL.zip</a></td>
 </tr>
 <tr>
     <td>Only Arabic-Persian Glyphs</td>
-    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.7-Beta2/Only%20Arabic-Persian%20Glyphs/Source">Estedad-V0.7(Beta2)-A.sfd</a></td>
-    <td><a href="https://github.com/aminabedi68/Estedad/tree/master/V%200.7-Beta2/Only%20Arabic-Persian%20Glyphs/Font">Estedad-V0.7(Beta2)-A.zip</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/blob/master/V%200.7-Beta10/Only%20Arabic-Persian%20Glyphs/Source">Estedad-V0.7(Beta10)-A.sfd</a></td>
+    <td><a href="https://github.com/aminabedi68/Estedad/tree/master/V%200.7-Beta10/Only%20Arabic-Persian%20Glyphs/Font">Estedad-V0.7(Beta10)-A.zip</a></td>
 </tr>
 </table>
-Thanks to <a href="https://github.com/zoghal">"Saleh Souzanchi"</a> for his kindness and for testing this font and reporting bugs.
 
-
-
+# V 0.7-Beta2
+<ul>
+<li>Parenthesis(L/R) and Bracket(L/R) was redesigned.</li>
+<li>AIN(and GHAIN) initial and medial formes was redesigned.</li>
+<li>letter HAH(the basic glyph of letters:KHAH, JEEM and TCHEH) initial and final forms was redesigned.</li>
+<li>SS01 was added to change FEH(medial and final) and QAF(medial) formes to corresponding alternate glyphs.</li>
+<liwoff format was added to available font format.</li>
+<li>excalm was added to glyph set.</li>
+<li>some kerning issus was fixed.</li>
+</ul>
 
 # V 0.7-Beta1
 <ul>
