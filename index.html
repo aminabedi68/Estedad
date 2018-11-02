@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>تایپ‌فیس استعداد</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+			<meta name="description" content="تایپ‌فیس استعداد">
+				<meta name="keywords" content="فونت,فارسی,font,persian,farsi,typeface">
+					<meta name="theme-color" content="#222">
+						<script src="./js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+						<style>
+
+      @font-face {
+       font-family: EstedadThin;
+       src: url('Estedad/Estedad-Thin.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: EstedadLight;
+        src: url('Estedad/Estedad-Light.woff2') format('woff2');
+      }
+
+      @font-face {
+        font-family: EstedadMedium;
+        src: url('Estedad/Estedad-Medium.woff2') format('woff2');
+      }
+
+      @font-face {
+        font-family: EstedadBold;
+        src: url('Estedad/Estedad-Bold.woff2') format('woff2');
+      }
+
+      @font-face {
+        font-family: EstedadBlack;
+        src: url('Estedad/Estedad-Black.woff2') format('woff2');
+      }
+      p.sizelabel {
+        font: normal 10px/10px "Lucida Grande","Lucida Sans Unicode", arial, sans-serif !important;
+        color: #666;
+      }
+
+      #scroll {
+          position:fixed;
+          left:50px;
+          top: 50%;
+          cursor:pointer;
+          width:50px;
+          height:50px;
+          background-color:#aaaaaa55;
+          text-indent:-9999px;
+          display:none;
+          z-index: 1000;
+          -webkit-border-radius:60px;
+          -moz-border-radius:60px;
+          border-radius:60px;
+
+      }
+      #download-icon {
+          position:fixed;
+          left:110px;
+          top: 50%;
+          cursor:pointer;
+          width:50px;
+          height:50px;
+          display:block;
+          z-index: 2000;
+          fill:#aaaaaa55;
+          }
+
+      sup {
+          vertical-align: super;
+          font-size: 10px;
+          color:#888;
+      }
+
+      footer a {
+        text-decoration: none;
+        color: #00aaaa;
+      }
+
+
+
+      hr {
+        border: none;
+        background-color: #000;
+        height: 1px;
+      }
+
+      body {
+        background-color: #eee;
+        color: #000;
+        direction: rtl;
+        line-height: 30px;
+        font:20px/30px EstedadMedium, sans-serif;
+      }
+
+      .bg-white #main {
+        color: #222;
+        background-color: #fbfbfb;
+      }
+
+      .bg-black #main {
+        color: #fff;
+        background-color: #222;
+      }
+
+      .bg-blue #main {
+        color: #fff;
+        background-color: #3f51b5;
+      }
+
+      .bg-yellow #main {
+        color: #211e08;
+        background-color: #ffeb3b;
+      }
+
+      .toolbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fbfbfb;
+        opacity: 0;
+        -webkit-transition: opacity 0.2s ease-in;
+        -moz-transition: opacity 0.2s ease-in;
+        -o-transition: opacity 0.2s ease-in;
+        transition: opacity 0.2s ease-in;
+        z-index: 1000;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .toolbar:hover{
+        opacity: 1 !important;
+        -webkit-transition: opacity 0.2s ease-out;
+        -moz-transition: opacity 0.2s ease-out;
+        -o-transition: opacity 0.2s ease-out;
+        transition: opacity 0.2s ease-out;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        font-weight: normal;
+      }
+      h2 {
+        font-size: 1.13em;
+        font-weight: normal;
+        line-height: 0.8em;
+      }
+
+      footer {
+        margin: auto;
+        padding: 40px 20%;
+      }
+
+      .changesizeOldNick {
+        margin: auto;
+        top: 0;
+        padding: 150px 20% 100px;
+      }
+
+
+      .font-selection li {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 15px;
+      }
+      .font-selection a {
+        text-decoration: none;
+        color: #ff6600;
+      }
+
+      .p,.changesizeOldNick {
+        background-color: #fbfbfb;
+        color: #101010;
+        -webkit-box-shadow:0px 2px 1px #aaa;
+        -moz-box-shadow:0px 2px 1px #aaa;
+        box-shadow:0px 2px 1px #aaa;;
+      }
+      .changesizeOldNick p {
+        margin-bottom: 10px;
+      }
+
+      .changesizeOldNick a { color: #0b6db3; }
+
+      .EstedadThin-font {
+        font: 20px/30px EstedadThin, sans-serif;
+      }
+
+      .EstedadLight-font {
+        font: 20px/30px EstedadLight, sans-serif;
+      }
+
+      .EstedadMedium-font {
+        font: 20px/30px EstedadMedium, sans-serif;
+      }
+
+      .EstedadBold-font {
+        font: 20px/30px EstedadBold, sans-serif;
+      }
+
+      .EstedadBlack-font {
+        font: 20px/30px EstedadBlack, sans-serif;
+      }
+
+      footer {
+        color: #222;
+        text-align: center;
+        font: 13px/22px EstedadMedium, sans-serif;
+        background: url(bg.svg) no-repeat center bottom fixed;
+        background-size: 20%;
+        min-width: 100px;
+      }
+
+      footer a {
+        color: #00aaaa;
+      }
+
+      *, *::after, *::before {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .social-list {
+        text-align: center;
+        font-size: 0;
+        margin: 10px auto;
+      }
+
+      .social-list li {
+        display: inline-block;
+        margin-right: 1%;
+        width: 45px;
+        height: 45px;
+        position: relative;
+      }
+
+      .social-list li > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 5px solid transparent;
+      }
+
+      .social-list li>a>svg {
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        width: 60%;
+        height: 60%;
+        fill: #444;
+        -webkit-transition: 0.1s;
+        transition: 0.1s;
+      }
+
+      .social-list li>a:hover>svg {
+        fill: #00aaaa;
+      }
+
+      .social-list li>a>span {
+        font-size: 1rem;
+        font-weight: bold;
+        white-space: nowrap;
+        position: absolute;
+        top: 125%;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        background: white;
+        padding: 10px 25px;
+        text-align: center;
+        visibility: hidden;
+        z-index: 1;
+      }
+
+      .button-white {
+            padding: 15px;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #fbfbfb;
+            border: none;
+            border-radius: 50%;
+            outline: none;
+      }
+      .button-black {
+            padding: 15px;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #222;
+            border: none;
+            border-radius: 50%;
+            outline: none;
+      }
+      .button-blue {
+            padding: 15px;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #3f51b5;
+            border: none;
+            border-radius: 50%;
+            outline: none;
+      }
+      .button-yellow {
+            padding: 15px;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #ffeb3b;
+            border: none;
+            border-radius: 50%;
+            outline: none;
+      }
+
+      .column1 {
+          float: right;
+          width: 35%;
+          padding-left: 0;
+          left: 0;
+          padding: 20px 150px 20px 20px;
+      }
+      .column2 {
+          float: right;
+          width: 40%;
+          padding: 20px;
+      }
+      .column3 {
+          float: right;
+          width: 25%;
+          padding: 20px;
+      }
+
+      .row:after {
+          content: "";
+          display: table;
+          clear: both;
+          z-index: 1;
+        }
+.fontname{
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    color: #777;
+    z-index: 100000;
+}
+.mobile{
+display: none;
+}
+.input-slider-1 {
+    -webkit-appearance: none;
+    width: 300px;
+}
+.input-slider-2 {
+    -webkit-appearance: none;
+    width: 300px;
+}
+.input-slider-3 {
+    -webkit-appearance: none;
+    width: 300px;
+}
+.input-slider-1::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 2px;
+    background: #ddd;
+    border: none;
+    border-radius: 2px;
+}
+.input-slider-2::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 2px;
+    background: #999;
+    border: none;
+    border-radius: 2px;
+}
+.input-slider-3::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+}
+.input-slider-1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #555;
+    border: none;
+    margin-top: -5px;
+}
+.input-slider-2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    margin-top: -5px;
+}
+.input-slider-3::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #555;
+    border: none;
+    margin-top: -5px;
+}
+
+
+
+
+.input-slider-1:focus {
+    outline: none;
+}
+.input-slider-1:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+.input-slider-1::-moz-range-track {
+    height: 2px;
+    background: #ddd;
+    border: none;
+    border-radius: 2px;
+
+}
+.input-slider-2::-moz-range-track {
+    height: 2px;
+    background: #999;
+    border: none;
+    border-radius: 2px;
+}
+.input-slider-3::-moz-range-track {
+    height: 2px;
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+}
+.input-slider-1::-moz-range-thumb {
+    border: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #555;
+    border: none;
+    margin-top: -4px;
+}
+.input-slider-2::-moz-range-thumb {
+    border: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    margin-top: -4px;
+}
+.input-slider-3::-moz-range-thumb {
+    border: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #222;
+    border: none;
+    margin-top: -4px;
+}
+
+
+/*hide the outline behind the border*/
+.input-slider-1:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+.input-slider-1::-ms-track {
+    width: 300px;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+.input-slider-1::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+.input-slider-1::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+.input-slider-1::-ms-thumb {
+    border: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #555;
+    border: none;
+    margin-top: 0px;
+  }
+.input-slider-1:focus::-ms-fill-lower {
+    background: #888;
+}
+.input-slider-1:focus::-ms-fill-upper {
+    background: #ccc;
+}
+.vertically-stacked-slider {
+    padding: 8px;
+}
+
+.vertically-stacked-slider > input[type="range"] {
+    padding: 0;
+}
+
+.horizontally-stacked-slider {
+    display: flex;
+    align-items: center;
+}
+
+.horizontally-stacked-slider > .title {
+    flex: 1;
+    padding: 8px;
+}
+
+.horizontally-stacked-slider > input[type="range"] {
+    flex: 1;
+}
+.verticaltab{
+  position: fixed;
+  display: block;
+  top: 40%;
+  right: 100px;
+}
+.tablink{
+  font: 15px EstedadLight, sans-serif;
+  color: #888;
+  border: none;
+  top: 0;
+  padding-right: 10px;
+  outline: none;
+  cursor: pointer;
+  background-color: #ffffff00;
+}
+ul{
+list-style:none;
+}
+
+small{
+  font-size: 13px;
+  vertical-align: super;
+  line-height: 0;
+}
+
+              @media screen and (max-width: 600px){
+                .changesizeOldNick, .column1, .column2, .column3, footer {
+                  padding: 10px 20px;
+                  width: 100%;
+                }
+                .toolbar{
+                    position: relative;
+                    opacity: 1;
+              }
+              .fontname{
+                opacity: 0;
+              }
+              #scroll{
+                top: 85%;
+              }
+              .mobile{
+                display: block;
+              }
+              .w3-container{
+                display: block;
+              }
+              .verticaltab{
+                display: none;
+              }
+              #download-icon{
+              display: none;
+              }
+              .text{
+                display: block;
+              }
+            }
+
+
+
+
+    </style>
+						<body class="bg-white" spellcheck="false">
+							<a title="بالا" href="#" id="scroll" style="display: none;"></a>
+							<section title="دانلود کنید :)">
+								<svg id="download-icon"
+ width="7.6868596mm"
+ height="7.6868601mm"
+ viewBox="0 0 7.6868596 7.6868601">
+									<a href="https://github.com/aminabedi68/Estedad/archive/master.zip">
+										<g
+ transform="translate(-0.14917593,-289.22728)">
+											<path
+   d="M 14.525391 0 C 6.5034575 0.00052913386 0.00052913386 6.5034568 0 14.525391 C -0.00054916535 22.54808 6.5026952 29.052205 14.525391 29.052734 C 22.548848 29.053264 29.053284 22.548836 29.052734 14.525391 C 29.052206 6.5026631 22.548085 -0.00056692913 14.525391 0 z M 14.474609 6.9414062 C 14.777792 6.9046314 15.044517 7.145786 15.037109 7.4511719 L 15.037109 16.068359 L 18.896484 12.757812 A 0.50083744 0.50083744 0 1 1 19.546875 13.519531 L 14.859375 17.541016 A 0.50083744 0.50083744 0 0 1 14.208984 17.541016 L 9.5292969 13.519531 A 0.50083744 0.50083744 0 0 1 9.8613281 12.632812 A 0.50083744 0.50083744 0 0 1 10.179688 12.757812 L 14.033203 16.068359 L 14.033203 7.4511719 C 14.027087 7.1923876 14.21756 6.9716425 14.474609 6.9414062 z M 7.3515625 19.609375 A 0.50083744 0.50083744 0 0 1 7.3964844 19.609375 L 21.671875 19.609375 A 0.50197795 0.50197795 0 1 1 21.671875 20.613281 L 7.3964844 20.613281 A 0.50246623 0.50246623 0 0 1 7.3515625 19.609375 z "
+   transform="matrix(0.26458333,0,0,0.26458333,0.14917593,289.22728)"
+   />
+										</g>
+									</a>
+								</svg>
+							</section>
+							<div class="fontname">
+								<h2>استعداد
+									<sup>نسخه ۲٫١</sup>
+								</h2>
+							</div>
+							<div class="toolbar" align="center">
+								<div class="row">
+									<div class="column1"  align="center">
+										<ul class="font-selection">
+											<div class="mobile">
+												<p>&nbsp</p>
+												<h2 >استعداد
+													<sup>نسخه ۲٫١</sup>
+												</h2>
+												<small>
+													<a href="https://github.com/aminabedi68/Estedad/archive/master.zip">دانلود▼</a>
+												</small>
+											</div>
+											<li style="font: 18px EstedadThin, sans-serif;">
+												<a href="#" id="EstedadThin" onclick="changeFont('EstedadThin', this); return false;">نازک</a>
+											</li>
+											<li style="font: 18px EstedadLight, sans-serif;">
+												<a href="#" id="EstedadLight" onclick="changeFont('EstedadLight', this); return false;">سبک</a>
+											</li>
+											<li style="font: 18px EstedadMedium, sans-serif;">
+												<a href="#" id="EstedadMedium" onclick="changeFont('EstedadMedium', this); return false;">معمولی</a>
+											</li>
+											<li style="font: 18px EstedadBold, sans-serif;">
+												<a href="#" id="EstedadBold" onclick="changeFont('EstedadBold', this); return false;">ضخیم</a>
+											</li>
+											<li style="font: 18px EstedadBlack, sans-serif;">
+												<a href="#" id="EstedadBlack" onclick="changeFont('EstedadBlack', this); return false;">سیاه</a>
+											</li>
+										</ul>
+									</div>
+									<div class="column2">
+										<input autocomplete="off" type="range" min="10" max="200" value="22" step="1" oninput="changeFontSizeOldNick(this.value)" onchange="changeFontSizeOldNick(this.value)" id="input1" class="input-slider-1" style="width: 80%; max-width: 300px;">
+											<input autocomplete="off" type="range" min="1" max="2" value="1.5" step="0.1" oninput="changeLineHeigthOldNick(this.value)" onchange="changeLineHeigthOldNick(this.value)" id="input2" class="input-slider-1" style="width: 80%; max-width: 200px;">
+												<script type="text/javascript">
+            function changeFontSizeOldNick(newValue) {
+              document.getElementById("changedfontsizeOldNick").innerHTML=newValue;
+              $('.changesizeOldNick').css('font-size',newValue + 'px');
+            };
+            function changeLineHeigthOldNick(newValue) {
+              document.getElementById("changedlineheigthOldNick").innerHTML=newValue;
+              $('.changesizeOldNick').css('line-height',newValue);
+            };
+          </script>
+												<p class="sizelabel" class="column3" align="center">
+													<span id="changedlineheigthOldNick" >1.5</span>em /
+													<span id="changedfontsizeOldNick">22</span>px
+												</p>
+											</div>
+											<div class="column3">
+												<ul class="font-selection">
+													<li>
+														<button class="button-white" onclick="myFunction1()"></button>
+														<script>
+        function myFunction1() {
+            $('body').removeClass('bg-yellow bg-blue bg-black').addClass('bg-white')
+            $(".toolbar").css('background-color', '#fbfbfb')
+            $(".toolbar").css('color', '#000')
+            $("p.sizelabel").css('color', '#222')
+            $("#scroll").css('background-color', '#aaaaaa55')
+            $(".tablink").css('color', '#888')
+            $(".fontname").css('color', '#777')
+            $(".mobile").css('color', 'black')
+            $("sup").css('color', '#777')
+            $(".font-selection a").css('color', '#ff6600')
+            $('#input1').removeClass('input-slider-2 input-slider-3').addClass('input-slider-1')
+            $('#input2').removeClass('input-slider-2 input-slider-3').addClass('input-slider-1')
+            $("#download-icon").css('fill', '#aaaaaa55')
+
+
+
+
+        }
+        </script>
+													</li>
+													<li>
+														<button class="button-black" onclick="myFunction2()"></button>
+														<script>
+        function myFunction2() {
+          $('body').removeClass('bg-yellow bg-blue bg-white').addClass('bg-black')
+          $(".toolbar").css('background-color', '#222222')
+          $(".toolbar").css('color', '#fff')
+          $("p.sizelabel").css('color', '#eee')
+          $("#scroll").css('background-color', '#ffffff55')
+          $(".tablink").css('color', '#eee')
+          $(".fontname").css('color', 'white')
+          $(".mobile").css('color', 'white')
+          $("sup").css('color', 'white')
+          $(".font-selection a").css('color', 'white')
+          $('#input1').removeClass('input-slider-1 input-slider-3').addClass('input-slider-2')
+          $('#input2').removeClass('input-slider-1 input-slider-3').addClass('input-slider-2')
+          $("#download-icon").css('fill', '#ffffff55')
+
+        }
+        </script>
+													</li>
+													<li>
+														<button class="button-blue" onclick="myFunction3()"></button>
+														<script>
+        function myFunction3() {
+          $('body').removeClass('bg-yellow bg-black bg-white').addClass('bg-blue')
+          $(".toolbar").css('background-color', '#3f51b5')
+          $(".toolbar").css('color', '#fff')
+          $("p.sizelabel").css('color', '#eee')
+          $("#scroll").css('background-color', '#cccccc88')
+          $(".tablink").css('color', '#eee')
+          $(".fontname").css('color', 'white')
+          $(".mobile").css('color', 'white')
+          $("sup").css('color', 'white')
+          $(".font-selection a").css('color', 'white')
+          $('#input1').removeClass('input-slider-1 input-slider-3').addClass('input-slider-2')
+          $('#input2').removeClass('input-slider-1 input-slider-3').addClass('input-slider-2')
+          $("#download-icon").css('fill', '#cccccc88')
+        }
+        </script>
+													</li>
+													<li>
+														<button class="button-yellow" onclick="myFunction4()"></button>
+														<script>
+        function myFunction4() {
+          $('body').removeClass('bg-blue bg-black bg-white').addClass('bg-yellow')
+          $(".toolbar").css('background-color', '#ffeb3b')
+          $(".toolbar").css('color', '#000')
+          $("p.sizelabel").css('color', '#222')
+          $("#scroll").css('background-color', '#55555555')
+          $(".tablink").css('color', '#555')
+          $(".fontname").css('color', '#777')
+          $(".mobile").css('color', 'black')
+          $("sup").css('color', '#777')
+          $(".font-selection a").css('color', '#ff6600')
+          $('#input1').removeClass('input-slider-2 input-slider-3').addClass('input-slider-3')
+          $('#input2').removeClass('input-slider-2 input-slider-3').addClass('input-slider-3')
+          $("#download-icon").css('fill', '#55555555')
+        }
+        </script>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="verticaltab" style="width:100px">
+										<ul>
+											<li>
+												<button class="tablink" onclick="openText(event, 'persian')">فارسی</button>
+											</li>
+											<li>
+												<button class="tablink" onclick="openText(event, 'latin')">لاتین</button>
+											</li>
+											<li>
+												<button class="tablink" onclick="openText(event, 'arabic')">عربی</button>
+											</li>
+											<li>
+												<button class="tablink" onclick="openText(event, 'kurdish')">کوردی</button>
+											</li>
+										</ul>
+									</div>
+									<script>
+    function openText(evt, cityName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("text");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " w3-red";
+    }
+
+									</script>
+									<section id="main" class="changesizeOldNick" class="changesizeOldNick" style="font-size: 22px; line-height: 1.5em;">
+										<p contenteditable="true"  id="persian" class="w3-container text" style="display:block">
+        با نگاه عمیق‌تر به قلم و کیفیت خوانایی آن و اثر آن بر روی مخاطب، ناچار باید بپذیریم که تایپوگرافی و حروف‌چینی یک متن به رعایت اصول و ضوابط طراحی قلم بیشتر نیازمند است تا مسائل طراحی گرافیک. استفاده از قلم مناسب راحت خوانده شدن را به خواننده هدیه می‌کند و بی آن‌که خواننده حس کند که طراح در تنظیم حروف‌چینی هنرنمایی کرده است، محیط مناسبی برای خوانایی او ایجاد می‌شود. استفاده از قلم مناسب در یک متن به‌ضرورت نظر دارد و نه به هنر. ما از خواندن بسیاری از متن‌ها لذت می‌بریم، بی آن‌که شیفتهٔ شکل خاص طراحی قلم بشویم، یا حتی ظرایف طراحی آن در ذهن ما حک شود. واقعیت این است که پس از گذشت سال‌ها از ورود کامپیوتر و حروف‌چینی دیجیتال، هنوز قلم‌های مناسب برای متن، همان قلم‌هایی هستند که الگوی طراحی آن‌ها خط نسخ بوده است، که شامل قلم‌های لوتوس، نازنین، میترا، بدر و چند قلم دیگر است که ضخامت مناسبی برای استفاده در سطرهای متوالی دارند. اگرچه تنوع قلم در نرم‌افزارهای جدید فارسی رو به افزایش است اما لازم به توجه است که در هر یک از این نرم‌افزارها فقط چهار یا پنج قلم مناسب برای متن می‌توان یافت. قلم‌هایی که با فرم‌های تزیینی، دست خط و یا فرم‌های خاص و آزاد طراحی شده‌اند، هیچ‌یک برای کاربرد در یک متن مناسب نیستند. فرم خاص حروف قلم‌های ذکرشده علاوه بر آن‌که برای خوانده شدن متن را دشوار می‌کند، از وقار و تشخص صورت بیرونی متن می‌کاهد. بنابراین لازم است گزینش نوع قلم متن با توجه به محتوا با جدیت و دقت نظر بیشتری انجام گیرد.٠١٢٣٤٥٦۴۵۶٧٨٩
+</p>
+										<p dir="ltr" contenteditable="true" id="latin" class="w3-container text" style="display:none;">
+
+  Although typically applied to printed, published, broadcast, and reproduced materials in contemporary times, all words, letters, symbols, and numbers written alongside the earliest naturalistic drawings by humans may be called typography. The uneven spacing of the impressions on brick stamps found in the Mesopotamian cities of Uruk and Larsa, dating from the second millennium B.C., may be evidence of type, wherein the reuse of identical characters was applied to create cuneiform text. Babylonian cylinder seals were used to create an impression on a surface by rolling the seal on wet clay. Typography also was implemented in the Phaistos Disc, an enigmatic Minoan printed item from Crete, which dates to between 1850 and 1600 B.C. It has been proposed that Roman lead pipe inscriptions were created with movable type printing, but German typographer Herbert Brekle recently dismissed this view.(from Wikipedia)
+
+											<br>0123456789!@#$%^&*()_+-={}[]:"'?/<>,.
+
+												<br>Pangram Example:
+
+													<br>SPHINX OF BLACK QUARTZ, JUDGE MY VOW.
+
+														<br>Sphinx of black quartz, judge my vow.
+
+
+														</p>
+														<p contenteditable="true"  id="arabic" class="w3-container text" style="display:none">
+  بِسْمِ اللّهِ الرَّحْمَنِ الرَّحیم
+
+															<br>
+															وَالنَّازِعَاتِ غَرْ‌قًا ﴿١﴾ وَالنَّاشِطَاتِ نَشْطًا ﴿٢﴾ وَالسَّابِحَاتِ سَبْحًا ﴿٣﴾ فَالسَّابِقَاتِ سَبْقًا ﴿٤﴾ فَالْمُدَبِّرَ‌اتِ أَمْرً‌ا ﴿٥﴾ يَوْمَ تَرْ‌جُفُ الرَّ‌اجِفَةُ ﴿٦﴾ تَتْبَعُهَا الرَّ‌ادِفَةُ ﴿٧﴾ قُلُوبٌ يَوْمَئِذٍ وَاجِفَةٌ ﴿٨﴾ أَبْصَارُ‌هَا خَاشِعَةٌ ﴿٩﴾ يَقُولُونَ أَإِنَّا لَمَرْ‌دُودُونَ فِي الْحَافِرَ‌ةِ ﴿١٠﴾ أَإِذَا كُنَّا عِظَامًا نَّخِرَ‌ةً ﴿١١﴾ قَالُوا تِلْكَ إِذًا كَرَّ‌ةٌ خَاسِرَ‌ةٌ ﴿١٢﴾ فَإِنَّمَا هِيَ زَجْرَ‌ةٌ وَاحِدَةٌ ﴿١٣﴾ فَإِذَا هُم بِالسَّاهِرَ‌ةِ ﴿١٤﴾ هَلْ أَتَاكَ حَدِيثُ مُوسَىٰ ﴿١٥﴾ إِذْ نَادَاهُ رَ‌بُّهُ بِالْوَادِ الْمُقَدَّسِ طُوًى ﴿١٦﴾ اذْهَبْ إِلَىٰ فِرْ‌عَوْنَ إِنَّهُ طَغَىٰ ﴿١٧﴾ فَقُلْ هَل لَّكَ إِلَىٰ أَن تَزَكَّىٰ ﴿١٨﴾ وَأَهْدِيَكَ إِلَىٰ رَ‌بِّكَ فَتَخْشَىٰ ﴿١٩﴾ فَأَرَ‌اهُ الْآيَةَ الْكُبْرَ‌ىٰ ﴿٢٠﴾ فَكَذَّبَ وَعَصَىٰ ﴿٢١﴾ ثُمَّ أَدْبَرَ‌ يَسْعَىٰ ﴿٢٢﴾ فَحَشَرَ‌ فَنَادَىٰ ﴿٢٣﴾ فَقَالَ أَنَا رَ‌بُّكُمُ الْأَعْلَىٰ ﴿٢٤﴾ فَأَخَذَهُ اللَّـهُ نَكَالَ الْآخِرَ‌ةِ وَالْأُولَىٰ ﴿٢٥﴾ إِنَّ فِي ذَٰلِكَ لَعِبْرَ‌ةً لِّمَن يَخْشَىٰ ﴿٢٦﴾ أَأَنتُمْ أَشَدُّ خَلْقًا أَمِ السَّمَاءُ ۚ بَنَاهَا ﴿٢٧﴾ رَ‌فَعَ سَمْكَهَا فَسَوَّاهَا ﴿٢٨﴾ وَأَغْطَشَ لَيْلَهَا وَأَخْرَ‌جَ ضُحَاهَا ﴿٢٩﴾ وَالْأَرْ‌ضَ بَعْدَ ذَٰلِكَ دَحَاهَا ﴿٣٠﴾ أَخْرَ‌جَ مِنْهَا مَاءَهَا وَمَرْ‌عَاهَا ﴿٣١﴾ وَالْجِبَالَ أَرْ‌سَاهَا ﴿٣٢﴾ مَتَاعًا لَّكُمْ وَلِأَنْعَامِكُمْ ﴿٣٣﴾ فَإِذَا جَاءَتِ الطَّامَّةُ الْكُبْرَ‌ىٰ ﴿٣٤﴾ يَوْمَ يَتَذَكَّرُ‌ الْإِنسَانُ مَا سَعَىٰ ﴿٣٥﴾ وَبُرِّ‌زَتِ الْجَحِيمُ لِمَن يَرَ‌ىٰ ﴿٣٦﴾ فَأَمَّا مَن طَغَىٰ ﴿٣٧﴾ وَآثَرَ‌ الْحَيَاةَ الدُّنْيَا ﴿٣٨﴾ فَإِنَّ الْجَحِيمَ هِيَ الْمَأْوَىٰ ﴿٣٩﴾ وَأَمَّا مَنْ خَافَ مَقَامَ رَ‌بِّهِ وَنَهَى النَّفْسَ عَنِ الْهَوَىٰ ﴿٤٠﴾ فَإِنَّ الْجَنَّةَ هِيَ الْمَأْوَىٰ ﴿٤١﴾ يَسْأَلُونَكَ عَنِ السَّاعَةِ أَيَّانَ مُرْ‌سَاهَا ﴿٤٢﴾ فِيمَ أَنتَ مِن ذِكْرَ‌اهَا ﴿٤٣﴾ إِلَىٰ رَ‌بِّكَ مُنتَهَاهَا ﴿٤٤﴾ إِنَّمَا أَنتَ مُنذِرُ‌ مَن يَخْشَاهَا ﴿٤٥﴾ كَأَنَّهُمْ يَوْمَ يَرَ‌وْنَهَا لَمْ يَلْبَثُوا إِلَّا عَشِيَّةً أَوْ ضُحَاهَا ﴿٤٦﴾
+															</p>
+															<p contenteditable="true"  id="kurdish" class="w3-container text" style="display:none">
+
+فۆنت بریتییە لە کۆی هەندێک پیت (حرف)، وشە، شێوە و نیگار کە لە زمانێکی تایبەتیدا وەک زمانی کوردی، فارسی یان ئینگلیسیدا دیاری دەکرێن کە هێمای تایبەتی خۆیان هەیە و نیشاندەری پیتەکانی ئەو زمانانەن. فۆنتەکان دەتوانن زیاتر لە یەک زمان لەخۆیان بگرن و هەڵگری فۆنتی زمانێکی تریش بن. فۆنت سەرەکی‌ترین ئامێری جوانکاری لە بەکارهێنانی ڕۆژنامە، گۆڤار و شێوەی تری گڕافیکیدایە. بەکارهێنانی فۆنتی جۆراوجۆر دەبێتە هۆی چێژبەخشین بە خوێندنەوە. قەبارەی فۆنتەکان لەسەر بنەما و یەکەی «پیکسێڵ» داڕێژراوە. فۆڕمەتی فۆنتەکان بەچەند جۆرێکی تایبەتە کە بریتین لە TTF، OTF و ... و دوای داونلۆدکردن و دابەزاندن دەتوانی کەڵکیان لێوەربگری. نەبوونی فۆنتی ستاندارد و یونیکۆدی کوردی لە ماوەی چەند ساڵی رابردوودا یەکێک بووە لە سەرەکیترین هۆکارەکانی پێشنەکەوتنی باشتربوونی نووسین و خوێندنەوە لە کۆمەڵگای کوردیدا و نەبوونی داهێنەری فۆنتی کوردی یەکێکە لەو کێشانە کە پێویستە بە زووترین کات داهێنەران و دیزاینەرانی کورد هەوڵ و کۆششی خۆیان بخەنە گەڕ بۆ درووستکردنی فۆنتی ستاندارد و یونیکۆدی کوردی. لەگەڵ هەموو ئەو کەند و کۆسپانەی رێگربوون لە بەرەوپێشچوونی فۆنتی کوردی و بەکارهێنانی یونیکۆد وەکوو ستانداردێک، بەڵام دیسان لەلایەن چەند دڵسۆزانێکەوە بە خۆبەخشانە هەوڵی کارلەسەرکردنی فۆنت و کیبۆردی کوردی هەر بەردەوام بووە و هیوادارین لەمەودوا زۆر بە تایبەتیتر کاری لەسەر بکرێت. یەکێک لە کێشە سەرەکیەکانی نەبوونی کیبۆرد و فۆنتی کوردی ئەوە بووە کە ناچاری درووست کردووە کە کیبۆرد و فۆنتی ناکوردی بەکار بهێنرێت و ئەوەش لە کۆکردنەوە و دۆزینەوە زانیاری و داتاکان لەسەر هێڵی ئینتەرنێتیش بووەتە کۆسپ و تاکی کورد ناتوانێت بە تەواوەتی کەڵکی لێوەربگرێت.
+
+</p>
+														</section>
+														<footer>
+
+      با تشکر از کمک‌های بی‌دریغ
+															<a href="http://github.com/rastikerdar" target="_blank">صابر راستی‌کردار</a> و
+															<a href="http://github.com/zoghal/" target="_blank">صالح سوزنچی</a>
+															<br>
+      و با سپاس از
+																<a href="https://github.com/arashmilani" target="_blank">آرش میلانی</a> برای رفع اشکالات این صفحه
+																<br>
+      طراحی شده توسط
+																	<a href="http://github.com/aminabedi68" target="_blank">امین عابدی</a> /
+      تاریخ اولین انتشار: ۱۳۹۶/۰۱/۱۰
+
+																	<br>
+																		<p>فونت‌های آزاد:
+
+																			<a href="http://github.com/aminabedi68/Estedad/" target="_blank">استعداد</a>،
+
+																			<a href="http://github.com/aminabedi68/Mikhak/" target="_blank">میخک</a>،
+
+																			<a href="http://github.com/aminabedi68/AzarMehrMonospaced/" target="_blank">آذرمهر مونواسپیست</a>،
+
+																			<a href="http://github.com/aminabedi68/Fandogh/" target="_blank">فندق</a>
+																		</p>
+																		<p>فونت‌های تجاری:
+
+																			<a href="https://www.opentypeshop.com/%d8%a2%d8%b0%d8%b1%d9%85%d9%87%d8%b1/" target="_blank">آذرمهر</a>،
+
+																			<a href="https://www.opentypeshop.com/%d8%a2%d8%b0%d8%b1%d9%86%da%af%d8%a7%d8%b1/" target="_blank">آذرنگار</a>،
+
+																			<a href="https://www.opentypeshop.com/%d8%b9%d9%86%d9%88%d8%a7%d9%86/" target="_blank">عنوان</a>،
+
+																			<a href="https://www.opentypeshop.com/%d8%a8%d8%af%db%8c%d8%b9/" target="_blank">بدیع</a>
+																		</p>
+																		<ul class="social-list">
+																			<li>
+																				<a href="mailto:aminabedi68@gmail.com" class="social-gmail">
+																					<svg viewBox="0 0 100 100" class="gmail">
+																						<use
+																							xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gmail">
+																						</use>
+																					</svg>
+																				</a>
+																			</li>
+																			<li>
+																				<a href="https://dribbble.com/aminabedi68" class="social-dribbble" target="_blank">
+																					<svg viewBox="0 0 100 100" class="shape-dribbble">
+																						<use
+																							xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-dribbble">
+																						</use>
+																					</svg>
+																				</a>
+																			</li>
+																			<li>
+																				<a href="https://instagram.com/aminabedi68" class="social-instagram" target="_blank">
+																					<svg viewBox="0 0 100 100" class="shape-instagram">
+																						<use
+																							xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-instagram">
+																						</use>
+																					</svg>
+																				</a>
+																			</li>
+																			<li>
+																				<a href="https://opentypeshop.com" class="social-opentypeshop" target="_blank">
+																					<svg viewBox="0 0 100 100" class="shape-opentypeshop">
+																						<use
+																							xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#opentypeshop">
+																						</use>
+																					</svg>
+																				</a>
+																			</li>
+																			<li>
+																				<a href="https://twitter.com/aminabedi68" class="social-twitter" target="_blank">
+																					<svg viewBox="0 0 100 100" class="shape-twitter">
+																						<use
+																							xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-twitter">
+																						</use>
+																					</svg>
+																				</a>
+																			</li>
+																			<li>
+																				<a href="https://github.com/aminabedi68" class="social-github" target="_blank">
+																					<svg viewBox="0 0 100 100" class="shape-github">
+																						<use
+																							xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-github">
+																						</use>
+																					</svg>
+																				</a>
+																			</li>
+																			<li>
+																				<a href="https://telegram.me/aminabedi68" class="social-telegram" target="_blank">
+																					<svg viewBox="0 0 100 100" class="telegram">
+																						<use
+																							xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#telegram">
+																						</use>
+																					</svg>
+																				</a>
+																			</li>
+																		</ul>
+																		<svg width="0" height="0">
+																			<defs>
+																				<path id="gmail" d="m 11.53846,13.461537 c -1.18077,0 -2.29615,0.228961 -3.36538,0.555888 L 19.381,21.153844 H 80.619 L 91.82693,14.017425 C 90.75769,13.690502 89.64231,13.461537 88.46154,13.461537 Z M 4.28185,16.105768 C 1.68954,18.224998 0,21.403845 0,24.999998 v 49.999999 c 0,6.361538 5.17693,11.538466 11.53846,11.538466 H 88.46154 C 94.82308,86.538463 100,81.361535 100,74.999997 V 24.999998 c 0,-3.596153 -1.68953,-6.775 -4.28184,-8.89423 L 50,45.199817 Z M 11.53846,34.284852 50,58.766524 88.46154,34.284852 V 78.846155 H 11.53846 Z"></path>
+																				<path id="telegram" d="M 79.16663,100 H 20.83338 C 9.32916,100 0,90.670831 0,79.166662 V 20.833333 C 0,9.3291683 9.32916,-9.9999999e-7 20.83338,-9.9999999e-7 H 79.16663 C 90.67502,-9.9999999e-7 100,9.3291683 100,20.833333 V 79.166662 C 100,90.670831 90.67502,100 79.16663,100 Z M 67.73338,78.55 c 0.89578,0.637502 2.04578,0.795831 3.07493,0.404219 1.02507,-0.387468 1.78338,-1.266666 2.01254,-2.333337 2.41253,-11.341663 8.27084,-40.05833 10.46662,-50.375 0.16202,-0.779169 -0.11266,-1.587498 -0.72084,-2.10833 C 81.95422,23.620881 81.10422,23.470881 80.35,23.750084 68.70422,28.058417 32.83338,41.516746 18.17084,46.945915 c -0.92915,0.341688 -1.53337,1.237502 -1.50421,2.220832 0.0337,0.979168 0.6959,1.833337 1.6459,2.120835 6.57494,1.962502 15.20831,4.7 15.20831,4.7 0,0 4.02916,12.183333 6.13338,18.375004 0.26203,0.779161 0.87494,1.391667 1.67494,1.6 0.80422,0.208313 1.65422,-0.0084 2.25422,-0.575 3.37915,-3.187502 8.6,-8.116671 8.6,-8.116671 0,0 9.92084,7.275 15.55,11.279169 z M 37.15,54.45 41.81253,69.833333 42.85,60.091662 c 0,0 18.01663,-16.25 28.29169,-25.516662 0.3,-0.270844 0.34219,-0.725 0.0916,-1.045832 -0.24979,-0.320843 -0.70422,-0.395822 -1.04591,-0.179156 -11.90409,7.604169 -33.03747,21.1 -33.03747,21.1 z"></path>
+																				<path id="shape-instagram" d="M 49.999996,0 C 33.71246,0 31.80036,0.0484 25.36278,0.363022 19.40924,0.62924 16.19073,1.645508 14.0368,2.4683546 11.18104,3.5574199 9.14812,4.8886854 7.0184,7.0184096 4.88867,9.1481325 3.58161,11.181051 2.46834,14.036815 1.62129,16.190739 0.62923,19.409243 0.36302,25.362788 0.0726,31.800362 0,33.71246 0,50.000004 c 0,16.287542 0.0726,18.199642 0.36302,24.637215 0.26621,5.953546 1.28248,9.172047 2.10532,11.325973 1.08906,2.855766 2.42033,4.888682 4.55006,7.018406 2.12972,2.129723 4.16264,3.43679 7.0184,4.550053 2.15393,0.84705 5.37244,1.839117 11.32598,2.105334 C 31.80036,99.927401 33.71246,100 49.999996,100 c 16.287536,0 18.199633,-0.07261 24.637209,-0.363015 5.953542,-0.266217 9.172054,-1.282487 11.32598,-2.105334 2.855762,-1.089064 4.88868,-2.42033 7.018404,-4.550053 2.129724,-2.129724 3.436792,-4.16264 4.550043,-7.018406 0.847061,-2.153926 1.83913,-5.372427 2.105335,-11.325973 0.29042,-6.437573 0.363026,-8.349673 0.363026,-24.637215 0,-16.287544 -0.07265,-18.199642 -0.363026,-24.637216 C 99.370762,19.409243 98.354492,16.190739 97.531632,14.036815 96.442569,11.181051 95.111313,9.1481325 92.981589,7.0184096 90.851865,4.8886854 88.818947,3.5816202 85.963185,2.4683546 83.809259,1.621307 80.590747,0.62924 74.637205,0.363022 68.199629,0.072605 66.287532,0 49.999996,0 Z M 82.55087,10.140484 a 7.3088238,7.3088238 0 0 1 7.308636,7.308636 7.3088238,7.3088238 0 0 1 -7.308636,7.308633 7.3088238,7.3088238 0 0 1 -7.308621,-7.308633 7.3088238,7.3088238 0 0 1 7.308621,-7.308636 z m -32.550874,8.542811 c 17.279793,0 31.316702,14.036909 31.316702,31.316709 0,17.2798 -14.036909,31.316709 -31.316702,31.316709 -17.279796,0 -31.316706,-14.012709 -31.316706,-31.316709 0,-17.304003 14.03691,-31.316709 31.316706,-31.316709 z m 0,8.574482 c -12.562476,0 -22.742226,10.17976 -22.742226,22.742227 0,12.562464 10.17975,22.742224 22.742226,22.742224 12.562459,0 22.742223,-10.17976 22.742223,-22.742224 0,-12.562467 -10.179764,-22.742227 -22.742223,-22.742227 z"></path>
+																				<path id="shape-github" d="M50.049,0.3c14.18,0.332,25.969,5.307,35.366,14.923S99.675,36.9,100,51.409c-0.195,11.445-3.415,21.494-9.658,30.146
+              c-6.244,8.65-14.406,14.772-24.488,18.366c-1.234,0.199-2.112,0.017-2.633-0.549c-0.521-0.565-0.781-1.215-0.781-1.946
+              l0.098-14.074c0-2.396-0.342-4.377-1.023-5.939c-0.684-1.564-1.479-2.745-2.391-3.544c5.788-0.399,10.977-2.312,15.561-5.739
+              c4.586-3.428,7.01-9.934,7.27-19.517c0-2.795-0.455-5.324-1.366-7.586c-0.91-2.263-2.179-4.293-3.805-6.09
+              c0.391-0.665,0.716-2.196,0.976-4.592c0.262-2.396-0.229-5.391-1.463-8.983c0-0.2-1.105-0.15-3.316,0.149
+              c-2.211,0.299-5.691,2.013-10.439,5.141c-4.032-1.131-8.18-1.697-12.438-1.697c-4.26,0-8.439,0.566-12.537,1.697
+              c-4.748-3.128-8.228-4.841-10.439-5.141c-2.211-0.3-3.317-0.35-3.317-0.149c-1.235,3.593-1.723,6.588-1.463,8.983
+              c0.26,2.396,0.585,3.927,0.976,4.592c-1.626,1.73-2.894,3.743-3.805,6.039c-0.911,2.296-1.366,4.842-1.366,7.637
+              c0.26,9.518,2.667,16.006,7.219,19.466c4.553,3.461,9.724,5.391,15.512,5.79c-0.715,0.599-1.366,1.464-1.951,2.596
+              s-1.008,2.528-1.268,4.192c-1.561,0.865-3.772,1.281-6.634,1.248c-2.862-0.033-5.496-1.881-7.902-5.54
+              c0-0.2-0.65-1.032-1.951-2.496c-1.301-1.464-3.187-2.396-5.659-2.795c-0.325-0.066-0.976,0.05-1.951,0.35
+              c-0.976,0.3-0.456,1.214,1.561,2.745c0.065-0.066,0.699,0.449,1.902,1.547c1.203,1.1,2.423,3.078,3.659,5.939
+              c-0.195,0.466,0.862,1.863,3.17,4.191c2.309,2.329,6.846,2.93,13.61,1.797l0.098,9.483c0,0.731-0.26,1.381-0.781,1.946
+              c-0.52,0.564-1.398,0.748-2.634,0.549c-10.082-3.594-18.244-9.716-24.488-18.367C3.415,72.604,0.195,62.556,0,51.11
+              C0.325,36.602,5.187,24.54,14.585,14.923C23.984,5.308,35.772,0.333,49.951,0L50.049,0.3z"></path>
+																				<path id="opentypeshop" d="m 99.03401,5.076576 c -0.26242,0 -0.48287,0.0955 -0.66171,0.28642 -0.17884,0.17887 -0.26851,0.4059 -0.26851,0.68021 l -0.0352,11.91399 -16.38673,-12.66582 c -0.19076,-0.14308 -0.38136,-0.21421 -0.57223,-0.21421 -0.27426,0 -0.50727,0.0949 -0.69811,0.28583 -0.17888,0.1908 -0.26793,0.41783 -0.26793,0.68021 v 23.112538 c 0,0.26234 0.089,0.48877 0.26793,0.67963 0.19082,0.19085 0.42382,0.28641 0.69811,0.28641 0.26241,0 0.48287,-0.0897 0.66174,-0.26851 0.17884,-0.19081 0.2685,-0.42323 0.2685,-0.69753 V 17.205976 L 98.426,29.906974 c 0.19085,0.14309 0.39339,0.21481 0.60801,0.21481 0.26239,0 0.48346,-0.0897 0.66233,-0.26851 0.17884,-0.19081 0.26789,-0.42323 0.26789,-0.69753 l 0.0358,-23.112538 c 0,-0.26233 -0.0955,-0.48876 -0.28641,-0.67963 -0.1789,-0.19085 -0.40534,-0.28641 -0.67962,-0.28641 z m -86.51138,5.8e-4 c -2.26594,0 -4.35881,0.56042 -6.27893,1.68147 -1.92007,1.12103 -3.44059,2.64153 -4.56163,4.56164 C 0.56103,13.240356 0,15.333826 0,17.599776 c 0,2.26593 0.56103,4.35881 1.68207,6.278898 1.12104,1.92008 2.64156,3.44059 4.56163,4.56164 1.92012,1.12105 4.01299,1.68147 6.27893,1.68147 2.26593,0 4.35881,-0.56042 6.27889,-1.68147 1.92012,-1.12105 3.44062,-2.64156 4.56166,-4.56164 1.12104,-1.920088 1.68146,-4.012968 1.68146,-6.278898 0,-2.26595 -0.56042,-4.35942 -1.68146,-6.27951 -1.12104,-1.92011 -2.64154,-3.44061 -4.56166,-4.56164 -1.92008,-1.12105 -4.01296,-1.68147 -6.27889,-1.68147 z m 17.99658,0 c -0.27428,0 -0.50725,0.0956 -0.69814,0.28642 -0.17884,0.19081 -0.26789,0.41724 -0.26789,0.67963 v 23.112528 c 0,0.26234 0.089,0.48877 0.26789,0.67963 0.19085,0.19086 0.42386,0.28642 0.69814,0.28642 h 7.29863 c 0.2624,0 0.48288,-0.0897 0.66171,-0.26852 0.17888,-0.19081 0.26852,-0.42323 0.26852,-0.69753 v -5.975178 h 2.21788 c 1.69348,0 3.25582,-0.3991 4.68694,-1.19815 1.44304,-0.81096 2.58239,-1.90847 3.4172,-3.2919 0.84675,-1.39533 1.26976,-2.91586 1.26976,-4.56165 0,-1.64581 -0.42301,-3.16032 -1.26976,-4.54374 -0.83481,-1.39534 -1.97416,-2.49287 -3.4172,-3.29191 -1.43112,-0.81097 -2.99346,-1.21605 -4.68694,-1.21605 z m 25.25882,0 c -0.27424,0 -0.50667,0.0956 -0.69752,0.28642 -0.17888,0.19081 -0.26792,0.41724 -0.26792,0.67963 v 23.112528 c 0,0.26234 0.089,0.48877 0.26792,0.67963 0.19079,0.19086 0.42324,0.28642 0.69752,0.28642 h 18.891 c 0.26239,0 0.48345,-0.089 0.66233,-0.26792 0.17883,-0.19081 0.26789,-0.42383 0.26789,-0.69813 0,-0.26241 -0.089,-0.48286 -0.26789,-0.66172 -0.16699,-0.17885 -0.38806,-0.2685 -0.66233,-0.2685 H 64.0075 v -9.659708 h 10.66153 c 0.27434,0 0.50136,-0.0956 0.68023,-0.28641 0.19085,-0.19081 0.2858,-0.41724 0.2858,-0.67962 0,-0.26233 -0.0949,-0.48936 -0.2858,-0.68021 -0.17891,-0.19087 -0.40596,-0.28582 -0.68023,-0.28582 H 64.0075 v -9.66031 h 10.66153 c 0.27416,0 0.49525,-0.0896 0.66233,-0.26851 0.17883,-0.17887 0.26789,-0.39934 0.26789,-0.66172 0,-0.27433 -0.089,-0.50076 -0.26789,-0.67963 -0.1789,-0.19085 -0.39996,-0.28641 -0.66233,-0.28641 z m -43.2554,1.89627 c 1.92008,0 3.69688,0.47677 5.33077,1.43085 1.63388,0.94215 2.92197,2.23026 3.86411,3.86412 0.95408,1.63387 1.43146,3.41128 1.43146,5.33138 0,1.92008 -0.47738,3.6969 -1.43146,5.33077 -0.94214,1.633838 -2.23023,2.927938 -3.86411,3.882018 -1.63389,0.94218 -3.41069,1.41295 -5.33077,1.41295 -1.03758,0 -2.1351,-0.17864 -3.29191,-0.53642 V 7.509846 c 1.15681,-0.35778 2.25433,-0.53642 3.29191,-0.53642 z m 26.22544,0 h 2.21788 c 2.07512,0 3.84058,0.7038 5.29557,2.11106 1.45495,1.39534 2.18208,3.07655 2.18208,5.04437 0,1.9678 -0.72713,3.65559 -2.18208,5.06287 -1.45499,1.39533 -3.22045,2.09317 -5.29557,2.09317 h -2.21788 z m -37.782,30.847958 c -0.27426,0 -0.50668,0.0955 -0.69753,0.28641 C 0.08967,38.298604 0,38.525044 0,38.787414 c 0,0.26241 0.0897,0.48287 0.26854,0.66173 0.19082,0.17886 0.42322,0.26851 0.69753,0.26851 H 5.7962 v 22.18231 c 0,0.26233 0.0897,0.48877 0.26851,0.67962 0.19085,0.19087 0.42325,0.28641 0.69752,0.28641 h 7.29864 c 0.27433,0 0.50077,-0.0956 0.67961,-0.28641 0.19088,-0.19081 0.28642,-0.41724 0.28642,-0.67962 v -22.18231 h 4.83017 c 0.25044,0 0.46496,-0.0896 0.64381,-0.26851 0.19084,-0.19081 0.28641,-0.41128 0.28641,-0.66173 0,-0.25039 -0.0956,-0.47085 -0.28641,-0.66172 -0.17887,-0.20286 -0.39337,-0.30431 -0.64381,-0.30431 z m 25.2594,0 c -0.26206,1.6e-4 -0.48893,0.10161 -0.67962,0.30431 -0.19085,0.19082 -0.28583,0.41128 -0.28583,0.66172 0,0.0478 0.0353,0.17859 0.10681,0.39322 l 6.2258,13.84605 -3.82835,8.47948 c -0.0478,0.14304 -0.0716,0.27449 -0.0716,0.3938 0,0.27427 0.089,0.50666 0.26793,0.69753 0.17887,0.17886 0.39935,0.2685 0.66171,0.2685 h 8.05047 c 0.16708,0 0.33376,-0.0538 0.50059,-0.16109 0.16702,-0.11923 0.28651,-0.25664 0.35803,-0.41172 l 10.44734,-23.11255 c 0.0478,-0.14306 0.0716,-0.2739 0.0716,-0.39322 0,-0.26232 -0.0956,-0.48936 -0.28644,-0.68021 -0.17887,-0.19086 -0.4053,-0.28582 -0.67961,-0.28582 h -8.01464 c -0.16711,0 -0.33377,0.0597 -0.50062,0.17901 -0.16703,0.10727 -0.28651,0.23813 -0.35803,0.39322 l -5.58136,12.3078 -5.54561,-12.3078 c -0.0716,-0.167 -0.19054,-0.3038 -0.3574,-0.41112 -0.1549,-0.10715 -0.32197,-0.16098 -0.50063,-0.16111 z m 27.26306,0 c -0.27424,0 -0.50663,0.0949 -0.69752,0.28582 -0.17883,0.19081 -0.2685,0.41784 -0.2685,0.68021 v 23.11255 c 0,0.26233 0.0897,0.48877 0.2685,0.67962 0.19082,0.19087 0.42321,0.28641 0.69752,0.28641 h 7.29866 c 0.2624,0 0.48286,-0.0896 0.66172,-0.2685 0.17885,-0.19082 0.26851,-0.42322 0.26851,-0.69753 v -5.97519 h 2.21847 c 1.69348,0 3.25582,-0.39911 4.68694,-1.19814 1.44308,-0.81097 2.58181,-1.90848 3.41662,-3.2919 0.84674,-1.39533 1.27034,-2.91584 1.27034,-4.56165 0,-1.64578 -0.4236,-3.16033 -1.27034,-4.54374 -0.83481,-1.39535 -1.97354,-2.49284 -3.41662,-3.29191 -1.43112,-0.81095 -2.99346,-1.21605 -4.68694,-1.21605 z m 25.25944,0 c -0.27428,0 -0.50668,0.0949 -0.69752,0.28582 -0.17888,0.19081 -0.26851,0.41784 -0.26851,0.68021 v 23.11255 c 0,0.26233 0.0896,0.48877 0.26851,0.67962 0.19079,0.19087 0.42321,0.28641 0.69752,0.28641 h 18.891 c 0.2624,0 0.48288,-0.0896 0.66172,-0.2685 0.17887,-0.19082 0.26793,-0.42322 0.26793,-0.69753 0,-0.26239 -0.089,-0.48285 -0.26793,-0.66172 -0.16693,-0.17885 -0.38741,-0.26851 -0.66172,-0.26851 H 86.97683 v -9.65971 h 10.66214 c 0.27434,0 0.50079,-0.0956 0.67962,-0.28641 0.19085,-0.19083 0.28641,-0.41787 0.28641,-0.68022 0,-0.26233 -0.0956,-0.48876 -0.28641,-0.67962 -0.17887,-0.19086 -0.40531,-0.28641 -0.67962,-0.28641 H 86.97683 v -9.65971 h 10.66214 c 0.2744,0 0.49488,-0.0896 0.66172,-0.26851 0.17887,-0.17889 0.26793,-0.39934 0.26793,-0.66173 0,-0.27432 -0.089,-0.50076 -0.26793,-0.67962 -0.17888,-0.19086 -0.39932,-0.28641 -0.66172,-0.28641 z m -17.03055,1.89627 h 2.21847 c 2.07512,0 3.84001,0.70379 5.29496,2.11106 1.45498,1.39534 2.18269,3.07658 2.18269,5.04437 0,1.9678 -0.72771,3.65557 -2.18269,5.06286 -1.45495,1.39533 -3.21984,2.09256 -5.29496,2.09256 H 61.71742 Z M 27.21,69.878224 c -0.27427,0 -0.50728,0.0956 -0.69812,0.28641 -0.17888,0.19084 -0.26793,0.41724 -0.26793,0.67963 v 23.11253 c 0,0.26234 0.089,0.48937 0.26793,0.68022 0.19082,0.19087 0.42381,0.28641 0.69812,0.28641 h 7.29864 c 0.26239,0 0.48284,-0.0896 0.66171,-0.2685 0.17884,-0.19082 0.27246,-0.42323 0.26851,-0.69752 v -10.62635 h 9.6955 v 10.62635 c 0,0.26232 0.0897,0.48876 0.26852,0.67961 0.1908,0.19087 0.4232,0.28641 0.69751,0.28641 0.2624,0 0.48349,-0.0896 0.66233,-0.2685 0.17887,-0.19082 0.26793,-0.42321 0.26793,-0.69752 v -23.11255 c 0,-0.25043 -0.10149,-0.47146 -0.30431,-0.66231 -0.19082,-0.20286 -0.4113,-0.30432 -0.66172,-0.30432 -0.25045,0 -0.47087,0.0956 -0.66174,0.28641 -0.17885,0.19084 -0.26852,0.41783 -0.26852,0.68022 v 10.58995 h -9.69611 v -10.58995 c 0,-0.27436 -0.089,-0.50137 -0.2679,-0.68022 -0.17887,-0.19086 -0.39993,-0.28641 -0.66232,-0.28641 z m 35.74614,0 c -2.26594,0 -4.35882,0.561 -6.27892,1.68205 -1.92009,1.12106 -3.44118,2.64156 -4.56225,4.56165 -1.12104,1.92009 -1.68145,4.01297 -1.68145,6.27891 0,2.26597 0.56041,4.35881 1.68145,6.2789 1.12107,1.92008 2.64216,3.44059 4.56225,4.56164 1.9201,1.12103 4.01298,1.68147 6.27892,1.68147 2.26594,0 4.3588,-0.56044 6.27889,-1.68147 1.92009,-1.12105 3.44059,-2.64156 4.56163,-4.56164 1.12108,-1.92009 1.68146,-4.01293 1.68146,-6.2789 0,-2.26594 -0.56038,-4.35882 -1.68146,-6.27891 -1.12104,-1.92009 -2.64154,-3.44059 -4.56163,-4.56165 -1.92009,-1.12105 -4.01295,-1.68205 -6.27889,-1.68205 z m 17.07946,0 c -0.27425,0 -0.50667,0.0956 -0.69752,0.28641 -0.17885,0.19084 -0.26789,0.41724 -0.26789,0.67963 v 23.11253 c 0,0.26234 0.089,0.48937 0.26789,0.68022 0.19081,0.19087 0.42321,0.28583 0.69752,0.28583 h 7.29924 c 0.2624,0 0.48288,-0.089 0.66172,-0.26792 0.17887,-0.19082 0.2685,-0.42381 0.2685,-0.69813 v -5.97459 h 2.21789 c 1.69351,0 3.25583,-0.39969 4.68696,-1.19874 1.44304,-0.81096 2.58237,-1.90788 3.41719,-3.2913 0.84676,-1.39534 1.26975,-2.91644 1.26975,-4.56225 0,-1.64578 -0.42299,-3.16032 -1.26975,-4.54374 -0.83482,-1.39537 -1.97415,-2.49228 -3.41719,-3.29131 -1.43113,-0.81098 -2.99345,-1.21664 -4.68696,-1.21664 z m -67.47359,0.0525 c -0.98357,0.007 -1.9671,0.0863 -2.94046,0.23868 -1.95393,0.30604 -4.03517,0.94674 -5.57899,2.46729 -0.76821,0.75662 -1.36807,1.71168 -1.65103,2.79188 -0.28439,1.08562 -0.23407,2.26801 0.23032,3.33069 0.50701,1.16024 1.43376,2.02113 2.44879,2.60452 1.00706,0.57879 2.0871,0.89263 3.12363,1.12117 2.63237,0.58038 5.23441,0.69333 7.60236,1.3324 1.0034,0.2708 1.94929,0.63254 2.731,1.17069 0.77443,0.53311 1.39582,1.26624 1.67074,2.07467 0.31671,0.93132 0.17924,2.05513 -0.32936,2.94105 -0.46788,0.8149 -1.24926,1.48772 -2.15346,1.95056 -0.90993,0.46577 -1.95286,0.73934 -3.04008,0.91352 -3.84129,0.61546 -7.89677,-0.0577 -11.33224,-1.88313 -1.09383,-0.62608 -1.99023,1.06087 -0.85922,1.61701 3.79617,2.01697 8.23564,2.75474 12.48025,2.07467 1.2002,-0.1923 2.43327,-0.50155 3.58546,-1.09133 1.15792,-0.59272 2.22384,-1.47424 2.90943,-2.66837 0.76225,-1.32767 0.97886,-2.95947 0.47376,-4.4447 -0.43253,-1.27184 -1.33274,-2.28013 -2.36821,-2.99297 -1.02818,-0.70778 -2.17216,-1.13031 -3.29014,-1.43203 -1.0925,-0.29485 -2.1849,-0.48453 -3.26325,-0.64562 v -9.63227 c 2.537,0.0435 5.0691,0.60922 7.36962,1.67012 1.1174,0.53296 1.89793,-1.1611 0.76675,-1.66415 -1.78935,-0.82518 -3.69675,-1.37977 -5.64464,-1.65103 -0.9739,-0.13562 -1.95747,-0.20038 -2.94103,-0.19332 z m 50.39413,1.84375 c 1.92007,0 3.69688,0.47737 5.33077,1.43145 1.63385,0.94216 2.92194,2.23025 3.86411,3.86413 0.95409,1.63385 1.43084,3.41067 1.43084,5.33077 0,1.9201 -0.47675,3.6969 -1.43084,5.33077 -0.94217,1.63387 -2.23026,2.92795 -3.86411,3.88203 -1.63389,0.94215 -3.4107,1.41354 -5.33077,1.41354 -1.03758,0 -2.13509,-0.17923 -3.29191,-0.53701 v -20.17863 c 1.15682,-0.35778 2.25433,-0.53702 3.29191,-0.53702 z m 25.30892,0 h 2.21789 c 2.07513,0 3.84059,0.70381 5.29557,2.11107 1.45499,1.39536 2.18206,3.07717 2.18206,5.04497 0,1.96779 -0.72707,3.655 -2.18206,5.06226 -1.45498,1.39536 -3.22044,2.09317 -5.29557,2.09317 h -2.21789 z"
+              </path>
+																				<path id="shape-twitter" d="M100.001,17.942c-3.681,1.688-7.633,2.826-11.783,3.339
+            c4.236-2.624,7.49-6.779,9.021-11.73c-3.965,2.432-8.354,4.193-13.026,5.146C80.47,10.575,75.138,8,69.234,8
+            c-11.33,0-20.518,9.494-20.518,21.205c0,1.662,0.183,3.281,0.533,4.833c-17.052-0.884-32.168-9.326-42.288-22.155
+            c-1.767,3.133-2.778,6.773-2.778,10.659c0,7.357,3.622,13.849,9.127,17.65c-3.363-0.109-6.525-1.064-9.293-2.651
+            c-0.002,0.089-0.002,0.178-0.002,0.268c0,10.272,7.072,18.845,16.458,20.793c-1.721,0.484-3.534,0.744-5.405,0.744
+            c-1.322,0-2.606-0.134-3.859-0.379c2.609,8.424,10.187,14.555,19.166,14.726c-7.021,5.688-15.867,9.077-25.48,9.077
+            c-1.656,0-3.289-0.102-4.895-0.297C9.08,88.491,19.865,92,31.449,92c37.737,0,58.374-32.312,58.374-60.336
+            c0-0.92-0.02-1.834-0.059-2.743C93.771,25.929,97.251,22.195,100.001,17.942L100.001,17.942z"></path>
+																				<path id="shape-dribbble" d="M 50.0095,0 C 45.94668,0 42.00366,0.490706 38.21933,1.401496 38.97291,2.407296 48.37045,14.868439 56.91875,30.574653 75.79123,23.494734 82.91518,12.656407 83.03642,12.47294 74.22927,4.711567 62.6665,0 50.0095,0 Z M 38.01801,1.450871 c 0,0 -0.057,0.01186 -0.15189,0.03798 0.0589,-0.02622 0.10813,-0.03143 0.16706,-0.03798 z M 28.6702,4.770406 C 14.72226,11.355613 4.31488,24.207171 1.07118,39.693878 2.38831,39.706908 23.2267,39.968626 47.23669,33.586543 38.58353,18.207951 29.33533,5.658263 28.6702,4.770406 Z m 59.95744,13.464241 c -0.0982,0.134315 -8.11763,11.725285 -27.86491,19.78807 1.16312,2.388368 2.28598,4.813049 3.33117,7.250559 0.36368,0.878027 0.72435,1.731931 1.07494,2.590302 17.18181,-2.16231 34.10706,1.478153 34.83115,1.625583 C 99.88525,37.632508 95.64256,26.756104 88.62764,18.234647 Z M 51.38452,41.281481 C 25.63474,48.99371 0.92647,48.439464 0.04181,48.406703 0.02621,48.944003 1e-5,49.460804 1e-5,49.998106 c 0,12.849348 4.84354,24.556196 12.81193,33.411829 -0.006,-0.01303 -0.0195,-0.02658 -0.0195,-0.02658 0,0 13.68804,-24.269979 40.67306,-32.997839 0.65202,-0.21623 1.3133,-0.410599 1.97515,-0.603894 -1.25489,-2.840487 -2.62484,-5.689136 -4.05666,-8.500134 z m 28.36631,13.673136 c -3.59736,-0.05692 -7.49692,0.15137 -11.53189,0.7976 6.5595,18.025779 9.22084,32.703148 9.73525,35.717274 C 89.17937,83.894861 97.15561,71.86558 99.37704,57.928526 98.60544,57.680351 90.5429,55.125391 79.75083,54.954617 Z m -20.9101,3.110639 c -0.10482,0.04259 -0.21146,0.0779 -0.32285,0.113935 C 29.00343,68.469809 19.36855,89.199149 19.2768,89.395723 27.7596,96.016971 38.41027,100 50.00571,100 56.92888,100 63.52689,98.590769 69.52938,96.038589 68.78562,91.668107 65.88187,76.353126 58.84073,58.065248 Z M 19.2768,89.39573 c -0.37023,-0.288307 -0.76062,-0.550404 -1.12431,-0.858368 0.66513,0.540576 1.11672,0.87736 1.11672,0.87736 z"
+      ></path>
+																			</defs>
+																		</svg>
+																	</footer>
+																	<script>
+      "use strict";
+      function changeFont(name, event) {
+        var testText = document.getElementsByClassName('changesizeOldNick')[0];
+        testText.className = 'changesizeOldNick ' + name + '-font';
+      }
+    </script>
+																	<script>
+    $(document).ready(function () {
+
+      'use strict';
+
+       var c, currentScrollTop = 0,
+           navbar = $('nav');
+
+       $(window).scroll(function () {
+          var a = $(window).scrollTop();
+          var b = navbar.height();
+
+          currentScrollTop = a;
+
+          if (c < currentScrollTop && a > b + b) {
+            navbar.addClass("scrollUp");
+          } else if (c > currentScrollTop && !(a <= b)) {
+            navbar.removeClass("scrollUp");
+          }
+          c = currentScrollTop;
+      });
+
+    });
+
+																	</script>
+																	<script type="text/javascript">
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#scroll').fadeIn();
+        } else {
+            $('#scroll').fadeOut();
+        }
+
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+</script>
+																	<!-- <script type="text/javascript">
+//$(document).ready(function(){
+//  if ($(window).width() > 600){
+//    $(window).scroll(function(){
+
+//        if($(this).scrollTop() <= 20) {
+//          $('.toolbar').css('opacity', '1')
+//        } else {
+//          $('.toolbar').css('opacity', '0')
+//        }
+//    });
+
+//  }
+})
+
+
+</script> -->
+																</body>
+															</html>
