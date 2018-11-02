@@ -563,14 +563,14 @@ small{
   line-height: 0;
 }
 
-              @media screen and (max-width: 600px){
-                .changesizeOldNick, .column1, .column2, .column3, footer {
-                  padding: 10px 20px;
-                  width: 100%;
+            @media screen and (max-width: 600px){
+             .changesizeOldNick, .column1, .column2, .column3, footer {
+                padding: 10px 20px;
+                width: 100%;
                 }
-                .toolbar{
-                    position: relative;
-                    opacity: 1;
+              .toolbar{
+                  position: relative;
+                  opacity: 1;
               }
               .fontname{
                 opacity: 0;
@@ -581,17 +581,11 @@ small{
               .mobile{
                 display: block;
               }
-              .w3-container{
-                display: block;
-              }
               .verticaltab{
                 display: none;
               }
               #download-icon{
-              display: none;
-              }
-              .text{
-                display: block;
+               display: none;
               }
             }
 
@@ -778,8 +772,9 @@ small{
 										</ul>
 									</div>
 									<script>
+
     function openText(evt, cityName) {
-      var i, x, tablinks;
+			var i, x, tablinks;
       x = document.getElementsByClassName("text");
       for (i = 0; i < x.length; i++) {
          x[i].style.display = "none";
@@ -790,9 +785,15 @@ small{
       }
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " w3-red";
-    }
 
+
+    }
 									</script>
+
+
+
+
+
 									<section id="main" class="changesizeOldNick" class="changesizeOldNick" style="font-size: 22px; line-height: 1.5em;">
 										<p contenteditable="true"  id="persian" class="w3-container text" style="display:block">
         با نگاه عمیق‌تر به قلم و کیفیت خوانایی آن و اثر آن بر روی مخاطب، ناچار باید بپذیریم که تایپوگرافی و حروف‌چینی یک متن به رعایت اصول و ضوابط طراحی قلم بیشتر نیازمند است تا مسائل طراحی گرافیک. استفاده از قلم مناسب راحت خوانده شدن را به خواننده هدیه می‌کند و بی آن‌که خواننده حس کند که طراح در تنظیم حروف‌چینی هنرنمایی کرده است، محیط مناسبی برای خوانایی او ایجاد می‌شود. استفاده از قلم مناسب در یک متن به‌ضرورت نظر دارد و نه به هنر. ما از خواندن بسیاری از متن‌ها لذت می‌بریم، بی آن‌که شیفتهٔ شکل خاص طراحی قلم بشویم، یا حتی ظرایف طراحی آن در ذهن ما حک شود. واقعیت این است که پس از گذشت سال‌ها از ورود کامپیوتر و حروف‌چینی دیجیتال، هنوز قلم‌های مناسب برای متن، همان قلم‌هایی هستند که الگوی طراحی آن‌ها خط نسخ بوده است، که شامل قلم‌های لوتوس، نازنین، میترا، بدر و چند قلم دیگر است که ضخامت مناسبی برای استفاده در سطرهای متوالی دارند. اگرچه تنوع قلم در نرم‌افزارهای جدید فارسی رو به افزایش است اما لازم به توجه است که در هر یک از این نرم‌افزارها فقط چهار یا پنج قلم مناسب برای متن می‌توان یافت. قلم‌هایی که با فرم‌های تزیینی، دست خط و یا فرم‌های خاص و آزاد طراحی شده‌اند، هیچ‌یک برای کاربرد در یک متن مناسب نیستند. فرم خاص حروف قلم‌های ذکرشده علاوه بر آن‌که برای خوانده شدن متن را دشوار می‌کند، از وقار و تشخص صورت بیرونی متن می‌کاهد. بنابراین لازم است گزینش نوع قلم متن با توجه به محتوا با جدیت و دقت نظر بیشتری انجام گیرد.٠١٢٣٤٥٦۴۵۶٧٨٩
@@ -1005,22 +1006,14 @@ $(document).ready(function(){
     });
 });
 </script>
-																	<!-- <script type="text/javascript">
-//$(document).ready(function(){
-//  if ($(window).width() > 600){
-//    $(window).scroll(function(){
+<script type="text/javascript">
+if($('div.verticaltab').css('display') === 'none'){
+	var i, x;
+	x = document.getElementsByClassName("text");
+	for (i = 0; i < x.length; i++) {
+		 x[i].style.display = "block";
+	} }
+</script>
 
-//        if($(this).scrollTop() <= 20) {
-//          $('.toolbar').css('opacity', '1')
-//        } else {
-//          $('.toolbar').css('opacity', '0')
-//        }
-//    });
-
-//  }
-})
-
-
-</script> -->
 																</body>
 															</html>
