@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Estedad-VF";
+  src: url("./Estedad-VF.woff2")
+}
+
+body {
+  display: grid;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  direction: rtl;
+  margin: 1.5em 24.5em 1.5em 1.5em;
+  font-family: "Estedad-VF", sans-serif;
+}
+sup{
+  font-size: 12px;
+}
+aside{
+  font-family: "Estedad-VF", sans-serif;
+  width: 17.3em;
+  position: fixed;
+  top: 1.5em;
+  right: 1.5em;
+  z-index: 1;
+  display: block;
+}
+#FontToggle{
+  background-color: transparent;
+}
+#fixedbutton {
+    font-family: "Estedad-VF", sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+main, aside {
+  padding: 1em 2em;
+  line-height: 1.5;
+  color: #222;
+  background-color: white;
+  border-radius: 0.5em;
+}
+
+form {
+  font-family: "Estedad-VF", sans-serif;
+  background-color: white;
+  border-radius: 0.2em;
+}
+
+input,
+button,
+textarea,
+select {
+  font-size: 12px;
+  color: #0ad;
+  font-family: "Estedad-VF", sans-serif;
+  font-variation-settings: "wght" 600;
+  outline: none;
+}
+*:focus {
+    outline: none;
+}
+h1 {
+  color: #0ad;
+  font-variation-settings: "wght" 500;
+  font-size: 28px;
+}
+h1:hover{
+  color: #f06;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+input[type="range"] {
+  width: calc(100% - 4.3em);
+  width: 80%;
+}
+
+form p {
+  margin-top: 0.5em;
+}
+
+form p:first-child {
+  margin-top: 0;
+}
+
+form p:last-child {
+  margin-bottom: 0;
+}
+
+form p > span {
+  display: flex;
+  justify-content: space-between;
+}
+
+form button {
+  background-color: transparent;
+  padding: 0.25em 0.5em;
+  margin-left: 0.5em;
+  border: none;
+  border-radius: 0;
+}
+
+form button:focus,
+form button:hover {
+  color: #f06;
+  outline: none;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  font: 18px Estedad-VF, sans-serif;
+  font-variation-settings: 'wght' 550;
+}
+
+
+.tab button:hover {
+  color: #f06;
+}
+
+
+.tab button.active {
+  color: #f06;
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+@media screen and (min-width: 50em) {
+  body {
+    display: grid;
+    grid-template-areas:
+    "main aside"
+}
+    grid-gap: 0;
+  }
+
+  input[type="range"] {
+    margin-top: 10px;
+    -webkit-appearance: none;
+  	-moz-appearance: none;
+  	background: #888;
+  	border-radius: 5px;
+    width: 100%;
+    height: 1px;
+    outline: 0;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #888;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0px;
+  }
+    input[type="range"]::-webkit-slider-thumb:active {
+      transform: scale(1);
+      background-color: #f06;
+    }
+    input[type="range"]::-moz-range-thumb {
+      -moz-appearance: none;
+      background-color: #888;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 0px;
+    }
+      input[type="range"]::-moz-range-thumb:active {
+        transform: scale(1);
+        background-color: #f06;
+      }
+      input[type="checkbox"] {
+        margin-right: 10px;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: 0;
+        background: lightgray;
+        height: 12px;
+        width: 12px;
+        border: none;
+      }
+
+      input[type="checkbox"]:checked {
+        background: #f06;
+      }
+
+      input[type="checkbox"]:hover {
+        background: #0ad;
+      }
+
+  .social-list {
+    padding-left: 0px;
+    text-align: center;
+    font-size: 0;
+    margin-top: 10px;
+    margin-bottom: -30px;
+  }
+  .social-list li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+  .social-list li > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  }
+  .social-list li>a>svg {
+    top: 10%;
+    width: 60%;
+    height: 60%;
+    fill: #888;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+  }
+  .social-list li>a:hover>svg {
+    fill: #f06;
+  }
