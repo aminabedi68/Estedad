@@ -1,3 +1,6 @@
+html {
+  overflow-y: scroll;
+}
 @font-face {
   font-family: "Estedad-VF";
   src: url("./Estedad-VF.woff2")
