@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1583602339
-ModificationTime: 1585153295
+ModificationTime: 1585217369
 PfmFamily: 33
 TTFWeight: 100
 TTFWidth: 5
@@ -62,13 +62,13 @@ Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 3" { "'kern' Horizont
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 4" { "'kern' Horizontal Kerning in Latin lookup 4 subtable" [307,0,0] } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 264 9 0 "'kern' Horizontal Kerning in Arabic lookup 5" { "'kern' Horizontal Kerning in Arabic lookup 5 subtable 0"  "'kern' Horizontal Kerning in Arabic lookup 5 subtable 1"  "'kern' Horizontal Kerning in Arabic lookup 5 subtable 2"  } ['kern' ('arab' <'dflt' > ) ]
 Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic lookup 6" { "'kern' Horizontal Kerning in Arabic lookup 6 per glyph data 0" [307,30,0] "'kern' Horizontal Kerning in Arabic lookup 6 per glyph data 1"  "'kern' Horizontal Kerning in Arabic lookup 6 per glyph data 2"  } ['kern' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'dflt' > 'latn' <'dflt' > ) ]
-Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic lookup 7" { "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 0" [307,30,0] "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 1" [307,30,0] } ['kern' ('arab' <'FAR ' 'KUR ' 'dflt' > ) ]
-Lookup: 261 1 0 "'mark' Mark Positioning lookup 8" { "'mark' Mark Positioning lookup 8 subtable"  } ['mark' ('arab' <'FAR ' 'KUR ' 'dflt' > ) ]
+Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic lookup 7" { "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 0" [307,30,0] "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 1" [307,30,0] "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" [307,30,0] } ['kern' ('arab' <'FAR ' 'KUR ' 'dflt' > ) ]
 Lookup: 260 1 0 "'mark' Mark Positioning lookup 9" { "'mark' Mark Positioning lookup 9 subtable"  } ['mark' ('arab' <'FAR ' 'KUR ' 'dflt' > ) ]
 Lookup: 261 1 0 "'mark' Mark Positioning lookup 10" { "'mark' Mark Positioning lookup 10 subtable"  } ['mark' ('arab' <'FAR ' 'KUR ' 'dflt' > ) ]
 Lookup: 260 1 0 "'mark' Mark Positioning lookup 11" { "'mark' Mark Positioning lookup 11 subtable"  } ['mark' ('arab' <'FAR ' 'KUR ' 'dflt' > ) ]
-Lookup: 262 1 0 "'mkmk' Mark to Mark in Arabic lookup 12" { "'mkmk' Mark to Mark in Arabic lookup 12 subtable"  } ['mkmk' ('arab' <'FAR ' 'KUR ' 'dflt' > ) ]
+Lookup: 261 1 0 "'mark' Mark Positioning lookup 8" { "'mark' Mark Positioning lookup 8 subtable"  } ['mark' ('arab' <'FAR ' 'KUR ' 'dflt' > ) ]
 Lookup: 262 1 0 "'mkmk' Mark to Mark in Arabic lookup 13" { "'mkmk' Mark to Mark in Arabic lookup 13 subtable"  } ['mkmk' ('arab' <'FAR ' 'KUR ' 'dflt' > ) ]
+Lookup: 262 1 0 "'mkmk' Mark to Mark in Arabic lookup 12" { "'mkmk' Mark to Mark in Arabic lookup 12 subtable"  } ['mkmk' ('arab' <'FAR ' 'KUR ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 KernClass2: 5 6 "'kern' Horizontal Kerning in Latin lookup 4 subtable"
@@ -148,7 +148,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 38 13
+WinInfo: 0 19 13
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -2733,6 +2733,12 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 15 1776 N 1 0 0 1 0 0 2
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" nine dx=-79 dy=0 dh=-79 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" seven dx=-158 dy=0 dh=-158 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" four dx=-105 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" three dx=-105 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" two dx=-105 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" one dx=53 dy=0 dh=53 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: one
@@ -2745,6 +2751,9 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 16 1777 N 1 0 0 1 0 0 2
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" nine dx=-79 dy=0 dh=-79 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" five dx=-53 dy=0 dh=-53 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" zero dx=-53 dy=0 dh=-53 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: two
@@ -2757,6 +2766,9 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 17 1778 N 1 0 0 1 0 0 2
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" eight dx=-158 dy=0 dh=-158 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" five dx=-53 dy=0 dh=-53 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" zero dx=-26 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: three
@@ -2769,6 +2781,9 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 18 1779 N 1 0 0 1 0 0 2
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" eight dx=-53 dy=0 dh=-53 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" five dx=-79 dy=0 dh=-79 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" zero dx=-53 dy=0 dh=-53 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: four
@@ -2781,6 +2796,8 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 19 1780 N 1 0 0 1 0 0 2
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" eight dx=-53 dy=0 dh=-53 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" zero dx=-26 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: five
@@ -2793,6 +2810,11 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 20 1781 N 1 0 0 1 0 0 2
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" nine dx=-79 dy=0 dh=-79 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" seven dx=-105 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" three dx=-26 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" two dx=-26 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" one dx=53 dy=0 dh=53 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: six
@@ -2817,6 +2839,10 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 22 1783 N 1 0 0 1 0 0 2
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" nine dx=-105 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" eight dx=-158 dy=0 dh=-158 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" five dx=-105 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" zero dx=-105 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: eight
@@ -2829,6 +2855,11 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 23 1784 N 1 0 0 1 0 0 2
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" seven dx=-158 dy=0 dh=-158 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" six dx=-184 dy=0 dh=-184 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" four dx=-210 dy=0 dh=-210 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" three dx=-210 dy=0 dh=-210 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" two dx=-184 dy=0 dh=-184 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: nine
@@ -2841,6 +2872,12 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 24 1785 N 1 0 0 1 0 0 2
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" seven dx=-53 dy=0 dh=-53 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" five dx=-26 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" two dx=-26 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" one dx=-26 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" uni066B dx=210 dy=0 dh=210 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" nine dx=-26 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: uni0622
@@ -4839,6 +4876,11 @@ SplineSet
  703 576 l 257
  232 -626 l 257
 EndSplineSet
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" seven dx=-105 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" three dx=-79 dy=0 dh=-79 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" two dx=-105 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" zero dx=-53 dy=0 dh=-53 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 2" uni066B dx=-53 dy=0 dh=-53 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 1" uni06F7 dx=-105 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 1" uni06F0 dx=-53 dy=0 dh=-53 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning in Arabic lookup 7 per glyph data 1" uni06F3 dx=-79 dy=0 dh=-79 dv=0 dx=0 dy=0 dh=0 dv=0
