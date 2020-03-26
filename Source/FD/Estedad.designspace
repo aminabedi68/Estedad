@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+ <axes>
+  <axis maximum="900" minimum="100" tag="wght" default="900" name="weight">
+   <labelname xml:lang="en">Weight</labelname>
+  </axis>
+    <axis maximum="200" minimum="100" tag="wdth" default="100" name="width">
+   <labelname xml:lang="en">Width</labelname>
+  </axis>
+ </axes>
+ <sources>
+  <source familyname="Estedad-VF-FD" name="Estedad-VF-FD" stylename="Thin" filename="Estedad-VF-FD-Thin.ufo">
+   <location>
+    <dimension xvalue="100" name="weight"/>
+	<dimension xvalue="100" name="width"/>
+   </location>
+  </source>
+  <source familyname="Estedad-VF-FD" name="Estedad-VF-FD" stylename="KThin" filename="Estedad-VF-FD-KThin.ufo">
+   <location>
+    <dimension xvalue="100" name="weight"/>
+	<dimension xvalue="200" name="width"/>
+   </location>
+  </source>
+  <source familyname="Estedad-VF-FD" name="Estedad-VF-FD" stylename="Black" filename="Estedad-VF-FD-Black.ufo">
+   <location>
+    <dimension xvalue="900" name="weight"/>
+	<dimension xvalue="100" name="width"/>
+	</location>
+  </source>
+  <source familyname="Estedad-VF-FD" name="Estedad-VF-FD" stylename="KBlack" filename="Estedad-VF-FD-KBlack.ufo">
+   <location>
+    <dimension xvalue="900" name="weight"/>
+	<dimension xvalue="200" name="width"/>
+   </location>
+  </source>
+ </sources>
+  <instances>
+     <instance name="Estedad Thin" familyname="Estedad" stylename="Thin" filename="instance_ufo/Estedad-Thin.ufo">
+   <location>
+    <dimension name="weight" xvalue="100"/>
+    <dimension name="width" xvalue="100"/>
+   </location>
+  </instance>
+   <instance name="Estedad Light" familyname="Estedad" stylename="Light" filename="instance_ufo/Estedad-Light.ufo">
+   <location>
+    <dimension name="weight" xvalue="300"/>
+    <dimension name="width" xvalue="100"/>
+   </location>
+  </instance>
+  <instance name="Estedad Medium" familyname="Estedad" stylename="Medium" filename="instance_ufo/Estedad-Medium.ufo">
+   <location>
+    <dimension name="weight" xvalue="500"/>
+    <dimension name="width" xvalue="100"/>
+   </location>
+  </instance>
+  <instance name="Estedad Bold" familyname="Estedad" stylename="Bold" filename="instance_ufo/Estedad-Bold.ufo">
+   <location>
+    <dimension name="weight" xvalue="700"/>
+    <dimension name="width" xvalue="100"/>
+   </location>
+  </instance>
+    <instance name="Estedad Black" familyname="Estedad" stylename="Black" filename="instance_ufo/Estedad-Black.ufo">
+   <location>
+    <dimension name="weight" xvalue="900"/>
+    <dimension name="width" xvalue="100"/>
+   </location>
+  </instance>
+ </instances>
+</designspace>
