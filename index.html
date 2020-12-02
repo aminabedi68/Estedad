@@ -16,17 +16,33 @@
        font-family: EstedadThin;
        src: url('Estedad/Estedad-Thin.woff2') format('woff2');
       }
+	  @font-face {
+        font-family: EstedadExtraLight;
+        src: url('Estedad/Estedad-ExtraLight.woff2') format('woff2');
+      }
       @font-face {
         font-family: EstedadLight;
         src: url('Estedad/Estedad-Light.woff2') format('woff2');
+      }
+	  @font-face {
+        font-family: EstedadRegular;
+        src: url('Estedad/Estedad-Regular.woff2') format('woff2');
       }
       @font-face {
         font-family: EstedadMedium;
         src: url('Estedad/Estedad-Medium.woff2') format('woff2');
       }
+	  @font-face {
+        font-family: EstedadSemiBold;
+        src: url('Estedad/Estedad-SemiBold.woff2') format('woff2');
+      }
       @font-face {
         font-family: EstedadBold;
         src: url('Estedad/Estedad-Bold.woff2') format('woff2');
+      }
+	  @font-face {
+        font-family: EstedadExtraBold;
+        src: url('Estedad/Estedad-ExtraBold.woff2') format('woff2');
       }
       @font-face {
         font-family: EstedadBlack;
@@ -188,6 +204,18 @@
       }
       .EstedadBlack-font {
         font: 20px/30px EstedadBlack, sans-serif;
+      }
+      .EstedadExtraLight-font {
+        font: 20px/30px EstedadExtraLight, sans-serif;
+      }
+      .EstedadRegular-font {
+        font: 20px/30px EstedadRegular, sans-serif;
+      }
+      .EstedadSemiBold-font {
+        font: 20px/30px EstedadSemiBold, sans-serif;
+      }
+      .EstedadExtraBold-font {
+        font: 20px/30px EstedadExtraBold, sans-serif;
       }
       footer {
         color: #888;
@@ -358,8 +386,8 @@
 			.input-slider-1::-webkit-slider-thumb {
 			    -webkit-appearance: none;
 			    border: none;
-			    height: 12px;
-			    width: 12px;
+			    height: 15px;
+			    width: 15px;
 			    border-radius: 50%;
 			    background: #222;
 			    border: none;
@@ -368,8 +396,8 @@
 			.input-slider-2::-webkit-slider-thumb {
 			    -webkit-appearance: none;
 			    border: none;
-			    height: 12px;
-			    width: 12px;
+			    height: 15px;
+			    width: 15px;
 			    border-radius: 50%;
 			    background: #fff;
 			    border: none;
@@ -378,8 +406,8 @@
 			.input-slider-3::-webkit-slider-thumb {
 			    -webkit-appearance: none;
 			    border: none;
-			    height: 12px;
-			    width: 12px;
+			    height: 15px;
+			    width: 15px;
 			    border-radius: 50%;
 			    background: #555;
 			    border: none;
@@ -612,7 +640,7 @@
 
 							<div class="fontname">
 								<h1>استعداد
-									<sup>نسخه ۴٫۰</sup>
+									<sup>نسخه ۵٫۰</sup>
 								</h1>
 							</div>
 							<div class="toolbar" align="center">
@@ -622,26 +650,38 @@
 											<div class="mobile">
 												<p>&nbsp</p>
 												<h2 >استعداد
-													<sup>نسخه ۴٫۰</sup>
+													<sup>نسخه ۵٫۰</sup>
 												</h2>
 												<small>
 													<a href="https://github.com/aminabedi68/Estedad/archive/master.zip">دانلود▼</a>
 												</small>
 											</div>
 											<li style="font: 18px EstedadThin, sans-serif;">
-												<a href="#" id="EstedadThin" onclick="changeFont('EstedadThin', this); return false;">نازک</a>
+												<a href="#" id="EstedadThin" onclick="changeFont('EstedadThin', this); return false;">1</a>
+											</li>
+											<li style="font: 18px EstedadExtraLight, sans-serif;">
+												<a href="#" id="EstedadExtraLight" onclick="changeFont('EstedadExtraLight', this); return false;">2</a>
 											</li>
 											<li style="font: 18px EstedadLight, sans-serif;">
-												<a href="#" id="EstedadLight" onclick="changeFont('EstedadLight', this); return false;">سبک</a>
+												<a href="#" id="EstedadLight" onclick="changeFont('EstedadLight', this); return false;">3</a>
+											</li>
+											<li style="font: 18px EstedadRegular, sans-serif;">
+												<a href="#" id="EstedadRegular" onclick="changeFont('EstedadRegular', this); return false;">4</a>
 											</li>
 											<li style="font: 18px EstedadMedium, sans-serif;">
-												<a href="#" id="EstedadMedium" onclick="changeFont('EstedadMedium', this); return false;">معمولی</a>
+												<a href="#" id="EstedadMedium" onclick="changeFont('EstedadMedium', this); return false;">5</a>
+											</li>
+											<li style="font: 18px EstedadSemiBold, sans-serif;">
+												<a href="#" id="EstedadSemiBold" onclick="changeFont('EstedadSemiBold', this); return false;">6</a>
 											</li>
 											<li style="font: 18px EstedadBold, sans-serif;">
-												<a href="#" id="EstedadBold" onclick="changeFont('EstedadBold', this); return false;">ضخیم</a>
+												<a href="#" id="EstedadBold" onclick="changeFont('EstedadBold', this); return false;">7</a>
+											</li>
+											<li style="font: 18px EstedadExtraBold, sans-serif;">
+												<a href="#" id="EstedadExtraBold" onclick="changeFont('EstedadExtraBold', this); return false;">8</a>
 											</li>
 											<li style="font: 18px EstedadBlack, sans-serif;">
-												<a href="#" id="EstedadBlack" onclick="changeFont('EstedadBlack', this); return false;">سیاه</a>
+												<a href="#" id="EstedadBlack" onclick="changeFont('EstedadBlack', this); return false;">9</a>
 											</li>
 										</ul>
 									</div>
@@ -798,7 +838,7 @@
     }
 									</script>
 
-									<section id="main" class="changesizeOldNick" class="changesizeOldNick" style="font-size: 22px; line-height: 1.5em; font-kerning: normal">
+									<section id="main" class="changesizeOldNick" class="changesizeOldNick" style="font-size: 22px; line-height: 1.5em;">
 										<p contenteditable="true"  id="persian" class="w3-container text" style="display:block">
 											بیشتر تاریخ‌دانان از ابن‌مقله به‌عنوان اولین مبتکر خوشنویسی اسلامی نام می‌برند و او را اولین کسی ذکر می‌کنند که کتابت را به یک هنر ارتقاء داد. در واقع ابن‌مقله با بررسی و نظام بخشیدن به خطوط مختلف رایج در زمان خود خطوط ششگانه را انتظام داد و به آن‌ها هویت واقعی بخشید و برای آن‌ها قواعدی وضع کرد.
 
