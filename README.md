@@ -7,7 +7,7 @@ Estedad is a Sans Serif Arabic-Latin typeface in <a href="https://aminabedi68.gi
 Estedad has 9 Weights and 2 Axes:
 <br>
 ### Weights:
-100/300/500/700/900
+100/200/300/400/500/600/700/800/900
 <br>
 ### Axes:
 Weights:100-900
