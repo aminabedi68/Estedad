@@ -1,5 +1,6 @@
 # Estedad
-![estedad](https://user-images.githubusercontent.com/25493297/101204546-a0b79900-3681-11eb-8bcb-96ab167f2944.png)
+![estedad](https://user-images.githubusercontent.com/25493297/101204726-eaa07f00-3681-11eb-8b12-f708fa7588a0.png)
+<br>
 Estedad is a Sans Serif Arabic-Latin typeface in <a href="https://aminabedi68.github.io/Estedad/">9 weights</a> and <a href="https://aminabedi68.github.io/Estedad/VF.html">variable</a> version.
 <br>Created with <a href="https://github.com/fontforge/fontforge">fontforge</a> and <a href="https://github.com/googlefonts/fontmake">fontmake</a>.
 <br>Licensed under SIL open font License V1.1
