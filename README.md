@@ -9,4 +9,4 @@ static fonts in 9 standard weights(Thin to black) and a variable font with 2 axe
 ## Sources:
 Font sources presented in fontforge's `SFD` files and a `designspace` file for variable font.
 <br>
-![Estedad-VF Masters and Axes](https://user-images.githubusercontent.com/25493297/101950351-64001a80-3c0a-11eb-8263-ae16ac0eb672.png)
+![estedad-2](https://user-images.githubusercontent.com/25493297/101950836-32d41a00-3c0b-11eb-9c35-4323d32c246a.png)
