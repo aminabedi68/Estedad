@@ -8,3 +8,5 @@ Estedad is a Sans Serif Arabic-Latin typeface in <a href="https://aminabedi68.gi
 static fonts in 9 standard weights(Thin to black) and a variable font with 2 axes(Weight(`wght`):100-900 and Kashida(`kshd`):100-200) with 9 instances(placed on static weights coordinates).<br>
 ## Sources:
 Font sources presented in fontforge's `SFD` files and a `designspace` file for variable font.
+<br>
+![Estedad-VF Masters and Axes](https://user-images.githubusercontent.com/25493297/101950351-64001a80-3c0a-11eb-8263-ae16ac0eb672.png)
