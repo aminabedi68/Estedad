@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+ <axes>
+  <axis maximum="900" minimum="100" tag="wght" default="100" name="weight">
+   <labelname xml:lang="en">Weight</labelname>
+  </axis>
+  <axis maximum="200" minimum="100" tag="kshd" default="100" name="kashida">
+   <labelname xml:lang="en">Kashida</labelname>
+  </axis>
+ </axes>
+ <sources>
+  <source familyname="Estedad-FD" name="Estedad-FD" stylename="Thin" filename="Estedad-FD-VF-Thin.ufo">
+   <lib copy="1" />
+   <features copy="1" />
+   <location>
+    <dimension xvalue="100" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+   </location>
+  </source>
+  <source familyname="Estedad-FD" name="Estedad-FD" stylename="Bold" filename="Estedad-FD-VF-Bold.ufo">
+   <location>
+    <dimension xvalue="700" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+	</location>
+  </source>
+  <source familyname="Estedad-FD" name="Estedad-FD" stylename="Black" filename="Estedad-FD-VF-Black.ufo">
+   <location>
+    <dimension xvalue="900" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+	</location>
+  </source>
+  <source familyname="Estedad-FD" name="Estedad-FD" stylename="KThin" filename="Estedad-FD-VF-KThin.ufo">
+   <location>
+    <dimension xvalue="100" name="weight"/>
+    <dimension xvalue="200" name="kashida"/>
+   </location>
+  </source>
+  <source familyname="Estedad-FD" name="Estedad-FD" stylename="KBold" filename="Estedad-FD-VF-KBold.ufo">
+   <location>
+    <dimension xvalue="700" name="weight"/>
+    <dimension xvalue="200" name="kashida"/>
+	</location>
+  </source>
+  <source familyname="Estedad-FD" name="Estedad-FD" stylename="KBlack" filename="Estedad-FD-VF-KBlack.ufo">
+   <location>
+    <dimension xvalue="900" name="weight"/>
+    <dimension xvalue="200" name="kashida"/>
+	</location>
+  </source>
+ </sources>
+  <instances>
+     <instance name="Estedad-FD Thin" familyname="Estedad-FD" stylename="Thin" filename="instance_ufo/Estedad-FD-Thin.ufo">
+   <location>
+    <dimension xvalue="100" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+   </location>
+  </instance>
+   <instance name="Estedad-FD ExtraLight" familyname="Estedad-FD" stylename="ExtraLight" filename="instance_ufo/Estedad-FD-ExtraLight.ufo">
+   <location>
+    <dimension xvalue="200" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+   </location>
+  </instance>
+   <instance name="Estedad-FD Light" familyname="Estedad-FD" stylename="Light" filename="instance_ufo/Estedad-FD-Light.ufo">
+   <location>
+    <dimension xvalue="300" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+   </location>
+  </instance>
+  <instance name="Estedad-FD Regular" familyname="Estedad-FD" stylename="Regular" filename="instance_ufo/Estedad-FD-Regular.ufo">
+   <location>
+    <dimension xvalue="400" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+   </location>
+  </instance>
+  <instance name="Estedad-FD Medium" familyname="Estedad-FD" stylename="Medium" filename="instance_ufo/Estedad-FD-Medium.ufo">
+   <location>
+    <dimension xvalue="500" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+   </location>
+  </instance>
+  <instance name="Estedad-FD SemiBold" familyname="Estedad-FD" stylename="SemiBold" filename="instance_ufo/Estedad-FD-SemiBold.ufo">
+   <location>
+    <dimension xvalue="600" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+   </location>
+  </instance>
+  <instance name="Estedad-FD Bold" familyname="Estedad-FD" stylename="Bold" filename="instance_ufo/Estedad-FD-Bold.ufo">
+   <location>
+    <dimension xvalue="700" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+   </location>
+  </instance>
+  <instance name="Estedad-FD ExtraBold" familyname="Estedad-FD" stylename="ExtraBold" filename="instance_ufo/Estedad-FD-ExtraBold.ufo">
+   <location>
+    <dimension xvalue="800" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+   </location>
+  </instance>
+    <instance name="Estedad-FD Black" familyname="Estedad-FD" stylename="Black" filename="instance_ufo/Estedad-FD-Black.ufo">
+   <location>
+    <dimension xvalue="900" name="weight"/>
+    <dimension xvalue="100" name="kashida"/>
+   </location>
+  </instance>
+ </instances>
+ <rules>
+    <rule name="dollar substitution">
+        <conditionset>
+            <condition minimum="650" maximum="900" name="weight" />
+            <condition minimum="100" maximum="200" name="kashida" />
+        </conditionset>
+        <sub name="dollar" with="dollar.alt"/>
+    </rule>
+    <rule name="K substitution">
+        <conditionset>
+            <condition minimum="350" maximum="900" name="weight" />
+            <condition minimum="100" maximum="200" name="kashida" />
+        </conditionset>
+        <sub name="K" with="K.alt"/>
+    </rule>
+    <rule name="k substitution">
+        <conditionset>
+            <condition minimum="350" maximum="900" name="weight" />
+            <condition minimum="100" maximum="200" name="kashida" />
+        </conditionset>
+        <sub name="k" with="k.alt"/>
+    </rule>
+    <rule name="Q substitution">
+        <conditionset>
+            <condition minimum="550" maximum="900" name="weight" />
+            <condition minimum="100" maximum="200" name="kashida" />
+        </conditionset>
+        <sub name="Q" with="Q.alt"/>
+    </rule>
+    <rule name="oslash substitution">
+        <conditionset>
+            <condition minimum="650" maximum="900" name="weight" />
+            <condition minimum="100" maximum="200" name="kashida" />
+        </conditionset>
+        <sub name="oslash" with="oslash.alt"/>
+    </rule>
+    <rule name="cent substitution">
+        <conditionset>
+            <condition minimum="550" maximum="900" name="weight" />
+            <condition minimum="100" maximum="200" name="kashida" />
+        </conditionset>
+        <sub name="cent" with="cent.alt"/>
+    </rule>
+    <rule name="Oslash substitution">
+        <conditionset>
+            <condition minimum="750" maximum="900" name="weight" />
+            <condition minimum="100" maximum="200" name="kashida" />
+        </conditionset>
+        <sub name="Oslash" with="Oslash.alt"/>
+    </rule>
+    <rule name="yen substitution">
+        <conditionset>
+            <condition minimum="750" maximum="900" name="weight" />
+            <condition minimum="100" maximum="200" name="kashida" />
+        </conditionset>
+        <sub name="yen" with="yen.alt"/>
+    </rule>
+</rules>
+</designspace>
