@@ -1,0 +1,2 @@
+fontmake>=2.4
+fontbakery>=0.8

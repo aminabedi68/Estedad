@@ -1,13 +1,25 @@
 # Estedad
-![estedad](https://user-images.githubusercontent.com/25493297/101259308-5b58a180-373d-11eb-8862-11addabbba38.png)<br>
-Estedad is a Sans Serif Arabic-Latin typeface in <a href="https://aminabedi68.github.io/Estedad/">9 weights</a> and a <a href="https://aminabedi68.github.io/Estedad/VF.html">variable</a> version.
-<br>Created with <a href="https://github.com/fontforge/fontforge">fontforge</a> and <a href="https://github.com/googlefonts/fontmake">fontmake</a>.
-<br>Licensed under SIL open font License V1.1
+![Estedad](https://github.com/aminabedi68/Estedad/master/documentation/sample.png?raw=true)
+Estedad(/~este~dAd/ means Talent in persian) is an Arabic-Latin Sans-Serif typeface in 9 standard weights and a variable version(wght:weight/KSHD:Arabic simple kashida). Estedad has wide range codepoint support for most of Arabic and Latin languages.
+<br>design of type is simple, smooth, compact, legible, low contrast, lowest optical size(a bit higher in bold and above weights) and suitable for web-like environments.
+<br>Estadad supporting small caps, simple fractions, tabular and old-style numbers and both decomposed(limited to basic a-z A-Z letters) and precomposed letter forms for Latin, and semi-advanced quran marking methodes for Arabic script.
+<br>this typeface has designed inside fontforge(in two thin and black masters). variable font and static instances build with fontmake and help of python scripts(fontforge python api and fonttools). whole project is licenced to be free under open font licence v1.1.
+<br>quality of variable font has improved under fontbakery advisments.
 
-## Fonts:
-static fonts in 9 standard weights(Thin to black) and a variable font with 2 axes(Weight(`wght`):100-900 and Kashida(`kshd`):100-200) with 9 instances(placed on static weights coordinates).<br>
-## Sources:
-Font sources presented in fontforge's `SFD` files and a `designspace` file for variable font.
+## Weights and Axes
+Estedad has 9 Weights and 2 Axes:
+<br>
+Weights: 9 Standard weights, 100-Thin to 900-Black
+<br>
+Axes: Weight[wght]:100-900 // Kashida[KSHD]:100-200
+
+## Build(Windows):
+### requirements:
+<br>1-installed <a href="https://github.com/fontforge/fontforge">fontforge</a> with path access in environment variables
+<br>2-installed <a href="https://www.python.org/">python</a> and <a href="https://github.com/googlefonts/fontmake">fontmake</a>
+### build:
+move script folder contents to sources folder and run Build.bat
+<br>(FD version of variable font created manually.)
 <br>
 <br>
-![estedad-2](https://user-images.githubusercontent.com/25493297/101951006-7cbd0000-3c0b-11eb-92ce-72ddbeec379f.png)
+![Estedad](https://github.com/aminabedi68/Estedad/master/documentation/designspace.png?raw=true)
