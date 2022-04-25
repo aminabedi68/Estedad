@@ -1,21 +1,17 @@
 # Estedad
 ![sample](https://user-images.githubusercontent.com/25493297/165099649-27b31e58-a990-4f98-ae4a-fba550b262f3.png)
-Estedad(`/~este~dAd/` means Talent in persian) is an Arabic-Latin Sans-Serif typeface in 9 standard weights and a variable version(wght:weight/KSHD:Arabic simple kashida). Estedad has wide range codepoint support for most of Arabic and Latin languages.
-<br>design of type is simple, smooth, compact, legible, low contrast, lowest optical size(a bit higher in bold and above weights) and suitable for web-like environments.
+Estedad(`/~este~dAd/` means Talent in persian) is an Arabic-Latin Sans-Serif typeface in 9 standard weights and a variable version(`wght`:weight/`KSHD`:Arabic simple kashida). Estedad has wide codepoint range support for most Arabic and Latin languages.
+<br>design of type is simple, smooth, compact, legible, low contrast, lowest optical size(a bit higher in bold and above weights) and optimized for web-like environments.
 <br>Estadad supporting small caps, simple fractions, tabular and old-style numbers and both decomposed(limited to basic a-z A-Z letters) and precomposed letter forms for Latin, and semi-advanced quran marking methodes for Arabic script.
-<br>this typeface has designed inside fontforge(in two thin and black masters). variable font and static instances build with fontmake and help of python scripts(fontforge python api and fonttools). whole project is licenced to be free under open font licence v1.1.
+<br>this typeface is designed inside fontforge(in two thin and black masters). variable font and static instances build with fontmake and help of python scripts(fontforge python api and fonttools). whole project is licenced to be free under open font licence v1.1.
 <br>quality of variable font has improved under fontbakery advisments.
 
 ## Weights and Axes
-Estedad has 9 Weights and 2 Axes:
-<br>
-Weights: 9 Standard weights, 100-Thin to 900-Black
-<br>
-Axes: Weight[wght]:100-900 // Kashida[KSHD]:100-200
+Estedad has 9 Weights(Standard weights, 100-Thin to 900-Black) and 2 Axes(Weight[wght]:100-900 // Kashida[KSHD]:100-200)
 
 ## Build(Windows):
 ### requirements:
-<br>1-installed <a href="https://github.com/fontforge/fontforge">fontforge</a> with path access in environment variables
+1-installed <a href="https://github.com/fontforge/fontforge">fontforge</a> with path access in environment variables
 <br>2-installed <a href="https://www.python.org/">python</a> and <a href="https://github.com/googlefonts/fontmake">fontmake</a>
 ### build:
 move script folder contents to sources folder and run Build.bat
