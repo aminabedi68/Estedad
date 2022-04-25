@@ -3,7 +3,7 @@ html {
 }
 @font-face {
   font-family: "Estedad-VF";
-  src: url("./Estedad-VF.woff2")
+  src: url("./Estedad[KSHD,wght].woff2")
 }
 
 body {
@@ -49,7 +49,7 @@ aside{
   right: 1.5em;
   z-index: 1;
   display: block;
-  line-height: 1.5;
+  line-height: 1.4;
   overflow: hidden;
   height: 90%;
 }
@@ -323,4 +323,10 @@ a:hover{
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

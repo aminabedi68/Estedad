@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <title>Estedad Variable font testing page صفحه تست فونت متغیر استعداد</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="صفحه تست فونت متغیر استعداد | تایپ‌فیس استعداد مجموعه فونت ۵
- وزنی سازگار با وب و منتشر شده تحت مجوز آزاد است. ">
+  <meta name="description" content="صفحه تست فونت متغیر استعداد | تایپ‌فیس استعداد مجموعه فونت ۹ وزنی سازگار با وب به همراه نسخۀ متغیر و منتشر شده تحت مجوز آزاد است. ">
   <link rel="stylesheet" href="./style.css">
   <script src="./js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/otfeatures.js" type="text/javascript" charset="utf-8"></script>
@@ -354,13 +353,61 @@
 	<br>primo" 1º "prima" 1ª, "secondo" 2º "seconda" 2ª, "terzo" 3º "terza" 3ª 1.º
 	</p>
 </div>
+  <div id="rvrntest" class="tabcontent">
+	<p class="changesize" contenteditable="true" style="direction:ltr;"  style="font-size:18px">Q$¢øØ¥
+	</p>
+</div>
+  <div id="LatinMark" class="tabcontent">
+	<p class="changesize" contenteditable="true" style="direction:ltr;"  style="font-size:18px">
+(if you not see the colors, please <a onClick="window.location.href=window.location.href">refresh page</a> and come here again.)<br>
+there are two method to implement latin characters with marks:
+<br><span style="color: #ff4242">Precomposed forms: single precombined components or outlines.</span>
+<br><span style="color: #00bdbd">Decomposed forms: a set of opentype base and mark(s) components or outlines.</span>
+<p class="changesize" contenteditable="true" style="direction:ltr;" style="font-size:18px" id="demo"></p>
+<script>
+const characters = ["À", "Á", "Â", "Ã", "Ä", "Å", "Ç", "È", "É", "Ê", "Ë", "Ì", "Í", "Î", "Ï", "Ñ", "Ò", "Ó", "Ô", "Õ", "Ö", "Ù", "Ú", "Û", "Ü", "Ý", "à", "á", "â", "ã", "ä", "å", "ç", "è", "é", "ê", "ë", "ì", "í", "î", "ï", "ñ", "ò", "ó", "ô", "õ", "ö", "ù", "ú", "û", "ü", "ý", "ÿ", "Ā", "ā", "Ă", "ă", "Ą", "ą", "Ć", "ć", "Ĉ", "ĉ", "Ċ", "ċ", "Č", "č", "Ď", "ď", "Ē", "ē", "Ĕ", "ĕ", "Ė", "ė", "Ę", "ę", "Ě", "ě", "Ĝ", "ĝ", "Ğ", "ğ", "Ġ", "ġ", "Ģ", "ģ", "Ĥ", "ĥ", "Ĩ", "ĩ", "Ī", "ī", "Ĭ", "ĭ", "Į", "į", "İ", "Ĵ", "ĵ", "Ķ", "ķ", "Ĺ", "ĺ", "Ļ", "ļ", "Ľ", "ľ", "Ń", "ń", "Ņ", "ņ", "Ň", "ň", "Ō", "ō", "Ŏ", "ŏ", "Ő", "ő", "Ŕ", "ŕ", "Ŗ", "ŗ", "Ř", "ř", "Ś", "ś", "Ŝ", "ŝ", "Ş", "ş", "Š", "š", "Ţ", "ţ", "Ť", "ť", "Ũ", "ũ", "Ū", "ū", "Ŭ", "ŭ", "Ů", "ů", "Ű", "ű", "Ų", "ų", "Ŵ", "ŵ", "Ŷ", "ŷ", "Ÿ", "Ź", "ź", "Ż", "ż", "Ž", "ž", "Ơ", "ơ", "Ư", "ư", "Ǎ", "ǎ", "Ǐ", "ǐ", "Ǒ", "ǒ", "Ǔ", "ǔ", "Ǖ", "ǖ", "Ǘ", "ǘ", "Ǚ", "ǚ", "Ǜ", "ǜ", "Ǟ", "ǟ", "Ǡ", "ǡ", "Ǣ", "ǣ", "Ǧ", "ǧ", "Ǩ", "ǩ", "Ǫ", "ǫ", "Ǭ", "ǭ", "ǰ", "Ǵ", "ǵ", "Ǹ", "ǹ", "Ǻ", "ǻ", "Ǽ", "ǽ", "Ǿ", "ǿ", "Ȁ", "ȁ", "Ȃ", "ȃ", "Ȅ", "ȅ", "Ȇ", "ȇ", "Ȉ", "ȉ", "Ȋ", "ȋ", "Ȍ", "ȍ", "Ȏ", "ȏ", "Ȑ", "ȑ", "Ȓ", "ȓ", "Ȕ", "ȕ", "Ȗ", "ȗ", "Ș", "ș", "Ț", "ț", "Ȟ", "ȟ", "Ȧ", "ȧ", "Ȩ", "ȩ", "Ȫ", "ȫ", "Ȭ", "ȭ", "Ȯ", "ȯ", "Ȱ", "ȱ", "Ȳ", "ȳ", "Ḁ", "ḁ", "Ḃ", "ḃ", "Ḅ", "ḅ", "Ḇ", "ḇ", "Ḉ", "ḉ", "Ḋ", "ḋ", "Ḍ", "ḍ", "Ḏ", "ḏ", "Ḑ", "ḑ", "Ḓ", "ḓ", "Ḕ", "ḕ", "Ḗ", "ḗ", "Ḙ", "ḙ", "Ḛ", "ḛ", "Ḝ", "ḝ", "Ḟ", "ḟ", "Ḡ", "ḡ", "Ḣ", "ḣ", "Ḥ", "ḥ", "Ḧ", "ḧ", "Ḩ", "ḩ", "Ḫ", "ḫ", "Ḭ", "ḭ", "Ḯ", "ḯ", "Ḱ", "ḱ", "Ḳ", "ḳ", "Ḵ", "ḵ", "Ḷ", "ḷ", "Ḹ", "ḹ", "Ḻ", "ḻ", "Ḽ", "ḽ", "Ḿ", "ḿ", "Ṁ", "ṁ", "Ṃ", "ṃ", "Ṅ", "ṅ", "Ṇ", "ṇ", "Ṉ", "ṉ", "Ṋ", "ṋ", "Ṍ", "ṍ", "Ṏ", "ṏ", "Ṑ", "ṑ", "Ṓ", "ṓ", "Ṕ", "ṕ", "Ṗ", "ṗ", "Ṙ", "ṙ", "Ṛ", "ṛ", "Ṝ", "ṝ", "Ṟ", "ṟ", "Ṡ", "ṡ", "Ṣ", "ṣ", "Ṥ", "ṥ", "Ṧ", "ṧ", "Ṩ", "ṩ", "Ṫ", "ṫ", "Ṭ", "ṭ", "Ṯ", "ṯ", "Ṱ", "ṱ", "Ṳ", "ṳ", "Ṵ", "ṵ", "Ṷ", "ṷ", "Ṹ", "ṹ", "Ṻ", "ṻ", "Ṽ", "ṽ", "Ṿ", "ṿ", "Ẁ", "ẁ", "Ẃ", "ẃ", "Ẅ", "ẅ", "Ẇ", "ẇ", "Ẉ", "ẉ", "Ẋ", "ẋ", "Ẍ", "ẍ", "Ẏ", "ẏ", "Ẑ", "ẑ", "Ẓ", "ẓ", "Ẕ", "ẕ", "ẖ", "ẗ", "ẘ", "ẙ", "ẚ", "ẛ", "Ạ", "ạ", "Ả", "ả", "Ấ", "ấ", "Ầ", "ầ", "Ẩ", "ẩ", "Ẫ", "ẫ", "Ậ", "ậ", "Ắ", "ắ", "Ằ", "ằ", "Ẳ", "ẳ", "Ẵ", "ẵ", "Ặ", "ặ", "Ẹ", "ẹ", "Ẻ", "ẻ", "Ẽ", "ẽ", "Ế", "ế", "Ề", "ề", "Ể", "ể", "Ễ", "ễ", "Ệ", "ệ", "Ỉ", "ỉ", "Ị", "ị", "Ọ", "ọ", "Ỏ", "ỏ", "Ố", "ố", "Ồ", "ồ", "Ổ", "ổ", "Ỗ", "ỗ", "Ộ", "ộ", "Ớ", "ớ", "Ờ", "ờ", "Ở", "ở", "Ỡ", "ỡ", "Ợ", "ợ", "Ụ", "ụ", "Ủ", "ủ", "Ứ", "ứ", "Ừ", "ừ", "Ử", "ử", "Ữ", "ữ", "Ự", "ự", "Ỳ", "ỳ", "Ỵ", "ỵ", "Ỷ", "ỷ", "Ỹ", "ỹ"];
+let txt = "";
+characters.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+function myFunction(value, index, array) {
+  txt += " " + "<font color=\"#ff4242\">"+value+"</font>" + "&nbsp" + "<font color=\"#00bdbd\">"+value.normalize('NFD').split('').join('\u200C') + "&nbsp               "+"</font>"; 
+}
+</script>
+</p>
+</div>
+<div id="arrows" class="tabcontent">
+	<p class="changesize" contenteditable="true" style="direction:ltr;"  style="font-size:18px">
+	←↑→↓↔↕↖↗↘↙
+</div>
+<div id="QuranVersions" class="tabcontent">
+	<p class="changesize" contenteditable="true" style="font-size:18px">
+	<span dir="ltr !important;">there are several tradition of quran writing methodes, in the following examples from 7th verse of Al-Ma'idah, the first one is a bit complicated in opentype features and codepoint coverage but the secound is a simple version.</span>
+	<br>
+	<br>
+	وَٱذۡكُرُواْ نِعۡمَةَ ٱللَّهِ عَلَيۡكُمۡ وَمِيثَٰقَهُ ٱلَّذِي وَاثَقَكُم بِهِۦٓ إِذۡ قُلۡتُمۡ سَمِعۡنَا وَأَطَعۡنَاۖ وَٱتَّقُواْ ٱللَّهَۚ إِنَّ ٱللَّهَ عَلِيمُۢ بِذَاتِ ٱلصُّدُورِ ۝٧
+	<br>
+	<br>
+	وَاذْكُرُوا نِعْمَةَ اللَّهِ عَلَيْكُمْ وَمِيثَاقَهُ الَّذِي وَاثَقَكُمْ بِهِ إِذْ قُلْتُمْ سَمِعْنَا وَأَطَعْنَا ۖ وَاتَّقُوا اللَّهَ ۚ إِنَّ اللَّهَ عَلِيمٌ بِذَاتِ الصُّدُورِ ﴿٧﴾
+</div>
+<div id="ArabicEoA" class="tabcontent">
+	<p class="changesize" contenteditable="true" style="direction:ltr;"  style="font-size:18px">
+	۝١۝٢۝٣۝٤۝٥۝٦۝٧۝٨۝٩۝١٠۝١١۝١٢۝١٣۝١٤۝١٥۝١٦۝١٧۝١٨۝١٩۝٢٠۝٢١۝٢٢۝٢٣۝٢٤۝٢٥۝٢٦۝٢٧۝٢٨۝٢٩۝٣٠۝٣١۝٣٢۝٣٣۝٣٤۝٣٥۝٣٦۝٣٧۝٣٨۝٣٩۝٤٠۝٤١۝٤٢۝٤٣۝٤٤۝٤٥۝٤٦۝٤٧۝٤٨۝٤٩۝٥٠۝٥١۝٥٢۝٥٣۝٥٤۝٥٥۝٥٦۝٥٧۝٥٨۝٥٩۝٦٠۝٦١۝٦٢۝٦٣۝٦٤۝٦٥۝٦٦۝٦٧۝٦٨۝٦٩۝٧٠۝٧١۝٧٢۝٧٣۝٧٤۝٧٥۝٧٦۝٧٧۝٧٨۝٧٩۝٨٠۝٨١۝٨٢۝٨٣۝٨٤۝٨٥۝٨٦۝٨٧۝٨٨۝٨٩۝٩٠۝٩١۝٩٢۝٩٣۝٩٤۝٩٥۝٩٦۝٩٧۝٩٨۝٩٩۝١٠٠۝١٠١۝١٠٢۝١٠٣۝١٠٤۝١٠٥۝١٠٦۝١٠٧۝١٠٨۝١٠٩۝١١٠۝١١١۝١١٢۝١١٣۝١١٤۝١١٥۝١١٦۝١١٧۝١١٨۝١١٩۝١٢٠۝١٢١۝١٢٢۝١٢٣۝١٢٤۝١٢٥۝١٢٦۝١٢٧۝١٢٨۝١٢٩۝١٣٠۝١٣١۝١٣٢۝١٣٣۝١٣٤۝١٣٥۝١٣٦۝١٣٧۝١٣٨۝١٣٩۝١٤٠۝١٤١۝١٤٢۝١٤٣۝١٤٤۝١٤٥۝١٤٦۝١٤٧۝١٤٨۝١٤٩۝١٥٠۝١٥١۝١٥٢۝١٥٣۝١٥٤۝١٥٥۝١٥٦۝١٥٧۝١٥٨۝١٥٩۝١٦٠۝١٦١۝١٦٢۝١٦٣۝١٦٤۝١٦٥۝١٦٦۝١٦٧۝١٦٨۝١٦٩۝١٧٠۝١٧١۝١٧٢۝١٧٣۝١٧٤۝١٧٥۝١٧٦۝١٧٧۝١٧٨۝١٧٩۝١٨٠۝١٨١۝١٨٢۝١٨٣۝١٨٤۝١٨٥۝١٨٦۝١٨٧۝١٨٨۝١٨٩۝١٩٠۝١٩١۝١٩٢۝١٩٣۝١٩٤۝١٩٥۝١٩٦۝١٩٧۝١٩٨۝١٩٩۝٢٠٠۝٢٠١۝٢٠٢۝٢٠٣۝٢٠٤۝٢٠٥۝٢٠٦۝٢٠٧۝٢٠٨۝٢٠٩۝٢١٠۝٢١١۝٢١٢۝٢١٣۝٢١٤۝٢١٥۝٢١٦۝٢١٧۝٢١٨۝٢١٩۝٢٢٠۝٢٢١۝٢٢٢۝٢٢٣۝٢٢٤۝٢٢٥۝٢٢٦۝٢٢٧۝٢٢٨۝٢٢٩۝٢٣٠۝٢٣١۝٢٣٢۝٢٣٣۝٢٣٤۝٢٣٥۝٢٣٦۝٢٣٧۝٢٣٨۝٢٣٩۝٢٤٠۝٢٤١۝٢٤٢۝٢٤٣۝٢٤٤۝٢٤٥۝٢٤٦۝٢٤٧۝٢٤٨۝٢٤٩۝٢٥٠۝٢٥١۝٢٥٢۝٢٥٣۝٢٥٤۝٢٥٥۝٢٥٦
+</div>
+<div id="about" class="tabcontent">
+	<p class="changesize" contenteditable="true" style="direction:ltr;"  style="font-size:18px">
+Estedad(/~este~dAd/ means Talent in persian) is an Arabic-Latin Sans-Serif typeface in 9 standard weights and a variable version[wght:weight/KSHD:Arabic simple kashida]. Estedad has wide range codepoint support for most of Arabic(Farsi, Arabic, Quran, Turkuca, Farsi, Kurdi, Koshur, Lurish, Mazanderani, Punjabi, Pashto, sindhi, Gilaki, Uyghurche, Urdu and ...) and Latin(Albanian, Azeri, Croatian, Czech, Danish, Dutch, English, Esperanto, Estonian, Filipino, Finnish, French, German, Hungarian, Icelandic, Irish, Italian, Latvian, Lithuanian, Norwegian, Polish, Portuguese, Romanian, Serbian, Slovak, Slovenian, Spanish, Swedish, Turkish, Vietnamese, WestFrisian and ...) languages.
+<br>design of type is simple, smooth, compact, low contrast, legible, lowest optical size(a bit higher in bold and above weights) and suitable for web-like environments.
+<br>Estadad supporting small caps, simple fractions, tabular and old-style numbers and both decomposed(limited to basic letters) and precomposed letter forms for Latin, and semi-advanced quran marking methodes for Arabic script.
+<br>this typeface has designed inside fontforge(currently in two thin and black masters(fontforge SFD sources) in 6th version). variable font and static instances build with fontmake and help of python scripts(fontforge python api and fonttools). whole project is licenced to be free under open font licence v1.1.
+<br>quality of variable font and static instances has improved under fontbakery advisments.
+</div>
 </main>
 
 <aside>
 <div class="aside-child" style="overflow: auto">
   <form id="FontToggle">
     <div style="direction: rtl; text-align: center;">
-      <h1 style="font-weight: 800; margin-top: 10px;margin-bottom: 20px;">&nbsp&nbsp&nbsp استعداد<sup>&nbspنسخه ۵٫۰</sup></h1>
+      <h1 style="font-weight: 800; margin-top: 10px;margin-bottom: 20px;">&nbsp&nbsp&nbsp استعداد<sup>&nbspنسخۀ ۶٫۰</sup></h1>
     </div>
     <p style="font-size: 15px;">
      <label for="changedfontsizeOldNick">Font Size <span aria-hidden="true">(<output for="changedfontsize" form="FontToggle" id="changedfontsize">18</output> px)</span>:</label>
@@ -384,7 +431,7 @@
       <script type="text/javascript">
       var pageMain = document.querySelector('main');
       var wghtVal = '"wght" 400';
-      var kshdVal = '"kshd" 100';
+      var kshdVal = '"KSHD" 100';
       setStyles();
       function setStyles() {
         pageMain.setAttribute('style','font-variation-settings: ' + wghtVal + ', ' + kshdVal + ';');
@@ -487,7 +534,7 @@
       <label for="WDTH">Kashida <span aria-hidden="true">(<output for="KSHD" form="FontToggle" id="KSHDVal">100</output>)</span>:</label>
       <span>
         <span>100</span>
-        <input autocomplete="off" type="range" id="KSHD" step="1" min="100" max="200" value="100" aria-valuemin="200" aria-valuemax="200" aria-valuenow="100" oninput="changeAxis(this.id,value,'kshd');">
+        <input autocomplete="off" type="range" id="KSHD" step="1" min="100" max="200" value="100" aria-valuemin="200" aria-valuemax="200" aria-valuenow="100" oninput="changeAxis(this.id,value,'KSHD');">
         <span>200</span>
         <span><button type="button" class="reset" onclick="changeAxis('KSHD','100','kshd',1);">Reset</button></span>
       </span>
@@ -549,7 +596,14 @@
     </optgroup>
     <optgroup label="test">
       <option value="numbers">Numbers</option>
-  
+      <option value="rvrntest">rvrn feature</option>
+      <option value="LatinMark">Latin P&D</option>
+      <option value="arrows">arrows</option>
+      <option value="ArabicEoA">Arabic EoA</option>
+      <option value="QuranVersions">Quran Versions</option>
+    </optgroup>
+    <optgroup label="info">
+      <option value="about">About</option>
     </optgroup>
   </select>
 </form> 
@@ -570,6 +624,8 @@
 <button type="button" class="collapsible">Opentype features</button>
 <div class="content">
   <p id="otfeatures">
+    <input type="checkbox" id="ss01" onchange="refreshFeatures()">Style Set 1(ss01):&nbsp g → <span style="font-feature-settings: 'ss01' on">g<span><span style="font-feature-settings: 'ss01' off"><span></input><br/>
+    <input type="checkbox" id="ss03" onchange="refreshFeatures()">Style Set 3(ss03):&nbsp<span style="font-feature-settings: 'ss02' on">لا<span><span style="font-feature-settings: 'ss02' off"> → لا<span></input><br/>
     <input type="checkbox" id="liga" checked onchange="refreshFeatures()">Standard Ligatures(liga)</input><br/>
     <input type="checkbox" id="kern" checked onchange="refreshFeatures()">OpenType Kerning(kern)</input><br/>
     <input type="checkbox" id="calt" checked onchange="refreshFeatures()">Contextual Alternates(calt)</input><br/>
@@ -580,7 +636,7 @@
     <input type="checkbox" id="zero" onchange="refreshFeatures()">slashed zero(zero)</input><br/>
     <input type="checkbox" id="sups" onchange="refreshFeatures()">Superiors(sups)</input><br/>
     <input type="checkbox" id="subs" onchange="refreshFeatures()">Subscripts(subs)</input><br/>			
-    <input type="checkbox" id="snif" onchange="refreshFeatures()">Inferiors(snif)</input><br/>
+    <input type="checkbox" id="sinf" onchange="refreshFeatures()">Inferiors(sinf)</input><br/>
     <input type="checkbox" id="tnum" onchange="refreshFeatures()">Tabular numbers(tnum)</input><br/>
     <input type="checkbox" id="onum" onchange="refreshFeatures()">Oldstyle numbers(onum)</input><br/>				
   </p>
@@ -601,8 +657,8 @@
 
 <br>
 <p style="text-align:center; font-size: 13px; margin-top: 0px; margin-bottom: 0px;">
-Estedad V5.0 <br>a <a href="https://fontamin.com" target="_blank">fontamin</a> product.<br>created with fontforge and fontmake.<br>
-<a href="https://github.com/aminabedi68/Estedad/releases/download/5.0/Estedad-v5.0.zip" target="_blank">Download</a> and use under SIL ofl v1.1<br><br>specimen texts from wikipedia, <a href="http://www.cyreal.org/Font-Testing-Page/" target="_blank">impallari font testing project</a> (by Paclo Impallari) and <a href="http://libre.font-store.ir/PersianFontTestingTools/" target="_blank">Font Testing Tools</a> (by Saleh Souzanchi).<br>
+Estedad V6.0 <br>a <a href="https://fontamin.com" target="_blank">fontamin</a> product.<br>created with fontforge and fontmake.<br>
+<a href="https://github.com/aminabedi68/Estedad/releases/download/4.0/Estedad.V4.0.zip" target="_blank">Download</a> and use under SIL ofl v1.1<br><br>specimen texts from wikipedia, <a href="http://www.cyreal.org/Font-Testing-Page/" target="_blank">impallari font testing project</a> (by Paclo Impallari) and <a href="http://libre.font-store.ir/PersianFontTestingTools/" target="_blank">Font Testing Tools</a> (by Saleh Souzanchi).<br>
 <br>
 
 <ul class="social-list">
@@ -639,7 +695,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-
+<body onLoad="document.getElementById('tabcontentselector').options[0].selected = 'selected';">
 </aside>
 <a href="https://aminabedi68.github.io/Estedad/" id="fixedbutton">صفحۀ تست اول</a>
 </body>
