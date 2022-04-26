@@ -1,5 +1,5 @@
 echo off
-echo ===== Estedad-V6.0 Typeface Static fonts build =====
+echo ===== Estedad-V6.1 Typeface Static fonts build =====
 echo.
 echo Generating Kashida masters:
 echo ===========================

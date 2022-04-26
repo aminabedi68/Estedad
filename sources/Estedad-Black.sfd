@@ -4,14 +4,14 @@ FullName: Estedad Black
 FamilyName: Estedad Black
 Weight: Black
 Copyright: Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)
-Version: 6.0
+Version: 6.1
 ItalicAngle: 0
 UnderlinePosition: -750
 UnderlineWidth: 150
 Ascent: 1638
 Descent: 410
 InvalidEm: 0
-sfntRevision: 0x00060000
+sfntRevision: 0x0006199a
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1595075592
-ModificationTime: 1650825957
+ModificationTime: 1651005869
 PfmFamily: 17
 TTFWeight: 900
 TTFWidth: 5
@@ -470,7 +470,7 @@ ChainPos2: coverage "kernHorizontalKerninglookup10 subtable" 0 0 0 1
  1
   SeqLookup: 0 "SinglePositioning1"
 EndFPST
-LangName: 1033 "" "" "" "FontForge 2.0 : Estedad Black : 29-3-2022" "" "Version 6.0" "" "" "" "Amin Abedi" "" "" "" "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)" "http://scripts.sil.org/OFL" "" "Estedad" "Black"
+LangName: 1033 "" "" "" "6.0;amin;Estedad" "" "Version 6.1" "" "" "" "Amin Abedi" "" "" "" "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)" "http://scripts.sil.org/OFL" "" "Estedad" "Black"
 OtfFeatName: 'ss01' 1033 "alternate g"
 OtfFeatName: 'ss02' 1033 "rvrn alternates"
 OtfFeatName: 'ss03' 1033 "Persian Ligature isolated Alef-Lam"
@@ -481,7 +481,7 @@ NameList: AGL For New Fonts
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 104 13 9
+WinInfo: 91 13 9
 BeginPrivate: 7
 BlueValues 37 [-11 0 1135 1145 1505 1515 1560 1561]
 OtherBlues 11 [-461 -438]
@@ -31835,6 +31835,7 @@ LayerCount: 2
 Fore
 Refer: 1649 -1 N 1 0 0 1 -517 -536 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni0750.medi
@@ -33327,6 +33328,7 @@ LayerCount: 2
 Fore
 Refer: 1650 -1 N 1 0 0 1 -295 -886 2
 Refer: 1619 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uniFB5D.Extended_1
@@ -33354,6 +33356,7 @@ Fore
 Refer: 1318 57482 N 1 0 0 1 33 1065 2
 Refer: 1645 -1 N 1 0 0 1 -295 -536 2
 Refer: 1619 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni0775.medi.Extended_1
@@ -33382,6 +33385,7 @@ Fore
 Refer: 1319 57483 N 1 0 0 1 -41 1065 2
 Refer: 1645 -1 N 1 0 0 1 -295 -536 2
 Refer: 1619 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni0776.medi.Extended_1
@@ -33410,6 +33414,7 @@ Fore
 Refer: 1320 57484 N 1 0 0 1 -165 -1118 2
 Refer: 1645 -1 N 1 0 0 1 -319 -536 2
 Refer: 1619 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni0777.medi.Extended_1
@@ -33438,6 +33443,7 @@ Fore
 Refer: 1341 57505 N 1 0 0 1 340 -16 2
 Refer: 1645 -1 N 1 0 0 1 -295 -536 2
 Refer: 1619 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni063D.medi.Extended_1
@@ -33466,6 +33472,7 @@ Fore
 Refer: 1645 -1 N 1 0 0 1 -185 985 2
 Refer: 1645 -1 N 1 0 0 1 -295 -536 2
 Refer: 1619 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni063E.medi.Extended_1
@@ -33494,6 +33501,7 @@ Fore
 Refer: 1647 -1 N 1 0 0 1 -185 985 2
 Refer: 1645 -1 N 1 0 0 1 -295 -536 2
 Refer: 1619 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni063F.medi.Extended_1
@@ -33522,6 +33530,7 @@ Fore
 Refer: 1239 57398 N 1 0 0 1 351 -59 2
 Refer: 1645 -1 N 1 0 0 1 -295 -536 2
 Refer: 1619 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni08A8.medi.Extended_1
@@ -33550,6 +33559,7 @@ Fore
 Refer: 1644 -1 N 1 0 0 1 -12 1027 2
 Refer: 1645 -1 N 1 0 0 1 -295 -536 2
 Refer: 1619 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni08A9.medi.Extended_1
@@ -33578,6 +33588,7 @@ Fore
 Refer: 1240 57399 N 1 0 0 1 356 -73 2
 Refer: 1645 -1 N 1 0 0 1 -295 -536 2
 Refer: 1619 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni06CE.medi.Extended_1
@@ -33605,6 +33616,7 @@ LayerCount: 2
 Fore
 Refer: 1650 -1 N 1 0 0 1 -92 -886 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uniFB5D.Extended_2
@@ -33632,6 +33644,7 @@ Fore
 Refer: 1318 57482 N 1 0 0 1 236 1065 2
 Refer: 1645 -1 N 1 0 0 1 -92 -536 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni0775.medi.Extended_2
@@ -33660,6 +33673,7 @@ Fore
 Refer: 1319 57483 N 1 0 0 1 162 1065 2
 Refer: 1645 -1 N 1 0 0 1 -92 -536 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni0776.medi.Extended_2
@@ -33688,6 +33702,7 @@ Fore
 Refer: 1320 57484 N 1 0 0 1 38 -1118 2
 Refer: 1645 -1 N 1 0 0 1 -116 -536 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni0777.medi.Extended_2
@@ -33716,6 +33731,7 @@ Fore
 Refer: 1341 57505 N 1 0 0 1 543 -16 2
 Refer: 1645 -1 N 1 0 0 1 -92 -536 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni063D.medi.Extended_2
@@ -33744,6 +33760,7 @@ Fore
 Refer: 1645 -1 N 1 0 0 1 18 985 2
 Refer: 1645 -1 N 1 0 0 1 -92 -536 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni063E.medi.Extended_2
@@ -33772,6 +33789,7 @@ Fore
 Refer: 1647 -1 N 1 0 0 1 18 985 2
 Refer: 1645 -1 N 1 0 0 1 -92 -536 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni063F.medi.Extended_2
@@ -33800,6 +33818,7 @@ Fore
 Refer: 1239 57398 N 1 0 0 1 554 -59 2
 Refer: 1645 -1 N 1 0 0 1 -92 -536 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni08A8.medi.Extended_2
@@ -33828,6 +33847,7 @@ Fore
 Refer: 1644 -1 N 1 0 0 1 191 1027 2
 Refer: 1645 -1 N 1 0 0 1 -92 -536 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni08A9.medi.Extended_2
@@ -33856,6 +33876,7 @@ Fore
 Refer: 1240 57399 N 1 0 0 1 559 -73 2
 Refer: 1645 -1 N 1 0 0 1 -92 -536 2
 Refer: 1627 -1 N 1 0 0 1 0 0 3
+Position2: "SinglePositioning1 subtable" dx=0 dy=0 dh=200 dv=0
 EndChar
 
 StartChar: uni06CE.medi.Extended_2
