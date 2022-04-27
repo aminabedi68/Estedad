@@ -18,4 +18,4 @@ move script folder contents to sources folder and run Build.bat
 <br>(FD version of variable font created manually.)
 <br>
 <br>
-![designspace](![designspace](https://user-images.githubusercontent.com/25493297/165493488-c088728b-09b0-478e-8e5a-5b9447a81be6.png))
+![designspace](https://user-images.githubusercontent.com/25493297/165493488-c088728b-09b0-478e-8e5a-5b9447a81be6.png)
