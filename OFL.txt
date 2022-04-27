@@ -1,4 +1,4 @@
-Copyright 2022 Estedad Project Authors (https://github.com/aminabedi68/Estedad)
+Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
