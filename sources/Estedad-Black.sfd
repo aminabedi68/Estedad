@@ -470,7 +470,7 @@ ChainPos2: coverage "kernHorizontalKerninglookup10 subtable" 0 0 0 1
  1
   SeqLookup: 0 "SinglePositioning1"
 EndFPST
-LangName: 1033 "" "" "" "6.0;amin;Estedad" "" "Version 6.1" "" "" "" "Amin Abedi" "" "" "" "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)" "http://scripts.sil.org/OFL" "" "Estedad" "Black"
+LangName: 1033 "" "" "" "6.1;amin;Estedad" "" "Version 6.1" "" "" "" "Amin Abedi" "" "" "" "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)" "http://scripts.sil.org/OFL" "" "Estedad" "Black"
 OtfFeatName: 'ss01' 1033 "alternate g"
 OtfFeatName: 'ss02' 1033 "rvrn alternates"
 OtfFeatName: 'ss03' 1033 "Persian Ligature isolated Alef-Lam"
