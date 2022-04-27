@@ -37,9 +37,4 @@ for file in os.listdir():
  PreferredStyles = FNameStyle + "-FD-" + FWeight
  font.appendSFNTName('English (US)' , 'Preferred Family' , PreferredFamily)
  font.appendSFNTName('English (US)' , 'Preferred Styles' , PreferredStyles)
- # font.removeLookup("'ss07' Style Set 7 lookup 24")
- # font.removeLookup("'ss08' Style Set 8 lookup 25")
- # font.removeLookup("'ss09' Style Set 9 lookup 26")
- # font.removeLookup("'ss10' Style Set 10 lookup 27")
- # font.removeLookup("'ss11' Style Set 11 lookup 28")
  font.generate(FNameStyle + "-FD-" + FWeight + ".ttf")
