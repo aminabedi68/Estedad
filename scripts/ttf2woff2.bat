@@ -5,4 +5,4 @@ python ttf2woff2.py \Statics
 python ttf2woff2.py \variable_ttf
 echo Done!
 echo.
-pause
+exit

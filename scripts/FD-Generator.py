@@ -11,7 +11,6 @@ for file in os.listdir():
  font = fontforge.open(file) 
  filename = os.path.splitext(file)[0]
  FNameStyle, FWeight = filename.rsplit('-',1)
- # copy Farsi digits (0 1 2 3 4 5 6 7 8 9) to Latin digits
  mapDigits = {
      "uni06F0": "zero",
      "uni0661": "one",
@@ -37,4 +36,9 @@ for file in os.listdir():
  PreferredStyles = FNameStyle + "-FD-" + FWeight
  font.appendSFNTName('English (US)' , 'Preferred Family' , PreferredFamily)
  font.appendSFNTName('English (US)' , 'Preferred Styles' , PreferredStyles)
+ # font.removeLookup("'ss07' Style Set 7 lookup 24")
+ # font.removeLookup("'ss08' Style Set 8 lookup 25")
+ # font.removeLookup("'ss09' Style Set 9 lookup 26")
+ # font.removeLookup("'ss10' Style Set 10 lookup 27")
+ # font.removeLookup("'ss11' Style Set 11 lookup 28")
  font.generate(FNameStyle + "-FD-" + FWeight + ".ttf")

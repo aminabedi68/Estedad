@@ -1,5 +1,5 @@
 echo off
-echo ===== Estedad-V6.1 Variable font build =====
+echo ===== Estedad-V7.0 Variable font build =====
 echo.
 echo Generating Kashida masters:
 echo ===========================
@@ -48,7 +48,7 @@ echo Modify Name Records:
 REM Name Records:(Args: <font-path> <string> <nameID> <platformID> <platEncID> <langID>)
 echo ====================
 python modify-name-records.py variable_ttf\Estedad-VF.ttf "Estedad VF" 1 3 1 0x409
-python modify-name-records.py variable_ttf\Estedad-VF.ttf 6.1;amin;Estedad-VF 3 3 1 0x409
+python modify-name-records.py variable_ttf\Estedad-VF.ttf 7.0;amin;Estedad-VF 3 3 1 0x409
 python modify-name-records.py variable_ttf\Estedad-VF.ttf "Estedad VF" 4 3 1 0x409
 python modify-name-records.py variable_ttf\Estedad-VF.ttf Estedad-VF 6 3 1 0x409
 echo Done!
@@ -58,10 +58,10 @@ echo ===============
 python STAT.py variable_ttf\Estedad-VF.ttf
 echo Done!
 echo.
-echo add meta/prep/avar:
+echo add meta/prep:
 echo ===================
-CMD /c ttx -m variable_ttf\Estedad-VF.ttf meta-prep-avar.ttx
-python rename_move.py \meta-prep-avar.ttf \Estedad[KSHD,wght].ttf \variable_ttf
+CMD /c ttx -m variable_ttf\Estedad-VF.ttf meta-prep.ttx
+python rename_move.py \meta-prep.ttf \Estedad[KSHD,wght].ttf \variable_ttf
 echo Done!
 echo.
 echo Delete Junk Files:

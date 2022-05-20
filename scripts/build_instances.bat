@@ -1,5 +1,5 @@
 echo off
-echo ===== Estedad-V6.1 Typeface Static fonts build =====
+echo ===== Estedad-V7.0 Typeface Static fonts build =====
 echo.
 echo Generating Kashida masters:
 echo ===========================
@@ -65,8 +65,8 @@ python fsselection.py instance_ttf\Estedad-ExtraBold.ttf instance_ttf\Estedad-Ex
 python fsselection.py instance_ttf\Estedad-Black.ttf instance_ttf\Estedad-Black.ttf
 echo Done!
 echo.
-echo add meta/prep:
-echo ==============
+echo add meta/prep/avar:
+echo ===================
 CMD /c ttx -m instance_ttf\Estedad-Thin.ttf meta-prep.ttx
 python rename_move.py \meta-prep.ttf \Estedad-Thin.ttf \instance_ttf
 CMD /c ttx -m instance_ttf\Estedad-ExtraLight.ttf meta-prep.ttx
