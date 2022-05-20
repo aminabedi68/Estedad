@@ -3,7 +3,7 @@ html {
 }
 @font-face {
   font-family: "Estedad-VF";
-  src: url("./Estedad[KSHD,wght].woff2")
+  src: url("./Estedad[KSHD,wght].ttf")
 }
 
 body {
@@ -235,6 +235,9 @@ form button:hover {
 
       input[type="checkbox"]:hover {
         background: #888;
+      }
+      input[type="checkbox"]:checked:hover {
+        background: #f00;
       }
 
       input[type="checkbox"] {
