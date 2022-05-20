@@ -1,5 +1,5 @@
 # Estedad
-![sample](https://user-images.githubusercontent.com/25493297/165099649-27b31e58-a990-4f98-ae4a-fba550b262f3.png)
+![sample](https://github.com/aminabedi68/Estedad/blob/master/documentation/Estedad-sample.png)
 Estedad(`/~este~dAd/` means Talent in persian) is an Arabic-Latin Sans-Serif typeface in 9 standard weights and a variable version(`wght`:weight/`KSHD`:Arabic simple kashida). Estedad has wide codepoint range support for most Arabic and Latin languages.
 <br>design of type is simple, smooth, compact, legible, low contrast, lowest optical size(a bit higher in bold and above weights) and optimized for web-like environments.
 <br>Estadad supporting small caps, simple fractions, tabular and old-style numbers and both decomposed(limited to basic a-z A-Z letters) and precomposed letter forms for Latin, and semi-advanced quran marking methodes for Arabic script.
@@ -18,4 +18,8 @@ move script folder contents to sources folder and run Build.bat
 <br>(FD version of variable font created manually.)
 <br>
 <br>
-![designspace](https://user-images.githubusercontent.com/25493297/165494227-499e11b5-b5df-45db-9852-0ad72147c0a6.png)
+![designspace](https://github.com/aminabedi68/Estedad/blob/master/documentation/Estedad-designspace.png)
+
+## weight axis nonlinearity:
+The weight axis has a nonlinearity mapping to decrease distance of the bottom and increase distance of the above instances.
+![diagram](https://github.com/aminabedi68/Estedad/blob/master/documentation/Estedad-diagram.png)
