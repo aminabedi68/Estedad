@@ -3,7 +3,7 @@
 Estedad(`/~este~dAd/` means Talent in persian) is an Arabic-Latin Sans-Serif typeface in 9 standard weights and a variable version(`wght`:weight/`KSHD`:Arabic simple kashida). Estedad has wide codepoint range support for most Arabic and Latin languages.
 <br>design of type is simple, smooth, compact, legible, low contrast, lowest optical size(a bit higher in bold and above weights) and optimized for web-like environments.
 <br>Estadad supporting small caps, simple fractions, tabular and old-style numbers and both decomposed(limited to basic a-z A-Z letters) and precomposed letter forms for Latin, and semi-advanced quran marking methodes for Arabic script.
-<br>this typeface is designed inside fontforge(in two thin and black masters). variable font and static instances build with fontmake and help of python scripts(fontforge python api and fonttools). whole project is licenced to be free under open font licence v1.1.
+<br>this typeface designed inside fontforge(in two thin and black masters). variable font and static instances build with fontmake and help of python scripts(fontforge python api and fonttools). whole project is licenced to be free under open font licence v1.1.
 <br>quality of variable font has improved under fontbakery advisments.
 
 ## Weights and Axes
