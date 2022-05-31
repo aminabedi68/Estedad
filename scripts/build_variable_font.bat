@@ -8,7 +8,7 @@ fontforge -script KashidaStyleGenerator.py Estedad Thin
 echo Done!
 echo.
 echo Modifications of Kashida masters:
-echo ================================================
+echo =================================
 fontforge -lang=ff -script modifications-of-Kashida-masters.pe Estedad-KThin.sfd
 fontforge -lang=ff -script modifications-of-Kashida-masters.pe Estedad-KBlack.sfd
 echo Done!
@@ -46,7 +46,7 @@ echo Done!
 echo.
 echo Modify Name Records and fontRevision:
 REM Name Records:(Args: <font-path> <string> <nameID> <platformID> <platEncID> <langID>)
-echo ====================
+echo =====================================
 python modify-name-records.py variable_ttf\Estedad-VF.ttf "Estedad VF" 1 3 1 0x409
 python modify-name-records.py variable_ttf\Estedad-VF.ttf 7.1;amin;Estedad-VF 3 3 1 0x409
 python modify-name-records.py variable_ttf\Estedad-VF.ttf "Estedad VF" 4 3 1 0x409
