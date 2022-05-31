@@ -1,21 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
  <axes>
-  <axis maximum="900" minimum="100" tag="wght" default="100" name="weight">
-   <labelname xml:lang="en">Weight</labelname>
-    <map input="100" output="100" />
-    <map input="200" output="176" />
-    <map input="300" output="258" />
-    <map input="400" output="345" />
-    <map input="500" output="440" />
-    <map input="600" output="541" />
-    <map input="700" output="651" />
-    <map input="800" output="770" />
-    <map input="900" output="900" />
-  </axis>
-  <axis maximum="200" minimum="100" tag="KSHD" default="100" name="kashida">
-   <labelname xml:lang="en">Kashida</labelname>
-  </axis>
+      <axis tag="wght" name="weight" minimum="100" maximum="900" default="100">
+        <map input="100" output="100" />
+        <map input="200" output="176" />
+        <map input="300" output="258" />
+        <map input="400" output="345" />
+        <map input="500" output="440" />
+        <map input="600" output="541" />
+        <map input="700" output="651" />
+        <map input="800" output="770" />
+        <map input="900" output="900" />
+      <labels>
+        <label uservalue="100" userminimum="100" usermaximum="150" name="Thin"/>
+        <label uservalue="200" userminimum="150" usermaximum="250" name="ExtraLight"/>
+        <label uservalue="300" userminimum="250" usermaximum="350" name="Light"/>
+        <label uservalue="400" userminimum="350" usermaximum="450" name="Regular"/>
+        <label uservalue="500" userminimum="450" usermaximum="550" name="Medium"/>
+        <label uservalue="600" userminimum="550" usermaximum="650" name="SemiBold"/>
+        <label uservalue="700" userminimum="650" usermaximum="750" name="Bold"/>
+        <label uservalue="800" userminimum="750" usermaximum="850" name="ExtraBold"/>
+        <label uservalue="900" userminimum="850" usermaximum="900" name="Black"/>
+      </labels>
+      </axis>
+    <axis tag="KSHD" name="kashida" minimum="100" maximum="200" default="100">
+      <labels>
+        <label uservalue="100" userminimum="100" usermaximum="150" name="Normal" elidable="true"/>
+        <label uservalue="200" userminimum="150" usermaximum="200" name="Taweel"/>
+      </labels>
+    </axis>
  </axes>
  <sources>
   <source familyname="Estedad" name="Estedad" stylename="Thin" filename="Estedad-Thin.ufo">

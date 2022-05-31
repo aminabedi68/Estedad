@@ -1,5 +1,5 @@
 echo off
-echo ===== Estedad-V7.0 Variable font build =====
+echo ===== Estedad-V7.1 Variable font build =====
 echo.
 echo Generating Kashida masters:
 echo ===========================
@@ -44,18 +44,14 @@ echo ====================
 python fsselection.py variable_ttf\Estedad-VF.ttf variable_ttf\Estedad-VF.ttf
 echo Done!
 echo.
-echo Modify Name Records:
+echo Modify Name Records and fontRevision:
 REM Name Records:(Args: <font-path> <string> <nameID> <platformID> <platEncID> <langID>)
 echo ====================
 python modify-name-records.py variable_ttf\Estedad-VF.ttf "Estedad VF" 1 3 1 0x409
-python modify-name-records.py variable_ttf\Estedad-VF.ttf 7.0;amin;Estedad-VF 3 3 1 0x409
+python modify-name-records.py variable_ttf\Estedad-VF.ttf 7.1;amin;Estedad-VF 3 3 1 0x409
 python modify-name-records.py variable_ttf\Estedad-VF.ttf "Estedad VF" 4 3 1 0x409
 python modify-name-records.py variable_ttf\Estedad-VF.ttf Estedad-VF 6 3 1 0x409
-echo Done!
-echo.
-echo add STAT table:
-echo ===============
-python STAT.py variable_ttf\Estedad-VF.ttf
+python modify-fontRevision.py variable_ttf\Estedad-VF.ttf 7.1
 echo Done!
 echo.
 echo add meta/prep:
