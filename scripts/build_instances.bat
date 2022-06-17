@@ -1,5 +1,5 @@
 echo off
-echo ===== Estedad-V7.1 Typeface Static fonts build =====
+echo ===== Estedad-V7.2 Typeface Static fonts build =====
 echo.
 echo Generating Kashida masters:
 echo ===========================
@@ -55,59 +55,59 @@ echo.
 echo set fsselection bit, fontRevision, version and unique ID modification:
 echo =======================================================================
 python fsselection.py instance_ttf\Estedad-Thin.ttf instance_ttf\Estedad-Thin.ttf
-python modify-name-records.py instance_ttf\Estedad-Thin.ttf "Version 7.1" 5 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Thin.ttf "Version 7.1" 5 1 0 0x0
-python modify-name-records.py instance_ttf\Estedad-Thin.ttf 7.1;amin;Estedad-Thin 3 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Thin.ttf 7.1;amin;Estedad-Thin 3 1 0 0x0
-python modify-fontRevision.py instance_ttf\Estedad-Thin.ttf 7.1
+python modify-name-records.py instance_ttf\Estedad-Thin.ttf "Version 7.2" 5 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Thin.ttf "Version 7.2" 5 1 0 0x0
+python modify-name-records.py instance_ttf\Estedad-Thin.ttf 7.2;amin;Estedad-Thin 3 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Thin.ttf 7.2;amin;Estedad-Thin 3 1 0 0x0
+python modify-fontRevision.py instance_ttf\Estedad-Thin.ttf 7.2
 python fsselection.py instance_ttf\Estedad-ExtraLight.ttf instance_ttf\Estedad-ExtraLight.ttf
-python modify-name-records.py instance_ttf\Estedad-ExtraLight.ttf "Version 7.1" 5 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-ExtraLight.ttf "Version 7.1" 5 1 0 0x0
-python modify-name-records.py instance_ttf\Estedad-ExtraLight.ttf 7.1;amin;Estedad-ExtraLight 3 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-ExtraLight.ttf 7.1;amin;Estedad-ExtraLight 3 1 0 0x0
-python modify-fontRevision.py instance_ttf\Estedad-ExtraLight.ttf 7.1
+python modify-name-records.py instance_ttf\Estedad-ExtraLight.ttf "Version 7.2" 5 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-ExtraLight.ttf "Version 7.2" 5 1 0 0x0
+python modify-name-records.py instance_ttf\Estedad-ExtraLight.ttf 7.2;amin;Estedad-ExtraLight 3 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-ExtraLight.ttf 7.2;amin;Estedad-ExtraLight 3 1 0 0x0
+python modify-fontRevision.py instance_ttf\Estedad-ExtraLight.ttf 7.2
 python fsselection.py instance_ttf\Estedad-Light.ttf instance_ttf\Estedad-Light.ttf
-python modify-name-records.py instance_ttf\Estedad-Light.ttf "Version 7.1" 5 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Light.ttf "Version 7.1" 5 1 0 0x0
-python modify-name-records.py instance_ttf\Estedad-Light.ttf 7.1;amin;Estedad-Light 3 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Light.ttf 7.1;amin;Estedad-Light 3 1 0 0x0
-python modify-fontRevision.py instance_ttf\Estedad-Light.ttf 7.1
+python modify-name-records.py instance_ttf\Estedad-Light.ttf "Version 7.2" 5 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Light.ttf "Version 7.2" 5 1 0 0x0
+python modify-name-records.py instance_ttf\Estedad-Light.ttf 7.2;amin;Estedad-Light 3 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Light.ttf 7.2;amin;Estedad-Light 3 1 0 0x0
+python modify-fontRevision.py instance_ttf\Estedad-Light.ttf 7.2
 python fsselection.py instance_ttf\Estedad-Regular.ttf instance_ttf\Estedad-Regular.ttf
-python modify-name-records.py instance_ttf\Estedad-Regular.ttf "Version 7.1" 5 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Regular.ttf "Version 7.1" 5 1 0 0x0
-python modify-name-records.py instance_ttf\Estedad-Regular.ttf 7.1;amin;Estedad-Regular 3 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Regular.ttf 7.1;amin;Estedad-Regular 3 1 0 0x0
-python modify-fontRevision.py instance_ttf\Estedad-Regular.ttf 7.1
+python modify-name-records.py instance_ttf\Estedad-Regular.ttf "Version 7.2" 5 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Regular.ttf "Version 7.2" 5 1 0 0x0
+python modify-name-records.py instance_ttf\Estedad-Regular.ttf 7.2;amin;Estedad-Regular 3 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Regular.ttf 7.2;amin;Estedad-Regular 3 1 0 0x0
+python modify-fontRevision.py instance_ttf\Estedad-Regular.ttf 7.2
 python fsselection.py instance_ttf\Estedad-Medium.ttf instance_ttf\Estedad-Medium.ttf
-python modify-name-records.py instance_ttf\Estedad-Medium.ttf "Version 7.1" 5 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Medium.ttf "Version 7.1" 5 1 0 0x0
-python modify-name-records.py instance_ttf\Estedad-Medium.ttf 7.1;amin;Estedad-Medium 3 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Medium.ttf 7.1;amin;Estedad-Medium 3 1 0 0x0
-python modify-fontRevision.py instance_ttf\Estedad-Medium.ttf 7.1
+python modify-name-records.py instance_ttf\Estedad-Medium.ttf "Version 7.2" 5 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Medium.ttf "Version 7.2" 5 1 0 0x0
+python modify-name-records.py instance_ttf\Estedad-Medium.ttf 7.2;amin;Estedad-Medium 3 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Medium.ttf 7.2;amin;Estedad-Medium 3 1 0 0x0
+python modify-fontRevision.py instance_ttf\Estedad-Medium.ttf 7.2
 python fsselection.py instance_ttf\Estedad-SemiBold.ttf instance_ttf\Estedad-SemiBold.ttf
-python modify-name-records.py instance_ttf\Estedad-SemiBold.ttf "Version 7.1" 5 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-SemiBold.ttf "Version 7.1" 5 1 0 0x0
-python modify-name-records.py instance_ttf\Estedad-SemiBold.ttf 7.1;amin;Estedad-SemiBold 3 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-SemiBold.ttf 7.1;amin;Estedad-SemiBold 3 1 0 0x0
-python modify-fontRevision.py instance_ttf\Estedad-SemiBold.ttf 7.1
+python modify-name-records.py instance_ttf\Estedad-SemiBold.ttf "Version 7.2" 5 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-SemiBold.ttf "Version 7.2" 5 1 0 0x0
+python modify-name-records.py instance_ttf\Estedad-SemiBold.ttf 7.2;amin;Estedad-SemiBold 3 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-SemiBold.ttf 7.2;amin;Estedad-SemiBold 3 1 0 0x0
+python modify-fontRevision.py instance_ttf\Estedad-SemiBold.ttf 7.2
 python fsselection.py instance_ttf\Estedad-Bold.ttf instance_ttf\Estedad-Bold.ttf
-python modify-name-records.py instance_ttf\Estedad-Bold.ttf "Version 7.1" 5 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Bold.ttf "Version 7.1" 5 1 0 0x0
-python modify-name-records.py instance_ttf\Estedad-Bold.ttf 7.1;amin;Estedad-Bold 3 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Bold.ttf 7.1;amin;Estedad-Bold 3 1 0 0x0
-python modify-fontRevision.py instance_ttf\Estedad-Bold.ttf 7.1
+python modify-name-records.py instance_ttf\Estedad-Bold.ttf "Version 7.2" 5 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Bold.ttf "Version 7.2" 5 1 0 0x0
+python modify-name-records.py instance_ttf\Estedad-Bold.ttf 7.2;amin;Estedad-Bold 3 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Bold.ttf 7.2;amin;Estedad-Bold 3 1 0 0x0
+python modify-fontRevision.py instance_ttf\Estedad-Bold.ttf 7.2
 python fsselection.py instance_ttf\Estedad-ExtraBold.ttf instance_ttf\Estedad-ExtraBold.ttf
-python modify-name-records.py instance_ttf\Estedad-ExtraBold.ttf "Version 7.1" 5 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-ExtraBold.ttf "Version 7.1" 5 1 0 0x0
-python modify-name-records.py instance_ttf\Estedad-ExtraBold.ttf 7.1;amin;Estedad-ExtraBold 3 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-ExtraBold.ttf 7.1;amin;Estedad-ExtraBold 3 1 0 0x0
-python modify-fontRevision.py instance_ttf\Estedad-ExtraBold.ttf 7.1
+python modify-name-records.py instance_ttf\Estedad-ExtraBold.ttf "Version 7.2" 5 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-ExtraBold.ttf "Version 7.2" 5 1 0 0x0
+python modify-name-records.py instance_ttf\Estedad-ExtraBold.ttf 7.2;amin;Estedad-ExtraBold 3 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-ExtraBold.ttf 7.2;amin;Estedad-ExtraBold 3 1 0 0x0
+python modify-fontRevision.py instance_ttf\Estedad-ExtraBold.ttf 7.2
 python fsselection.py instance_ttf\Estedad-Black.ttf instance_ttf\Estedad-Black.ttf
-python modify-name-records.py instance_ttf\Estedad-Black.ttf "Version 7.1" 5 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Black.ttf "Version 7.1" 5 1 0 0x0
-python modify-name-records.py instance_ttf\Estedad-Black.ttf 7.1;amin;Estedad-Black 3 3 1 0x409
-python modify-name-records.py instance_ttf\Estedad-Black.ttf 7.1;amin;Estedad-Black 3 1 0 0x0
-python modify-fontRevision.py instance_ttf\Estedad-Black.ttf 7.1
+python modify-name-records.py instance_ttf\Estedad-Black.ttf "Version 7.2" 5 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Black.ttf "Version 7.2" 5 1 0 0x0
+python modify-name-records.py instance_ttf\Estedad-Black.ttf 7.2;amin;Estedad-Black 3 3 1 0x409
+python modify-name-records.py instance_ttf\Estedad-Black.ttf 7.2;amin;Estedad-Black 3 1 0 0x0
+python modify-fontRevision.py instance_ttf\Estedad-Black.ttf 7.2
 echo Done!
 echo.
 echo add meta/prep/avar:
