@@ -22,4 +22,3 @@ move script folder contents to sources folder and run Build.bat
 
 ## weight axis nonlinearity:
 The weight axis has a nonlinearity mapping to decrease distance of the bottom and increase distance of the above instances.
-![diagram](https://github.com/aminabedi68/Estedad/blob/master/documentation/Estedad-diagram.png)
