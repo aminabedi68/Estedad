@@ -4,14 +4,14 @@ FullName: Estedad Black
 FamilyName: Estedad Black
 Weight: Black
 Copyright: Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)
-Version: 7.2
+Version: 7.3
 ItalicAngle: 0
 UnderlinePosition: -750
 UnderlineWidth: 150
 Ascent: 1638
 Descent: 410
 InvalidEm: 0
-sfntRevision: 0x00073333
+sfntRevision: 0x00074ccd
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1595075592
-ModificationTime: 1658315281
+ModificationTime: 1658330383
 PfmFamily: 17
 TTFWeight: 900
 TTFWidth: 5
@@ -601,7 +601,7 @@ ChainPos2: coverage "kernHorizontalKerninglookup10 subtable" 0 0 0 1
  1
   SeqLookup: 0 "SinglePositioning1"
 EndFPST
-LangName: 1033 "" "" "" "" "" "Version 7.2" "" "" "" "Amin Abedi" "" "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" "https://scripts.sil.org/OFL" "" "Estedad" "Black"
+LangName: 1033 "" "" "" "" "" "Version 7.3" "" "" "" "Amin Abedi" "" "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" "https://scripts.sil.org/OFL" "" "Estedad" "Black"
 GaspTable: 1 65535 15 1
 OtfFeatName: 'ss01' 1033 "alternate g"
 OtfFeatName: 'ss02' 1033 "rvrn alternates"
@@ -614,7 +614,7 @@ NameList: AGL For New Fonts
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 13 9
+WinInfo: 24 8 2
 BeginPrivate: 7
 BlueValues 37 [-11 0 1137 1147 1507 1517 1562 1565]
 OtherBlues 11 [-471 -437]

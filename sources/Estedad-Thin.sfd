@@ -4,14 +4,14 @@ FullName: Estedad Thin
 FamilyName: Estedad Thin
 Weight: Thin
 Copyright: Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)
-Version: 7.2
+Version: 7.3
 ItalicAngle: 0
 UnderlinePosition: -750
 UnderlineWidth: 150
 Ascent: 1638
 Descent: 410
 InvalidEm: 0
-sfntRevision: 0x00073333
+sfntRevision: 0x00074ccd
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1595063989
-ModificationTime: 1658315268
+ModificationTime: 1658330371
 PfmFamily: 17
 TTFWeight: 100
 TTFWidth: 5
@@ -601,7 +601,7 @@ ChainPos2: coverage "kernHorizontalKerninglookup10 subtable" 0 0 0 1
  1
   SeqLookup: 0 "SinglePositioning1"
 EndFPST
-LangName: 1033 "" "" "" "" "" "Version 7.2" "" "" "" "Amin Abedi" "" "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" "https://scripts.sil.org/OFL" "" "Estedad" "Thin"
+LangName: 1033 "" "" "" "" "" "Version 7.3" "" "" "" "Amin Abedi" "" "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" "https://scripts.sil.org/OFL" "" "Estedad" "Thin"
 GaspTable: 1 65535 15 1
 OtfFeatName: 'ss01' 1033 "alternate g"
 OtfFeatName: 'ss02' 1033 "rvrn alternates"
