@@ -781,5 +781,20 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
+	   <script>
+if (window.visualViewport) {
+  const footer = document.querySelector("footer");
+
+  const adjustFooter = () => {
+    const vv = window.visualViewport;
+    const bottomOffset = window.innerHeight - vv.height - vv.offsetTop;
+    footer.style.bottom = bottomOffset > 0 ? bottomOffset + "px" : "0";
+  };
+
+  visualViewport.addEventListener("resize", adjustFooter);
+  visualViewport.addEventListener("scroll", adjustFooter);
+  adjustFooter();
+}
+</script>
    </body>
 </html>
