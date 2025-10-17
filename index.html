@@ -2,7 +2,7 @@
 <html lang="en" translate="no">
    <head>
       <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-      <meta name="theme-color" content="#ffffff" id="theme-color">
+      <meta name="theme-color" content="#000000" id="theme-color">
       <meta name="google" content="notranslate">
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -796,19 +796,6 @@ if (window.visualViewport) {
   visualViewport.addEventListener("scroll", adjustFooter);
   adjustFooter();
 }
-</script>
-	   <script>
-  function updateThemeColor() {
-    const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) {
-      meta.setAttribute('content', dark ? '#121212' : '#ffffff');
-    }
-  }
-
-  updateThemeColor(); // run at load
-  window.matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener('change', updateThemeColor); // listen for changes
 </script>
    </body>
 </html>
