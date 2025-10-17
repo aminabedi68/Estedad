@@ -781,5 +781,33 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
+	   <script>
+if (window.visualViewport) {
+  const footer = document.querySelector("footer");
+
+  function updateFooter() {
+    const vv = window.visualViewport;
+    const offset = window.innerHeight - vv.height - vv.offsetTop;
+    footer.style.transform = `translateY(-${offset}px)`;
+  }
+
+  // به‌روزرسانی بلادرنگ با requestAnimationFrame loop
+  let running = true;
+  function loop() {
+    if (!running) return;
+    updateFooter();
+    requestAnimationFrame(loop);
+  }
+
+  requestAnimationFrame(loop);
+
+  // وقتی صفحه پنهان شد (برای صرفه‌جویی)
+  document.addEventListener("visibilitychange", () => {
+    running = !document.hidden;
+    if (running) requestAnimationFrame(loop);
+  });
+}
+</script>
+
    </body>
 </html>
