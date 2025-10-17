@@ -88,16 +88,16 @@ body.darkmode .fontheader {
 
 /* =================== Footer =================== */
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px; /* ارتفاع فوتر رو بر اساس طراحی خودتون تنظیم کنید */
-    background: #333; /* رنگ فعلی فوتر */
-    color: #fff;
-    z-index: 1000;
-    transition: transform 0.2s ease-out; /* برای انیمیشن روان */
-    transform: translateY(0); /* مقدار اولیه برای transform */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  border-top: 1.5px solid #AAA;
+  height: 100px;
+  overflow-x: hidden;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 body.darkmode footer {
   background-color: black;
