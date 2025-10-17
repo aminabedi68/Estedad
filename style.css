@@ -458,6 +458,7 @@ bottom: 113px;
     gap: 6px;
   }
   footer {
+    position: sticky;
     padding-bottom: 8px;
   }
   .pc-tab nav ul {
