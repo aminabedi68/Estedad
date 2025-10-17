@@ -86,17 +86,12 @@ body.darkmode .fontheader {
 
 /* =================== Footer =================== */
 footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
-  width: 100vw;
-  max-width: 100%;
-  overflow-x: hidden;
+  width: 100%;
   background-color: white;
-  display: block;
-  padding: 0;
   z-index: 10;
-  height: 100px;
   border-top: 1.5px solid #AAA;
 }
 body.darkmode footer {
