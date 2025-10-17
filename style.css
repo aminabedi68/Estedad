@@ -1,335 +1,527 @@
-html {
-  overflow-y: scroll;
-}
-@font-face {
-  font-family: "Estedad-VF";
-  src: url("./Estedad[KSHD,wght].woff2")
+:root {
+  --accent: #ff4242;
+  --accent-bg: #ff424222;
 }
 
-body {
-  display: grid;
-  background-color: #eee;
-  color: #333;
+/* =================== Font =================== */
+@font-face {
+  font-family: "Estedad";
+  src: url("./Estedad[KSHD,wght].ttf");
+}
+
+/* =================== Reset & Base =================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  height:100%;
+  overflow-x: hidden;
+  background-color: #f5f5f1;
+  color: #222;
+  font-family: monospace;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* ---- Dark Mode ---- */
+body.darkmode {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+/* =================== Header =================== */
+header {
+  padding: 8px;
+}
+
+header img {
+  max-width: 56px;
+  height: auto;
+}
+
+a {
+  font-size: 12px;
+  color: black;
+  text-underline-offset: 4px;
+  text-decoration-color: #ff4242;
+}
+body.darkmode a {
+  color: white;
+}
+
+.fontheader {
+  font-size: 15px;
+  color: black;
+}
+body.darkmode .fontheader {
+  color: white;
+}
+
+/* =================== Main Text =================== */
+.dynamic {
+  font-size: 26px;
+  font-family: "Estedad";
+  line-height: 1.5em;
+  flex-direction: column;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;          /* allow multi-line flex content */
+  align-items: stretch;
+}
+.dynamic p,
+.tabcontent p {
+  white-space: normal;       /* allow wrapping */
+  word-wrap: break-word;     /* legacy support */
+  overflow-wrap: anywhere;   /* modern browsers */
+  max-width: 100%;           /* prevent overflow */
+  box-sizing: border-box;
+}
+
+/* =================== Footer =================== */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: white;
+  display: block;
+  padding: 0;
+  z-index: 10;
+  height: 100px;
+  border-top: 1.5px solid #AAA;
+}
+body.darkmode footer {
+  background-color: black;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 6px 10px 14px 10px;
+  box-sizing: border-box;
+  line-height: 1.3em;
+  font-size: 12px;
+}
+
+/* =================== Tabs =================== */
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3,
+#tab4:checked ~ section .tab4 {
+  display: inline-flex;
+}
+
+#tab1:checked ~ nav .tab1 label,
+#tab2:checked ~ nav .tab2 label,
+#tab3:checked ~ nav .tab3 label,
+#tab4:checked ~ nav .tab4 label {
+	color: black;
+}
+body.darkmode #tab1:checked ~ nav .tab1 label,
+body.darkmode #tab2:checked ~ nav .tab2 label,
+body.darkmode #tab3:checked ~ nav .tab3 label,
+body.darkmode #tab4:checked ~ nav .tab4 label {
+	color: white;
+}
+
+.pc-tab nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
   padding: 0;
   margin: 0;
 }
 
-main{
-  direction: rtl;
-  margin: 1.5em 24.5em 1.5em 1.5em;
-  font-family: "Estedad-VF", sans-serif;
-  line-height: 1.5;
-  word-break: break-word;
-}
-.aside-child{
-    width: 100%;
-	overflow-y: hidden;
-    height: 100%;
-    padding-right: 17px;
-	box-sizing: content-box;
-}
- /* Hide scrollbar for Chrome, Safari and Opera */
-.aside-child::-webkit-scrollbar {
-  display: none;
+.pc-tab ul li label {
+  color: #4445;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 10px;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.aside-child {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-} 
-sup{
-  font-size: 12px;
-}
-aside{
-  font-family: "Estedad-VF", sans-serif;
-  width: 17.3em;
-  position: fixed;
-  top: 1.5em;
-  right: 1.5em;
-  z-index: 1;
-  display: block;
-  line-height: 1.4;
-  overflow: hidden;
-  height: 90%;
-}
-#FontToggle{
-  background-color: transparent;
-}
-#fixedbutton {
-    font-family: "Estedad-VF", sans-serif;
-    font-variation-settings: "wght" 400;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background-color: #ff4242;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border: none;
-	border-radius: 8px;
-    font-size: 16px;
-    padding: 5px 10px;
-}
-main, aside {
-  padding: 1em 2em;
-  color: #222;
-  background-color: white;
-  border-radius: 0.5em;
+body.darkmode .pc-tab ul li label {
+  color: #5e5e5e;
 }
 
-form {
-  font-family: "Estedad-VF", sans-serif;
-  /* background-color: white; */
-  border-radius: 0.2em;
-}
-::selection {
-    background-color: #ff8080;
-}
-input,
-button,
-textarea,
-select {
-  /* font-size: 12px; */
-  color: #ff4242;
-  font-family: "Estedad-VF", sans-serif;
-  font-variation-settings: "wght" 500;
-  outline: none;
-}
-*:focus {
-    outline: none;
-}
-h1 {
-  color: #222;
-  font-variation-settings: "wght" 500;
-  font-size: 28px;
-}
-a {
-  outline: none;
-  text-decoration: none;
-  cursor:pointer;
-  color: #ff4242;
-  font-variation-settings: "wght" 600;
-}
-
-form p {
-  margin-top: -0.5em;
-}
-
-form p:first-child {
-  margin-top: 0;
-}
-
-form p:last-child {
-  margin-bottom: 0;
-}
-
-form p > span {
+/* =================== Sliders =================== */
+.font-slider {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  padding: 6px 6px;
 }
 
-form button {
-  background-color: transparent;
-  padding: 0.25em 0.5em;
-  margin-left: 0.5em;
-  border: none;
-  border-radius: 0;
+.font-slider label {
+  /* flex: 0 0 90px; */
+  /* min-width: 70px; */
+  /* text-align: left; */
 }
 
-form button:focus,
-form button:hover {
-  color: #ff4242;
-  outline: none;
+.font-slider span {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
-.tab {
-  overflow: hidden;
-}
-
-.tab button {
-  background-color: inherit;
-  float: center;
-  border: none;
+.slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 2px;
   outline: none;
   cursor: pointer;
-  padding: 5px 5px;
-  font: 18px Estedad-VF, sans-serif;
-  font-variation-settings: "wght" 550;
+}
+.slider {
+  -webkit-appearance: none; /* لازم برای Chrome/Safari */
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+  outline: none;
 }
 
-
-.tab button:hover {
-  color: #ff4242;
+/* Track برای WebKit */
+.slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: #ccc;
+}
+body.darkmode .slider::-webkit-slider-runnable-track {
+  background: #333;
 }
 
-
-.tab button.active {
-  color: #ff4242;
+/* Thumb برای WebKit */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 15px;
+  background: var(--accent);
+  cursor: pointer;
+  margin-top: -6px; /* برای مرکز شدن روی track */
+  border-radius: 8px;
 }
 
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
+/* برای Firefox */
+.slider::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: #ccc;
 }
-@media screen and (min-width: 50em) {
-  body {
-    display: grid;
-    grid-template-areas:
-    "main aside"
+body.darkmode .slider::-moz-range-track {
+  background: #333;
 }
-    grid-gap: 0;
-  }
-  input[type="range"] {
-    margin-top: 8px;
-    -webkit-appearance: none;
-  	-moz-appearance: none;
-  	background: #00000020;
-  	border-radius: 2px;
-    width: 100%;
-    height: 5px;
-	margin-left: 10px;
-	margin-right: 10px;
-    outline: 0;
-    border: none;
-  }
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: #555;
-    width: 10px;
-    height: 14px;
-    border-radius: 20%;
-    cursor: pointer;
-    border: 0px;
-  }
-    input[type="range"]::-moz-range-thumb {
-      -moz-appearance: none;
-      background-color: #555;
-      width: 10px;
-      height: 14px;
-      border-radius: 20%;
-      cursor: pointer;
-      border: 0px;
-    }
-     input[type="range"]::-webkit-slider-thumb:active {
-      transform: scale(1.1);
-      background-color: #ff4242;
-      }
-     input[type="range"]::-moz-range-thumb:active {
-      transform: scale(1.1);
-      background-color: #ff4242;
-      }
-    input[type="range"]::-webkit-slider-thumb:hover {
-      transform: scale(1.1);
-      background-color: #ff4242;
-    }
-      input[type="range"]::-moz-range-thumb:hover {
-        transform: scale(1.1);
-        background-color: #ff4242;
-      }
-      input[type="checkbox"]:checked {
-        background: #ff4242;
-      }
+.slider::-moz-range-thumb {
+  width: 30px;
+  height: 15px;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+}
 
-      input[type="checkbox"]:hover {
-        background: #888;
-      }
-      input[type="checkbox"]:checked:hover {
-        background: #f00;
-      }
+body.darkmode .slider {
+  background: #ff424288;
+}
 
-      input[type="checkbox"] {
-        margin-right: 10px;
-        vertical-align: middle;
-        cursor: pointer;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        outline: 0;
-        background: lightgray;
-        height: 14px;
-        width: 14px;
-        border: none;
-      }
+/* =================== Checkbox Buttons =================== */
+.hidden {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
 
-.social-list {
-    text-align: center;
-    font-size: 0;
+input[type=checkbox]+label {
+  color: #222;
+  background-color: #ECECEE;
+  padding: 6px;
+  border-radius: 25px;
+  cursor: pointer;
 }
-.social-list li {
-    display: inline-block;
-    width: 60px;
-    position: relative;
+input[type=checkbox]:checked+label {
+  color: var(--accent);
+  background-color: var(--accent-bg);
 }
-.social-list {
-    padding-left: 0px;
-    text-align: center;
-    font-size: 0;
-    margin-top: 10px;
-    margin-bottom: -20px;
+input[type=checkbox]+label:hover {
+  background-color: #dbdbdb;
 }
-.social-list li > a:hover > svg {
-    fill: #ff4242;
+input[type=checkbox]:checked+label:hover {
+  background-color: #ff4242;
+  color: white;
 }
-.social-list li > a > svg {
-    top: 10%;
-    width: 40%;
-    height: 40%;
-    fill: #888;
+body.darkmode input[type=checkbox]+label {
+  color: #aaa;
+  background-color: #111;
 }
+body.darkmode input[type=checkbox]:checked+label {
+  color: var(--accent);
+  background-color: var(--accent-bg);
+}
+body.darkmode input[type=checkbox]+label:hover {
+  background-color: #282828;
+}
+body.darkmode input[type=checkbox]:checked+label:hover {
+  background-color: #ff4242;
+  color: black;
+}
+
+/* =================== Buttons =================== */
+#randbutton {
+  padding: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 2em;
+}
+#randbutton:hover {
+  background: var(--accent);
+  border-radius: 5px;
+  color: white;
+}
+
+/* =================== Right-Side Header (CSS code preview) =================== */
+.right-side-header {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+  font-size: 12px !important;
+  max-width: calc(100% - 20px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.right-side-header:hover {
+  text-decoration: underline;
+}
+
+/* =================== Copy Alert =================== */
+.show, .hide {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 8px;
+  background: green;
+  color: white;
+  transition: opacity 0.5s;
+}
+.show { opacity: 1; }
+.hide { opacity: 0; }
+.SS{
+	font-family: Estedad;
+	font-size: 12px;
+}
+
+body.darkmode .fontamin-logo{
+	filter: invert(100%);
+}
+
+body.darkmode .show, body.darkmode .hide{
+	color: black;
+	background: white;
+}
+[contenteditable] {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  -moz-outline-style: none;
+}
+
 #tabcontentselector {
   padding: 5px 5px;
   border: none;
   color: #ff4242;
   background-color: #ffffff00;
-  height: 34px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-size: 15px;
-}
-#tabcontentselector:hover {
-	color: #555;
+  font-size: 12px;
+  line-height: 1.5em;
+  font-family: Estedad;
+  margin: 0px 0px 0px 30px;
 }
 
-.collapsible {
-  background-color: transparent;
-  color: #ff4242;
-  cursor: pointer;
-  padding: 5px;
-  width: 100%;
-  border: none;
-  text-align: center;
+form{
+  position: fixed;
+  left: 14px;
+  bottom: 110px;
+  background: white;
+  border: 1.5px solid #AAA;
+  border-radius: 20px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  -moz-outline-style: none;
+}
+.tabcontent {
+  display: none;
+}
+select:focus {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  -moz-outline-style: none;
+}
+select {
   outline: none;
-  font-size: 15px;
-  background-color: #88888811;
-  margin: 5px;
+  -webkit-tap-highlight-color: transparent; /* حذف هایلایت آبی در موبایل */
+  -webkit-user-select: text; /* حفظ انتخاب متن */
+}
+option,optgroup {
+  background-color: #f5f5f1; /* Only works in some browsers */
+  color: black;
+  font-family: Estedad;
 }
 
-.collapsible:hover {
-  color: #555;
+.DownloadIcon{
+	  background:#f5f5f1;
+	  position:fixed;
+	  right:25px;
+	  bottom:109px;
+	  height:33px;
+}
+body.darkmode .DownloadIcon{
+	  background:#222;
 }
 
-.reset:hover{
-	color: #555;
+.DarModeIcon{
+	  background:#f5f5f1;
+	  height:33px;
+	  pointer-events:auto;
+	  cursor:pointer;
+	  z-index: 10;
+}
+body.darkmode .DarModeIcon{
+	  background:#222;
 }
 
-a:hover{
-	color: #555;
+
+
+
+
+.toggle {
+display: none;
 }
 
-.content {
-  padding: 0 5px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+
+.DarkModeLabel {
+cursor: pointer;
+display: inline-block;
+position: fixed;
+bottom: 10px;
+left: 10px;
+}
+
+
+.icon {
+height:24px;
+position:fixed;
+left: 14px;
+bottom: 113px;
+}
+
+
+.on { opacity: 0 }
+.off { opacity: 1 }
+
+
+.toggle:checked + label .on { opacity: 1; transform: scale(1); }
+.toggle:checked + label .off { opacity: 0; transform: scale(0.8); }
+/* =================== Responsive =================== */
+@media (max-width: 600px) {
+  .font-slider label {
+    /* flex: 0 0 120px; */
+    font-size: 12px;
+  }
+  .font-slider {
+    gap: 6px;
+  }
+  footer {
+    padding-bottom: 8px;
+  }
+  .pc-tab nav ul {
+    gap: 4px;
+    justify-content: flex-start;
+  }
+  .right-side-header {
+    font-size: 10px !important;
+    bottom: 4px;
+  }
+  .DownloadIcon {
+	  right:10px;
+  }
+}
+/* =================== Horizontal scroll only for tab3 =================== */
+#tab2:checked ~ section,
+#tab3:checked ~ section {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3 {
+  display: inline-flex;
+  min-width: max-content;
+  white-space: nowrap;
+  gap: 8px;
+  padding-bottom: 6px;
+}
+
+#tab2:checked ~ section .tab2 p,
+#tab3:checked ~ section .tab3 p {
+  flex: 0 0 auto;
+  padding: 6px 0;
+}
+
+::selection {
+    background-color: #ff8080;
+}
+
+/* --- Fix touch behavior for Tab2 horizontal scroll --- */
+#tab2:checked ~ section {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; /* smooth scroll */
+  touch-action: pan-x; /* allow horizontal scrolls */
+}
+
+/* Let sliders handle vertical/horizontal touch gestures normally */
+#tab2:checked ~ section .tab2 input[type=range] {
+  touch-action: none; /* allow dragging */
+}
+/* ===== Slider value inside thumb ===== */
+.slider-value {
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  color: white;
+  background: transparent;
+  pointer-events: none;
   user-select: none;
+  font-weight: bold;
+}
+.font-slider {
+  position: relative; /* keep correct positioning context */
 }
