@@ -781,19 +781,34 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-	   <script>
+<script>
 if (window.visualViewport) {
   const footer = document.querySelector("footer");
+  let lastOffset = 0;
+  let ticking = false;
 
-  const adjustFooter = () => {
+  function updateFooterPosition() {
     const vv = window.visualViewport;
     const bottomOffset = window.innerHeight - vv.height - vv.offsetTop;
-    footer.style.bottom = bottomOffset > 0 ? bottomOffset + "px" : "0";
-  };
 
-  visualViewport.addEventListener("resize", adjustFooter);
-  visualViewport.addEventListener("scroll", adjustFooter);
-  adjustFooter();
+    // فقط وقتی تغییر کرده به‌روزرسانی کن تا لگ کم شه
+    if (bottomOffset !== lastOffset) {
+      footer.style.transform = `translateY(-${bottomOffset}px)`;
+      lastOffset = bottomOffset;
+    }
+    ticking = false;
+  }
+
+  function onViewportChange() {
+    if (!ticking) {
+      requestAnimationFrame(updateFooterPosition);
+      ticking = true;
+    }
+  }
+
+  visualViewport.addEventListener("resize", onViewportChange);
+  visualViewport.addEventListener("scroll", onViewportChange);
+  updateFooterPosition();
 }
 </script>
    </body>
