@@ -93,6 +93,8 @@ footer {
   background-color: white;
   z-index: 10;
   border-top: 1.5px solid #AAA;
+  height: 100px;
+  overflow-x: hidden;
 }
 body.darkmode footer {
   background-color: black;
