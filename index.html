@@ -2,7 +2,6 @@
 <html lang="en" translate="no">
    <head>
       <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
       <meta name="google" content="notranslate">
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -781,53 +780,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
-</script>
-<script>
-	// تنظیم موقعیت فوتر هنگام تغییر اندازه viewport
-function adjustFooter() {
-    const footer = document.querySelector('.footer');
-    if (!footer) return; // اگر فوتر پیدا نشد، ادامه نده
-
-    if (window.visualViewport) {
-        // استفاده از visualViewport برای دقت بیشتر در موبایل
-        const viewportHeight = window.visualViewport.height;
-        const footerHeight = footer.offsetHeight;
-        const offset = window.innerHeight - viewportHeight; // ارتفاع کیبورد
-
-        if (offset > 0) {
-            // کیبورد باز است، فوتر رو به بالا منتقل کن
-            footer.style.transform = `translateY(-${offset}px)`;
-        } else {
-            // کیبورد بسته است، فوتر به حالت اولیه برگرده
-            footer.style.transform = `translateY(0)`;
-        }
-    } else {
-        // فال‌بک برای مرورگرهایی که visualViewport رو پشتیبانی نمی‌کنن
-        const viewportHeight = window.innerHeight;
-        if (viewportHeight < window.screen.height) {
-            footer.style.transform = `translateY(-${window.screen.height - viewportHeight}px)`;
-        } else {
-            footer.style.transform = `translateY(0)`;
-        }
-    }
-}
-
-// افزودن رویدادهای لازم
-if (window.visualViewport) {
-    window.visualViewport.addEventListener('resize', () => {
-        requestAnimationFrame(adjustFooter);
-    });
-    window.visualViewport.addEventListener('scroll', () => {
-        requestAnimationFrame(adjustFooter);
-    });
-} else {
-    window.addEventListener('resize', () => {
-        requestAnimationFrame(adjustFooter);
-    });
-}
-
-// اجرای اولیه برای تنظیم موقعیت
-adjustFooter();
 </script>
 </body>
 </html>
