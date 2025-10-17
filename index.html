@@ -781,33 +781,31 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-	   <script>
+<script>
 if (window.visualViewport) {
   const footer = document.querySelector("footer");
+  let keyboardOpen = false;
 
-  function updateFooter() {
+  function adjustFooter() {
     const vv = window.visualViewport;
     const offset = window.innerHeight - vv.height - vv.offsetTop;
-    footer.style.transform = `translateY(-${offset}px)`;
+
+    // اگر اختلاف از 100px بیشتر بود یعنی کیبورد باز شده
+    if (offset > 100 && !keyboardOpen) {
+      keyboardOpen = true;
+      footer.style.transform = `translateY(-${offset}px)`;
+    } 
+    else if (offset <= 100 && keyboardOpen) {
+      keyboardOpen = false;
+      footer.style.transform = `translateY(0)`;
+    }
   }
 
-  // به‌روزرسانی بلادرنگ با requestAnimationFrame loop
-  let running = true;
-  function loop() {
-    if (!running) return;
-    updateFooter();
-    requestAnimationFrame(loop);
-  }
-
-  requestAnimationFrame(loop);
-
-  // وقتی صفحه پنهان شد (برای صرفه‌جویی)
-  document.addEventListener("visibilitychange", () => {
-    running = !document.hidden;
-    if (running) requestAnimationFrame(loop);
-  });
+  visualViewport.addEventListener("resize", adjustFooter);
+  visualViewport.addEventListener("scroll", adjustFooter);
 }
 </script>
+
 
    </body>
 </html>
