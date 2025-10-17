@@ -781,31 +781,5 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-<script>
-if (window.visualViewport) {
-  const footer = document.querySelector("footer");
-  let keyboardOpen = false;
-
-  function adjustFooter() {
-    const vv = window.visualViewport;
-    const offset = window.innerHeight - vv.height - vv.offsetTop;
-
-    // اگر اختلاف از 100px بیشتر بود یعنی کیبورد باز شده
-    if (offset > 100 && !keyboardOpen) {
-      keyboardOpen = true;
-      footer.style.transform = `translateY(-${offset}px)`;
-    } 
-    else if (offset <= 100 && keyboardOpen) {
-      keyboardOpen = false;
-      footer.style.transform = `translateY(0)`;
-    }
-  }
-
-  visualViewport.addEventListener("resize", adjustFooter);
-  visualViewport.addEventListener("scroll", adjustFooter);
-}
-</script>
-
-
-   </body>
+</body>
 </html>
