@@ -544,21 +544,29 @@
                      <input class="slider" autocomplete="off" type="range" id="wght" step="1" min="100" max="900" value="400" aria-valuemin="100" aria-valuemax="900" aria-valuenow="400" Style="height:4px;">
                      </span>
                   </p>
-                  <p class="font-slider">
-                     <label for="KSHD">Kashida:</label>
-                     <span>
-                     <input class="slider" autocomplete="off" type="range" id="KSHD" step="1" min="100" max="200" value="100" aria-valuemin="100" aria-valuemax="200" aria-valuenow="100" Style="height:4px;">
-                     </span>
-                  </p>
                   <br>
                   <div Style="align-content: center;">
                      <p class="right-side-header" id="text1" onclick="copyElementText(this.id); ShowSecond();"></p>
                   </div>
                </div>
                <div class="tab3">
-                  <p class="font-slider"><input class="hidden" type="checkbox" id="ss01" onchange="refreshFeatures()" autocomplete="off"></input><label for="ss01">Style Set 1: <span><span style="font-feature-settings: 'ss01' off" class="SS">g → </span><span style="font-feature-settings: 'ss01' on" class="SS">g</span></span></label></p>
-                  <p class="font-slider"><input class="hidden" type="checkbox" id="ss03" onchange="refreshFeatures()" autocomplete="off"></input><label for="ss03">Style Set 3: <span><span style="font-feature-settings: 'ss03' off" class="SS">لا → </span><span style="font-feature-settings: 'ss03' on" class="SS">لا</span></span></label></p>
-                  <p class="font-slider"><input class="hidden" type="checkbox" id="ss04" onchange="refreshFeatures()" autocomplete="off"></input><label for="ss04">Style Set 4: <span><span style="font-feature-settings: 'ss04' off" class="SS">a → </span><span style="font-feature-settings: 'ss04' on" class="SS">a</span></span></label></p>
+                  <p class="font-slider"><input class="hidden" type="checkbox" id="ss01" onchange="refreshFeatures()" autocomplete="off"></input><label for="ss01">Style Set 1:Arabic Round Dots</label></p>
+
+                  <p class="font-slider"><input class="hidden" type="checkbox" id="ss02" onchange="refreshFeatures()" autocomplete="off"></input><label for="ss02">Style Set 2:Arabic Square Dots</label></p>
+
+
+                  <p class="font-slider"><input class="hidden" type="checkbox" id="ss03" onchange="refreshFeatures()" autocomplete="off"></input><label for="ss03">Style Set 3:Arabic Rect Dots</label></p>
+
+                  <p class="font-slider"><input class="hidden" type="checkbox" id="ss10" onchange="refreshFeatures()" autocomplete="off"></input><label for="ss10">Style Set 10: <span><span style="font-feature-settings: 'ss10' off" class="SS">لا → </span><span style="font-feature-settings: 'ss10' on" class="SS">لا</span></span></label></p>
+
+                  <p class="font-slider"><input class="hidden" type="checkbox" id="ss11" onchange="refreshFeatures()" autocomplete="off"></input><label for="ss11">Style Set 11: <span><span style="font-feature-settings: 'ss11' off" class="SS">a → </span><span style="font-feature-settings: 'ss11' on" class="SS">a</span></span></label></p>
+
+                  <p class="font-slider"><input class="hidden" type="checkbox" id="ss12" onchange="refreshFeatures()" autocomplete="off"></input><label for="ss12">Style Set 12: <span><span style="font-feature-settings: 'ss12' off" class="SS">g → </span><span style="font-feature-settings: 'ss12' on" class="SS">g</span></span></label></p>
+
+
+                  <p class="font-slider"><input class="hidden" type="checkbox" id="ss20" onchange="refreshFeatures()" autocomplete="off"></input><label for="ss20">Style Set 3:Latin to Farsi Digits</label></p>
+
+
                   <p class="font-slider"> <a href="https://abcdinamo.com/news/tutorial-a-guide-to-opentype-features" target="_blank">??</a></p>
                   <p class="right-side-header" id="text2" onclick="copyElementText(this.id); ShowSecond();"></p>
                </div>
@@ -585,26 +593,29 @@
              if (!target) return;
          
              const wght = +document.getElementById('wght').value;
-             const kshd = +document.getElementById('KSHD').value;
              const fs   = +document.getElementById('fontsizeinput').value;
              const fh   = +document.getElementById('fontheightinput').value;
          
              // variation axes
-             target.style.fontVariationSettings = `"wght" ${wght}, "KSHD" ${kshd}`;
+             target.style.fontVariationSettings = `"wght" ${wght}`;
              target.style.fontSize = fs + 'px';
              target.style.lineHeight = fh + 'em';
          
              // feature toggles
              const features = [
                "'ss01' " + (document.getElementById('ss01').checked ? 'on' : 'off'),
+               "'ss02' " + (document.getElementById('ss02').checked ? 'on' : 'off'),
                "'ss03' " + (document.getElementById('ss03').checked ? 'on' : 'off'),
-               "'ss04' " + (document.getElementById('ss04').checked ? 'on' : 'off')
+               "'ss10' " + (document.getElementById('ss10').checked ? 'on' : 'off'),
+               "'ss11' " + (document.getElementById('ss11').checked ? 'on' : 'off'),
+               "'ss12' " + (document.getElementById('ss12').checked ? 'on' : 'off'),
+               "'ss20' " + (document.getElementById('ss20').checked ? 'on' : 'off'),
              ];
              target.style.fontFeatureSettings = features.join(', ');
          
              // update text block
              document.getElementById('text1').textContent =
-               `font-variation-settings: "wght" ${wght},"KSHD" ${kshd};`;
+               `font-variation-settings: "wght" ${wght};`;
          
              document.getElementById('text2').textContent =
                `font-feature-settings: ${features.join(', ')};`;
@@ -614,10 +625,10 @@
            };
          
            // attach listeners
-           ['wght','KSHD','fontsizeinput','fontheightinput'].forEach(id => {
+           ['wght','fontsizeinput','fontheightinput'].forEach(id => {
              document.getElementById(id).addEventListener('input', refreshFeatures);
            });
-           ['ss01','ss03','ss04'].forEach(id => {
+           ['ss01','ss02','ss03','ss10','ss11','ss12','ss20'].forEach(id => {
              document.getElementById(id).addEventListener('change', refreshFeatures);
            });
          

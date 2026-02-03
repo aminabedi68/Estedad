@@ -24,13 +24,9 @@ slider.addEventListener("input", function(e) {
 const pageMain = document.querySelector(".dynamic");
 
 let __wghtVal = 400;
-let __kshdVal = 100;
 
 const wghtInput = document.getElementById("wght");
 const wghtSpan = document.getElementById("wghtVal");
-
-const kshdInput = document.getElementById("KSHD");
-const kshdSpan = document.getElementById("kshdVal");
 
 const Trigger = new Event("changeVal");
 
@@ -39,13 +35,6 @@ function wghtVal(val = undefined) {
     __wghtVal = val;
   }
   return `"wght" ${__wghtVal}`;
-}
-
-function kshdVal(val = undefined) {
-  if (val) {
-    __kshdVal = val;
-  }
-  return `"KSHD" ${__kshdVal}`;
 }
 
 const content = document.querySelector(".dynamic");
@@ -57,7 +46,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 content.addEventListener("changeVal", () => {
   content.setAttribute(
     "style",
-    `font-variation-settings: ${wghtVal()},${kshdVal()};`
+    `font-variation-settings: ${wghtVal()};`
   );
 });
 
@@ -67,20 +56,11 @@ wghtInput.addEventListener(".font-slider", (e) => {
   content.dispatchEvent(Trigger);
 });
 
-kshdInput.addEventListener(".font-slider", (e) => {
-  kshdVal(e.target.value);
-  kshdSpan.innerText = __kshdVal;
-  content.dispatchEvent(Trigger);
-});
-
 function dice() {
   wghtVal(Math.floor(Math.random() * 900) + 100);
-  kshdVal(Math.floor(Math.random() * 100) + 30);
 
   wghtInput.value = __wghtVal;
-  kshdInput.value = __kshdVal;
   wghtInput.dispatchEvent(new Event("input"));
-  kshdInput.dispatchEvent(new Event("input"));
 }
 
 document.getElementById("randbutton").addEventListener("click", dice);
