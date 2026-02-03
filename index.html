@@ -79,7 +79,6 @@
                <optgroup label="test">
                   <option value="numbers">Numbers</option>
                   <option value="rvrntest">rvrn feature</option>
-                  <option value="LatinMark">Latin P&D</option>
                   <option value="ArabicEoA">Arabic EoA</option>
                   <option value="QuranVersions">Quran Versions</option>
                </optgroup>
@@ -422,24 +421,6 @@
                <p contenteditable="true" style="text-align:left; direction:ltr;">Q$¢øØ¥
                </p>
             </div>
-            <div id="LatinMark" class="tabcontent">
-               <p contenteditable="true" style="text-align:left; direction:ltr;">
-                  (if you not see the colors, please <a onClick="window.location.href=window.location.href">refresh page</a> and come here again.)<br>
-                  there are two method to implement latin characters with marks:
-                  <br><span style="color: #ff4242">Precomposed forms: single precombined components or outlines.</span>
-                  <br><span style="color: #00bdbd">Decomposed forms: a set of opentype base and mark(s) components or outlines.</span>
-               <p contenteditable="true" style="direction:ltr;" id="demo"></p>
-               <script>
-                  const characters = ["À", "Á", "Â", "Ã", "Ä", "Å", "Ç", "È", "É", "Ê", "Ë", "Ì", "Í", "Î", "Ï", "Ñ", "Ò", "Ó", "Ô", "Õ", "Ö", "Ù", "Ú", "Û", "Ü", "Ý", "à", "á", "â", "ã", "ä", "å", "ç", "è", "é", "ê", "ë", "ì", "í", "î", "ï", "ñ", "ò", "ó", "ô", "õ", "ö", "ù", "ú", "û", "ü", "ý", "ÿ", "Ā", "ā", "Ă", "ă", "Ą", "ą", "Ć", "ć", "Ĉ", "ĉ", "Ċ", "ċ", "Č", "č", "Ď", "ď", "Ē", "ē", "Ĕ", "ĕ", "Ė", "ė", "Ę", "ę", "Ě", "ě", "Ĝ", "ĝ", "Ğ", "ğ", "Ġ", "ġ", "Ģ", "ģ", "Ĥ", "ĥ", "Ĩ", "ĩ", "Ī", "ī", "Ĭ", "ĭ", "Į", "į", "İ", "Ĵ", "ĵ", "Ķ", "ķ", "Ĺ", "ĺ", "Ļ", "ļ", "Ľ", "ľ", "Ń", "ń", "Ņ", "ņ", "Ň", "ň", "Ō", "ō", "Ŏ", "ŏ", "Ő", "ő", "Ŕ", "ŕ", "Ŗ", "ŗ", "Ř", "ř", "Ś", "ś", "Ŝ", "ŝ", "Ş", "ş", "Š", "š", "Ţ", "ţ", "Ť", "ť", "Ũ", "ũ", "Ū", "ū", "Ŭ", "ŭ", "Ů", "ů", "Ű", "ű", "Ų", "ų", "Ŵ", "ŵ", "Ŷ", "ŷ", "Ÿ", "Ź", "ź", "Ż", "ż", "Ž", "ž", "Ơ", "ơ", "Ư", "ư", "Ǎ", "ǎ", "Ǐ", "ǐ", "Ǒ", "ǒ", "Ǔ", "ǔ", "Ǖ", "ǖ", "Ǘ", "ǘ", "Ǚ", "ǚ", "Ǜ", "ǜ", "Ǟ", "ǟ", "Ǡ", "ǡ", "Ǣ", "ǣ", "Ǧ", "ǧ", "Ǩ", "ǩ", "Ǫ", "ǫ", "Ǭ", "ǭ", "ǰ", "Ǵ", "ǵ", "Ǹ", "ǹ", "Ǻ", "ǻ", "Ǽ", "ǽ", "Ǿ", "ǿ", "Ȁ", "ȁ", "Ȃ", "ȃ", "Ȅ", "ȅ", "Ȇ", "ȇ", "Ȉ", "ȉ", "Ȋ", "ȋ", "Ȍ", "ȍ", "Ȏ", "ȏ", "Ȑ", "ȑ", "Ȓ", "ȓ", "Ȕ", "ȕ", "Ȗ", "ȗ", "Ș", "ș", "Ț", "ț", "Ȟ", "ȟ", "Ȧ", "ȧ", "Ȩ", "ȩ", "Ȫ", "ȫ", "Ȭ", "ȭ", "Ȯ", "ȯ", "Ȱ", "ȱ", "Ȳ", "ȳ", "Ḁ", "ḁ", "Ḃ", "ḃ", "Ḅ", "ḅ", "Ḇ", "ḇ", "Ḉ", "ḉ", "Ḋ", "ḋ", "Ḍ", "ḍ", "Ḏ", "ḏ", "Ḑ", "ḑ", "Ḓ", "ḓ", "Ḕ", "ḕ", "Ḗ", "ḗ", "Ḙ", "ḙ", "Ḛ", "ḛ", "Ḝ", "ḝ", "Ḟ", "ḟ", "Ḡ", "ḡ", "Ḣ", "ḣ", "Ḥ", "ḥ", "Ḧ", "ḧ", "Ḩ", "ḩ", "Ḫ", "ḫ", "Ḭ", "ḭ", "Ḯ", "ḯ", "Ḱ", "ḱ", "Ḳ", "ḳ", "Ḵ", "ḵ", "Ḷ", "ḷ", "Ḹ", "ḹ", "Ḻ", "ḻ", "Ḽ", "ḽ", "Ḿ", "ḿ", "Ṁ", "ṁ", "Ṃ", "ṃ", "Ṅ", "ṅ", "Ṇ", "ṇ", "Ṉ", "ṉ", "Ṋ", "ṋ", "Ṍ", "ṍ", "Ṏ", "ṏ", "Ṑ", "ṑ", "Ṓ", "ṓ", "Ṕ", "ṕ", "Ṗ", "ṗ", "Ṙ", "ṙ", "Ṛ", "ṛ", "Ṝ", "ṝ", "Ṟ", "ṟ", "Ṡ", "ṡ", "Ṣ", "ṣ", "Ṥ", "ṥ", "Ṧ", "ṧ", "Ṩ", "ṩ", "Ṫ", "ṫ", "Ṭ", "ṭ", "Ṯ", "ṯ", "Ṱ", "ṱ", "Ṳ", "ṳ", "Ṵ", "ṵ", "Ṷ", "ṷ", "Ṹ", "ṹ", "Ṻ", "ṻ", "Ṽ", "ṽ", "Ṿ", "ṿ", "Ẁ", "ẁ", "Ẃ", "ẃ", "Ẅ", "ẅ", "Ẇ", "ẇ", "Ẉ", "ẉ", "Ẋ", "ẋ", "Ẍ", "ẍ", "Ẏ", "ẏ", "Ẑ", "ẑ", "Ẓ", "ẓ", "Ẕ", "ẕ", "ẖ", "ẗ", "ẘ", "ẙ", "ẚ", "ẛ", "Ạ", "ạ", "Ả", "ả", "Ấ", "ấ", "Ầ", "ầ", "Ẩ", "ẩ", "Ẫ", "ẫ", "Ậ", "ậ", "Ắ", "ắ", "Ằ", "ằ", "Ẳ", "ẳ", "Ẵ", "ẵ", "Ặ", "ặ", "Ẹ", "ẹ", "Ẻ", "ẻ", "Ẽ", "ẽ", "Ế", "ế", "Ề", "ề", "Ể", "ể", "Ễ", "ễ", "Ệ", "ệ", "Ỉ", "ỉ", "Ị", "ị", "Ọ", "ọ", "Ỏ", "ỏ", "Ố", "ố", "Ồ", "ồ", "Ổ", "ổ", "Ỗ", "ỗ", "Ộ", "ộ", "Ớ", "ớ", "Ờ", "ờ", "Ở", "ở", "Ỡ", "ỡ", "Ợ", "ợ", "Ụ", "ụ", "Ủ", "ủ", "Ứ", "ứ", "Ừ", "ừ", "Ử", "ử", "Ữ", "ữ", "Ự", "ự", "Ỳ", "ỳ", "Ỵ", "ỵ", "Ỷ", "ỷ", "Ỹ", "ỹ"];
-                  let txt = "";
-                  characters.forEach(myFunction);
-                  document.getElementById("demo").innerHTML = txt;
-                  function myFunction(value, index, array) {
-                    txt += " " + "<font color=\"#ff4242\">"+value+"</font>" + "&nbsp" + "<font color=\"#00bdbd\">"+value.normalize('NFD').split('').join('\u200C') + "&nbsp               "+"</font>"; 
-                  }
-               </script>
-               </p>
-            </div>
             <div id="QuranVersions" class="tabcontent">
                <p contenteditable="true" style="text-align:left; direction:ltr">
                   <span>there are several tradition of quran writing methodes, in the following examples from 7th verse of Al-Ma'idah, the first one is a bit complicated in opentype features and codepoint coverage but the secound is a simple version.</span>
@@ -480,11 +461,7 @@
       </header>
 	  	              <div id="about" class="tabcontent" style="user-select: text;">
                <p style="font-family:monospace; font-size: 18px; padding: 0px 15px 15px 15px;margin-top: -30px; line-height: 1.35em;text-align:left; direction:ltr;">
-                                    Estedad(/~este~dAd/ means Talent in persian) is an Arabic-Latin Sans-Serif typeface in 9 standard weights and a variable version[wght:weight/KSHD:Arabic simple kashida]. Estedad has wide range codepoint support for most of Arabic(Farsi, Arabic, Quran, Turkuca, Farsi, Kurdi, Koshur, Lurish, Mazanderani, Punjabi, Pashto, sindhi, Gilaki, Uyghurche, Urdu and ...) and Latin(Albanian, Azeri, Croatian, Czech, Danish, Dutch, English, Esperanto, Estonian, Filipino, Finnish, French, German, Hungarian, Icelandic, Irish, Italian, Latvian, Lithuanian, Norwegian, Polish, Portuguese, Romanian, Serbian, Slovak, Slovenian, Spanish, Swedish, Turkish, Vietnamese, WestFrisian and ...) languages.
-                  <br>design of type is simple, smooth, compact, low contrast, legible, lowest optical size(a bit higher in bold and above weights) and suitable for web-like environments.
-                  <br>Estadad supporting small caps, simple fractions, tabular and old-style numbers and both decomposed(limited to basic letters) and precomposed letter forms for Latin, and semi-advanced quran marking methodes for Arabic script.
-                  <br>this typeface has designed inside fontforge(currently in two thin and black masters(fontforge SFD sources) in 6th version). variable font and static instances build with fontmake and help of python scripts(fontforge python api and fonttools). whole project is licenced to be free under open font licence v1.1.
-                  <br>quality of variable font and static instances has improved under fontbakery advisments.</br></br></br>About This Page:</br>Specimen texts are taken from <a style="color: #222; font-size: 18px;" href="https://www.wikipedia.org/" target='blank'>Wikipedia</a> and <a style="color: #222; font-size: 18px;" href="https://www.cyreal.org/Font-Testing-Page/index.php" target='blank'>Impallari Font Testing Project</a> (by Pablo Impallari).</p>
+About This Page:</br>Specimen texts are taken from <a style="color: #222; font-size: 18px;" href="https://www.wikipedia.org/" target='blank'>Wikipedia</a> and <a style="color: #222; font-size: 18px;" href="https://www.cyreal.org/Font-Testing-Page/index.php" target='blank'>Impallari Font Testing Project</a> (by Pablo Impallari).</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
@@ -573,7 +550,7 @@
                <div class="tab4">
                   <div style="direction:ltr;text-align:center;!important">
                      <a href="https://fontamin.com/" target="blank"><img class="fontamin-logo" src="fontamin-logo.svg" style="width:30px;"></a><br>
-                     Estedad V7.3 - a <a href="https://fontamin.com" target="_blank">fontamin</a> product.
+                     Estedad V8.0(beta) - a <a href="https://fontamin.com" target="_blank">fontamin</a> product.
                   </div>
                </div>
             </section>
