@@ -1,5 +1,5 @@
 {
-.appVersion = "3436";
+.appVersion = "3516";
 .formatVersion = 3;
 axes = (
 {
@@ -146,22 +146,6 @@ data = "Arab, Latn";
 tag = slng;
 }
 );
-},
-{
-name = "Axis Mappings";
-value = {
-wght = {
-100 = 100;
-200 = 190;
-300 = 280;
-400 = 370;
-500 = 465;
-600 = 560;
-700 = 665;
-800 = 770;
-900 = 900;
-};
-};
 },
 {
 name = "Use Arabic Presentation Form Unicodes";
