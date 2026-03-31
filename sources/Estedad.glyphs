@@ -1,6 +1,9 @@
 {
-.appVersion = "3436";
+.appVersion = "3516";
 .formatVersion = 3;
+DisplayStrings = (
+"ﷲ"
+);
 axes = (
 {
 name = Weight;
@@ -146,22 +149,6 @@ data = "Arab, Latn";
 tag = slng;
 }
 );
-},
-{
-name = "Axis Mappings";
-value = {
-wght = {
-100 = 100;
-200 = 190;
-300 = 280;
-400 = 370;
-500 = 465;
-600 = 560;
-700 = 665;
-800 = 770;
-900 = 900;
-};
-};
 },
 {
 name = "Use Arabic Presentation Form Unicodes";
@@ -83446,9 +83433,23 @@ width = 663;
 },
 {
 glyphname = "allah-ar";
-lastChange = "2026-03-14 07:50:22 +0000";
+lastChange = "2026-03-26 13:53:45 +0000";
 layers = (
 {
+anchors = (
+{
+name = caret_1;
+pos = (347.5,0);
+},
+{
+name = caret_2;
+pos = (695,0);
+},
+{
+name = caret_3;
+pos = (1042.5,0);
+}
+);
 layerId = "AE3FEF6D-3AA7-4252-B349-D2606A6A3B4C";
 shapes = (
 {
@@ -83478,6 +83479,20 @@ ref = "heh-ar.fina";
 width = 1390;
 },
 {
+anchors = (
+{
+name = caret_1;
+pos = (369.25,0);
+},
+{
+name = caret_2;
+pos = (738.5,0);
+},
+{
+name = caret_3;
+pos = (1107.75,0);
+}
+);
 layerId = "3FD7D777-D61F-402B-A269-3A472D550581";
 shapes = (
 {
@@ -83507,6 +83522,20 @@ ref = "heh-ar.fina";
 width = 1477;
 },
 {
+anchors = (
+{
+name = caret_1;
+pos = (357.25,0);
+},
+{
+name = caret_2;
+pos = (714.5,0);
+},
+{
+name = caret_3;
+pos = (1071.75,0);
+}
+);
 layerId = m004;
 shapes = (
 {
